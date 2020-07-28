@@ -1,0 +1,57 @@
+#!/bin/sh
+
+## live-config(7) - System Configuration Components
+## Copyright (C) 2006-2015 Daniel Baumann <mail@daniel-baumann.ch>
+##
+## This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+## This is free software, and you are welcome to redistribute it
+## under certain conditions; see COPYING for details.
+
+
+#set -e
+
+Cmdline ()
+{
+	# Reading kernel command line
+	for _PARAMETER in ${LIVE_CONFIG_CMDLINE}
+	do
+		case "${_PARAMETER}" in
+			live-config.nox11autologin|nox11autologin)
+				LIVE_CONFIG_NOX11AUTOLOGIN="true"
+				;;
+		esac
+	done
+}
+
+Init ()
+{
+	# Disables graphical autologin, no matter what mechanism
+	case "${LIVE_CONFIG_NOX11AUTOLOGIN}" in
+		true)
+			exit 0
+			;;
+	esac
+}
+
+Config ()
+{
+	# Checking if intel chipset is already configured differently
+	if [ -e /usr/share/X11/xorg.conf.d/20-intel.conf ]
+	then
+		exit 0
+	fi
+
+	if [ ! -z "$(lspci -v | grep -i vga | grep -i intel)" ] && [ -d /usr/share/X11/xorg.conf.d ]
+	then
+		cat > /usr/share/X11/xorg.conf.d/20-intel.conf << EOF
+Section "Device"
+ Identifier  "Intel Graphics"
+ Driver      "Intel"
+EndSection
+EOF
+	fi
+}
+
+Cmdline
+Init
+Config

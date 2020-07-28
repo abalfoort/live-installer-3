@@ -1,0 +1,1074 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# alessio <palimmo@libero.it>, 2015
+# Arjen Balfoort <arjenbalfoort@solydxk.com>, 2017,2019
+# Arjen Balfoort <arjenbalfoort@solydxk.com>, 2015-2017
+# Davide Favaro <belzebu87@gmail.com>, 2015-2016
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010
+# Franco Frolloni <frolloni@gmail.com>, 2016-2017,2019
+msgid ""
+msgstr ""
+"Project-Id-Version: live-installer-3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-09 13:37+0200\n"
+"PO-Revision-Date: 2019-09-05 08:52+0000\n"
+"Last-Translator: Arjen Balfoort <arjenbalfoort@solydxk.com>\n"
+"Language-Team: Italian (http://www.transifex.com/solydxk/live-installer-3/"
+"language/it/)\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: usr/lib/live-installer-3/partitioning.py:142
+#, python-brace-format
+msgid ""
+"Cannot assign {0} as root partition: a minimum size of {1} GiB is required."
+msgstr ""
+"Impossibile assegnare {0} come partizione root: servono almeno {1} GiB."
+
+#: usr/lib/live-installer-3/partitioning.py:143
+msgid "Root size"
+msgstr "Dimensione di root"
+
+#: usr/lib/live-installer-3/partitioning.py:395
+msgid "Removable:"
+msgstr "Unità rimovibile:"
+
+#: usr/lib/live-installer-3/partitioning.py:432
+#: usr/lib/live-installer-3/gtk_interface.py:835
+#: usr/lib/live-installer-3/gtk_interface.py:839
+#: usr/lib/live-installer-3/gtk_interface.py:869
+#: usr/lib/live-installer-3/gtk_interface.py:881
+#: usr/lib/live-installer-3/gtk_interface.py:909
+#: usr/lib/live-installer-3/gtk_interface.py:917
+#: usr/lib/live-installer-3/gtk_interface.py:946
+msgid "Installation Tool"
+msgstr "Strumento di installazione"
+
+#: usr/lib/live-installer-3/partitioning.py:433
+#, python-format
+msgid ""
+"No partition table was found on the hard drive: %s.\n"
+"\n"
+"Do you want the installer to create a set of partitions for you?\n"
+"\n"
+"Note: This will ERASE ALL DATA present on this disk."
+msgstr ""
+"Nessuna tabella delle partiziani è stata trovata sul disco fisso: %s.\n"
+"\n"
+"Vuoi che l'installatore crei delle partizioni per te?\n"
+"\n"
+"Nota: questo CANCELLERA' TUTTI I DATI presenti su questo disco."
+
+#: usr/lib/live-installer-3/partitioning.py:618
+#, python-brace-format
+msgid "Cannot partition {0}: at least {1} GiB is needed."
+msgstr ""
+
+#: usr/lib/live-installer-3/partitioning.py:619
+msgid "Drive size"
+msgstr ""
+
+#: usr/lib/live-installer-3/partitioning.py:720
+msgid "Logical partition"
+msgstr "Partizione logica"
+
+#: usr/lib/live-installer-3/partitioning.py:721
+msgid "Extended partition"
+msgstr "Partizione estesa"
+
+#: usr/lib/live-installer-3/partitioning.py:722
+#: usr/lib/live-installer-3/gtk_interface.py:605
+msgid "Free space"
+msgstr "Spazio libero"
+
+#: usr/lib/live-installer-3/partitioning.py:739
+#: usr/lib/live-installer-3/gtk_interface.py:641
+msgid "Encryption password"
+msgstr "Password per la cifratura"
+
+#: usr/lib/live-installer-3/partitioning.py:744
+#, python-brace-format
+msgid "Password for the encrypted partition ({0}/3):"
+msgstr "Inserire la password per la partizione cifrata ({0}/3):"
+
+#: usr/lib/live-installer-3/partitioning.py:758
+msgid "Failed to connect the encrypted partition:"
+msgstr "Connessione fallita alla partizione criptata"
+
+#: usr/lib/live-installer-3/partitioning.py:908
+msgid "Edit partition"
+msgstr "Modifica partizione"
+
+#: usr/lib/live-installer-3/partitioning.py:917
+#: usr/lib/live-installer-3/gtk_interface.py:597
+msgid "Device"
+msgstr "Dispositivi"
+
+#: usr/lib/live-installer-3/partitioning.py:918
+#: usr/lib/live-installer-3/gtk_interface.py:602
+msgid "Format as"
+msgstr "Formatta come"
+
+#: usr/lib/live-installer-3/partitioning.py:919
+#: usr/lib/live-installer-3/gtk_interface.py:601
+msgid "Mount point"
+msgstr "Punto di mount"
+
+#: usr/lib/live-installer-3/partitioning.py:920
+msgid "Label (optional)"
+msgstr "Etichetta (opzionale)"
+
+#: usr/lib/live-installer-3/partitioning.py:921
+msgid "Encrypt partition"
+msgstr "Cifratura della partizione"
+
+#: usr/lib/live-installer-3/partitioning.py:922
+msgid "Password"
+msgstr "Password"
+
+#: usr/lib/live-installer-3/partitioning.py:1049
+#: usr/lib/live-installer-3/partitioning.py:1058
+#: usr/lib/live-installer-3/partitioning.py:1129
+#: usr/lib/live-installer-3/gtk_interface.py:637
+msgid "Encryption"
+msgstr "Cifratura"
+
+#: usr/lib/live-installer-3/partitioning.py:1050
+#, python-brace-format
+msgid ""
+"You chose to encrypt the root partition.\n"
+"\n"
+"You will need to mount {0} on a separate non-encrypted partition (500 MiB).\n"
+"Without a non-encrypted {0} partition your system will be unbootable.\n"
+"\n"
+"Encryption will erase all data from {1}\n"
+"\n"
+"Are you sure you want to continue?"
+msgstr ""
+"È stato scelto di cifrare la partizione root\n"
+"\n"
+"Sarà necessario montare {0} in una partizione separata e non cifrata (500 "
+"MiB).\n"
+"Senza una partizione {0} non cifrata non sarà possibile avviare il sistema.\n"
+"\n"
+"La cifratura eliminerà ogni dato da {1}\n"
+"\n"
+"Sei sicuro di voler continuare?"
+
+#: usr/lib/live-installer-3/partitioning.py:1059
+msgid ""
+"Encryption will erase all data from {}\n"
+"\n"
+"Are you sure you want to continue?"
+msgstr ""
+"La cifratura eliminerà ogni dato da {}\n"
+"\n"
+"Sei sicuro di voler continuare?"
+
+#: usr/lib/live-installer-3/partitioning.py:1115
+#: usr/lib/live-installer-3/gtk_interface.py:783
+msgid "Please provide an encryption password."
+msgstr "Prego imposta una password di cifratura"
+
+#: usr/lib/live-installer-3/partitioning.py:1118
+#: usr/lib/live-installer-3/gtk_interface.py:786
+msgid "Your encryption passwords do not match."
+msgstr "Le password di cifratura non corrispondono"
+
+#: usr/lib/live-installer-3/partitioning.py:1121
+msgid ""
+"You need to choose a format type\n"
+"for your encrypted partition (default: ext4):"
+msgstr ""
+"È necessario scegliere un tipo di formattazione\n"
+"per la partizione cifrata (default: ext4):"
+
+#: usr/lib/live-installer-3/partitioning.py:1126
+msgid "You need to choose a mount point for partition:"
+msgstr "È necessario scegliere un punto di montaggio per la partizione:"
+
+#: usr/lib/live-installer-3/gtk_interface.py:83
+msgid "{} Installer"
+msgstr "Programma di installazione di {}"
+
+#: usr/lib/live-installer-3/gtk_interface.py:316
+#, python-format
+msgid ""
+"Please, click on the network manager's system tray icon to connect to the "
+"internet before you continue.\n"
+"\n"
+"You can still install %s without an internet connection.\n"
+"Without an internet connection your system will not be upgraded and some "
+"packages cannot be localized."
+msgstr ""
+"Prego, clicca sull'icona del gestore di rete nel pannello per connettersi ad "
+"internet prima di continuare\n"
+"\n"
+"Puoi anche installare %s senza connessione internet.\n"
+"Senza connessione il tuo sistema non sarà aggiornato ed alcuni pacchetti non "
+"potranno essere localizzati."
+
+#: usr/lib/live-installer-3/gtk_interface.py:319
+#: usr/lib/live-installer-3/gtk_interface.py:423
+msgid "No internet connection"
+msgstr "Nessuna connessione internet"
+
+#: usr/lib/live-installer-3/gtk_interface.py:359
+msgid "Quit?"
+msgstr "Uscire?"
+
+#: usr/lib/live-installer-3/gtk_interface.py:359
+msgid "Are you sure you want to quit the installer?"
+msgstr "Vuoi uscire dal programma di installazione?"
+
+#: usr/lib/live-installer-3/gtk_interface.py:421
+msgid ""
+"Cannot download and install additional locale packages: no internet "
+"connection\n"
+"Configuration will still be set to your selected language."
+msgstr ""
+"Impossibile scaricare ed installare i pacchetti addizionali per la "
+"localizzazione: nessuna connessione a internet\n"
+"La configurazione sarà comunque impostata nella lingua selezionata."
+
+#: usr/lib/live-installer-3/gtk_interface.py:548
+msgid "{} OEM Setup"
+msgstr "Configurazione {}  OEM"
+
+#: usr/lib/live-installer-3/gtk_interface.py:564
+#: usr/lib/live-installer-3/gtk_interface.py:584
+msgid "Language"
+msgstr "Lingua"
+
+#: usr/lib/live-installer-3/gtk_interface.py:565
+msgid "Timezone"
+msgstr "Fuso orario"
+
+#: usr/lib/live-installer-3/gtk_interface.py:566
+msgid "Keyboard layout"
+msgstr "Layout della tastiera"
+
+#: usr/lib/live-installer-3/gtk_interface.py:567
+msgid "User info"
+msgstr "Informazioni utente"
+
+#: usr/lib/live-installer-3/gtk_interface.py:568
+msgid "Partitioning"
+msgstr "Partizionamento"
+
+#: usr/lib/live-installer-3/gtk_interface.py:569
+msgid "Please make sure you wish to manage partitions manually"
+msgstr "Sicuro di voler gestire manualmente le partizioni?"
+
+#: usr/lib/live-installer-3/gtk_interface.py:570
+msgid "Summary"
+msgstr "Riepilogo"
+
+#: usr/lib/live-installer-3/gtk_interface.py:571
+msgid "Installing {}..."
+msgstr "Installazione di {} in corso..."
+
+#: usr/lib/live-installer-3/gtk_interface.py:572
+msgid "Installation is paused: please finish the custom installation"
+msgstr ""
+"L'installazione è in pausa: per favore completa l'installazione "
+"personalizzata"
+
+#: usr/lib/live-installer-3/gtk_interface.py:579
+#: usr/lib/live-installer-3/gtk_interface.py:609
+msgid "Quit"
+msgstr "Esci"
+
+#: usr/lib/live-installer-3/gtk_interface.py:580
+#: usr/lib/live-installer-3/gtk_interface.py:610
+msgid "Back"
+msgstr "Indietro"
+
+#: usr/lib/live-installer-3/gtk_interface.py:581
+#: usr/lib/live-installer-3/gtk_interface.py:611
+#: usr/lib/live-installer-3/gtk_interface.py:702
+msgid "Forward"
+msgstr "Avanti"
+
+#: usr/lib/live-installer-3/gtk_interface.py:585
+msgid "Country"
+msgstr "Stato"
+
+#: usr/lib/live-installer-3/gtk_interface.py:588
+msgid "Selected timezone:"
+msgstr "Fuso orario scelto:"
+
+#: usr/lib/live-installer-3/gtk_interface.py:589
+msgid "Select timezone"
+msgstr "Seleziona il fuso orario"
+
+#: usr/lib/live-installer-3/gtk_interface.py:592
+msgid "Refresh"
+msgstr "Scaricamento informazioni..."
+
+#: usr/lib/live-installer-3/gtk_interface.py:593
+msgid "_Expert mode"
+msgstr "_Modalità avanzate"
+
+#: usr/lib/live-installer-3/gtk_interface.py:594
+msgid "_Edit partitions"
+msgstr "_Modifica partizioni"
+
+#: usr/lib/live-installer-3/gtk_interface.py:598
+msgid "Grub"
+msgstr "Grub"
+
+#: usr/lib/live-installer-3/gtk_interface.py:599
+msgid "Type"
+msgstr "Tipo"
+
+#: usr/lib/live-installer-3/gtk_interface.py:600
+msgid "Label"
+msgstr "Etichetta"
+
+#: usr/lib/live-installer-3/gtk_interface.py:603
+msgid "Encrypt"
+msgstr "Cifratura"
+
+#: usr/lib/live-installer-3/gtk_interface.py:604
+msgid "Size"
+msgstr "Dimensione"
+
+#: usr/lib/live-installer-3/gtk_interface.py:614
+msgid "Layout"
+msgstr "configurazione"
+
+#: usr/lib/live-installer-3/gtk_interface.py:615
+msgid "Variant"
+msgstr "Variante"
+
+#: usr/lib/live-installer-3/gtk_interface.py:616
+msgid "Use this box to test your keyboard layout."
+msgstr ""
+"Usa questo riquadro per verificare la configurazione della tua tastiera"
+
+#: usr/lib/live-installer-3/gtk_interface.py:617
+msgid "Model"
+msgstr "Modello"
+
+#: usr/lib/live-installer-3/gtk_interface.py:620
+msgid "Click to change your picture"
+msgstr "Clic per cambiare immagine"
+
+#: usr/lib/live-installer-3/gtk_interface.py:621
+msgid "Take a photo..."
+msgstr "Scatta una foto..."
+
+#: usr/lib/live-installer-3/gtk_interface.py:622
+msgid "Browse for more pictures..."
+msgstr "Sfoglia per cercare altre foto..."
+
+#: usr/lib/live-installer-3/gtk_interface.py:623
+msgid "Your full name"
+msgstr "Il tuo nome completo"
+
+#: usr/lib/live-installer-3/gtk_interface.py:624
+msgid "This will be shown in the About Me application."
+msgstr "Questo sarà visto nell'applicazione \"About Me\""
+
+#: usr/lib/live-installer-3/gtk_interface.py:625
+msgid "Your username"
+msgstr "Il tuo nome utente"
+
+#: usr/lib/live-installer-3/gtk_interface.py:626
+msgid "This is the name you will use to log in to your computer."
+msgstr "Questo è il nome che userai per accedere al tuo computer"
+
+#: usr/lib/live-installer-3/gtk_interface.py:627
+msgid "Your password"
+msgstr "La tua password"
+
+#: usr/lib/live-installer-3/gtk_interface.py:628
+msgid "Please enter your password twice to ensure it is correct."
+msgstr "Inserisci la password due volte per assicurarne la correttezza"
+
+#: usr/lib/live-installer-3/gtk_interface.py:630
+msgid "Hostname"
+msgstr "Hostname"
+
+#: usr/lib/live-installer-3/gtk_interface.py:631
+msgid "This hostname will be the computer's name on the network."
+msgstr "Questo hostname sarà il nome del computer nella rete"
+
+#: usr/lib/live-installer-3/gtk_interface.py:632
+msgid "Automatic login"
+msgstr "Login automatico"
+
+#: usr/lib/live-installer-3/gtk_interface.py:633
+msgid ""
+"If enabled, the login screen is skipped when the system starts, and you are "
+"signed into your desktop session automatically."
+msgstr ""
+"Se abilitato, all'avvio del sistema la schermata di login verrà saltata e "
+"verrà avviata la sessione di lavoro automaticamente."
+
+#: usr/lib/live-installer-3/gtk_interface.py:635
+msgid "Log in automatically on system boot"
+msgstr "Login automatico all'avvio del sistema"
+
+#: usr/lib/live-installer-3/gtk_interface.py:638
+msgid "Encrypt home partition"
+msgstr "Cifratura della partizione home"
+
+#: usr/lib/live-installer-3/gtk_interface.py:639
+msgid "If enabled, the home partition will be encrypted."
+msgstr "Se abilitata, la partizione home sarà cifrata"
+
+#: usr/lib/live-installer-3/gtk_interface.py:642
+msgid ""
+"WARNING: when you loose your encryption password, you won't be able to "
+"recover your data! During boot you will be asked for your password to unlock "
+"the home partition. This is not necessarily the same password as your user "
+"login password."
+msgstr ""
+"ATTENZIONE: in caso di perdita della password di cifratura, non potrai "
+"recuperare i tuoi dati! Durante l'avvio ti verrà chiesta la password per "
+"sbloccare la partizione home. Questa non è necessariamente la stessa "
+"password del tuo accesso come utente."
+
+#: usr/lib/live-installer-3/gtk_interface.py:647
+msgid "Your picture"
+msgstr "La tua foto"
+
+#: usr/lib/live-installer-3/gtk_interface.py:648
+msgid ""
+"This picture represents your user account. It is used in the login screen "
+"and a few other places."
+msgstr ""
+"Questa immagine rappresenta il tuo account. È usata nella schermata "
+"d'accesso e in alcuni altri casi."
+
+#: usr/lib/live-installer-3/gtk_interface.py:652
+msgid ""
+"You have selected to manage your partitions manually, this feature is for "
+"ADVANCED USERS ONLY."
+msgstr ""
+"Hai selezionato di gestire manualmente le partizioni, questa opzione è SOLO "
+"per UTENTI ESPERTI"
+
+#: usr/lib/live-installer-3/gtk_interface.py:654
+#, python-format
+msgid "Before continuing, please mount your target filesystem(s) at %s."
+msgstr "Prima di continuare, per favore monta il filesystem target in %s."
+
+#: usr/lib/live-installer-3/gtk_interface.py:656
+#, python-format
+msgid "Do NOT mount virtual devices such as /dev, /proc, /sys, etc on %s/."
+msgstr "NON montare periferiche virtuali come /dev, /proc, /sys, ecc. in %s/"
+
+#: usr/lib/live-installer-3/gtk_interface.py:658
+#, python-format
+msgid ""
+"During the install, you will be given time to chroot into %s and install any "
+"packages that will be needed to boot your new system."
+msgstr ""
+"Durante l'installazione ti sarà dato il tempo di fare chroot in %s e "
+"installare i pacchetti che potrebbero essere necessari per avviare il nuovo "
+"sistema."
+
+#: usr/lib/live-installer-3/gtk_interface.py:660
+msgid "During the install, you will be required to write your own /etc/fstab."
+msgstr "Durante l'installazione ti sarà chiesto di scrivere il tuo /etc/fstab."
+
+#: usr/lib/live-installer-3/gtk_interface.py:662
+msgid ""
+"If you aren't sure what any of this means, please go back and deselect "
+"manual partition management."
+msgstr ""
+"Se non sei sicuro cosa significhino questi termini, per favore torna "
+"indietro e deseleziona la gestione manuale delle partizioni."
+
+#: usr/lib/live-installer-3/gtk_interface.py:666
+msgid "Please do the following and then click Forward to finish installation:"
+msgstr ""
+"Per favore completa le seguenti azioni e poi clicca su Avanti per completare "
+"l'installazione:"
+
+#: usr/lib/live-installer-3/gtk_interface.py:668
+#, python-brace-format
+msgid ""
+"Create {0}/etc/fstab for the filesystems as they will be mounted in your new "
+"system, matching those currently mounted at {0} (without using the {0} "
+"prefix in the mount paths themselves)."
+msgstr ""
+"Creare le voci in {0}/etc/fstab per il filesystem dato che saranno montate "
+"nel nuovo sistema, in accordo con quelle attualmente inserite in {0} (senza "
+"usare il prefisso {0} nel percorso di montaggio)"
+
+#: usr/lib/live-installer-3/gtk_interface.py:670
+#, python-format
+msgid ""
+"Install any packages that may be needed for first boot (mdadm, cryptsetup, "
+"dmraid, etc) by calling \"sudo chroot %s\" followed by the relevant apt-get/"
+"aptitude installations."
+msgstr ""
+"Installa i pacchetti che potrebbero essere necessari per il primo avvio "
+"(mdadm, cryptsetup, dmraid, ecc.) eseguendo \"sudo chroot %s\" seguito dalle "
+"corrispondenti installazioni con apt-get/aptitude"
+
+#: usr/lib/live-installer-3/gtk_interface.py:672
+#, python-format
+msgid ""
+"Note that in order for update-initramfs to work properly in some cases (such "
+"as dm-crypt), you may need to have drives currently mounted using the same "
+"block device name as they appear in %s/etc/fstab."
+msgstr ""
+"Notare che per eseguire update-initramfs correttamente in alcuni casi (come "
+"dm-crypt) potrebbe essere necessario avere i dispositivi attualmente montati "
+"con lo stesso block device name presente in %s/etc/fstab"
+
+#: usr/lib/live-installer-3/gtk_interface.py:674
+#, python-brace-format
+msgid ""
+"Double-check that your {0}/etc/fstab is correct, matches what your new "
+"system will have at first boot, and matches what is currently mounted at {0}."
+msgstr ""
+"Controlla attentamente che il tuo {0}/etc/fstab sia corretto, che "
+"corrisponda a quello che il tuo sistema avrà al primo avvio, e che "
+"corrisponda a ciò che è montato in {0}."
+
+#: usr/lib/live-installer-3/gtk_interface.py:678
+msgid "Overview"
+msgstr "panoramica"
+
+#: usr/lib/live-installer-3/gtk_interface.py:764
+msgid "Please provide your full name."
+msgstr "Inserisci nome e cognome"
+
+#: usr/lib/live-installer-3/gtk_interface.py:767
+msgid "Please provide a username."
+msgstr "Inserisci un nome utente"
+
+#: usr/lib/live-installer-3/gtk_interface.py:770
+msgid "Please provide a username without -oem."
+msgstr "Inserisci un nome utente senza -oem."
+
+#: usr/lib/live-installer-3/gtk_interface.py:773
+msgid "Please provide a password for your user account."
+msgstr "Inserisci una password per l'account del tuo nome utente"
+
+#: usr/lib/live-installer-3/gtk_interface.py:776
+msgid "Your passwords do not match."
+msgstr "Le password inserite non corrispondono"
+
+#: usr/lib/live-installer-3/gtk_interface.py:779
+msgid "Please provide a hostname."
+msgstr "Inserisci il nome dell'host"
+
+#: usr/lib/live-installer-3/gtk_interface.py:790
+msgid "Your username cannot start with a digit."
+msgstr "Il nome dell'utente non può cominciare con un numero"
+
+#: usr/lib/live-installer-3/gtk_interface.py:793
+msgid ""
+"The hostname is incorrect:\n"
+"not more than 63 characters between periods\n"
+"and not more than 255 characters total."
+msgstr ""
+"Hostname non corretto:\n"
+"non immettere più di 63 caratteri a frase\n"
+"e non più di 255 caratteri in totale."
+
+#: usr/lib/live-installer-3/gtk_interface.py:798
+msgid "Error"
+msgstr "Errore"
+
+#: usr/lib/live-installer-3/gtk_interface.py:816
+#: usr/lib/live-installer-3/gtk_interface.py:985
+#: usr/lib/live-installer-3/gtk_interface.py:993
+msgid "Apply"
+msgstr "Applica"
+
+#: usr/lib/live-installer-3/gtk_interface.py:836
+#, python-format
+msgid ""
+"Please indicate a filesystem to format the root (%s) partition with before "
+"proceeding."
+msgstr ""
+"Indica il filesystem da utilizzare per formattare la partizione root (%s) "
+"prima di procedere."
+
+#: usr/lib/live-installer-3/gtk_interface.py:840
+#, python-format
+msgid "<b>Please select a root (%s) partition.</b>"
+msgstr "<b>Per favore scegli una partizione di root (%s)</b>"
+
+#: usr/lib/live-installer-3/gtk_interface.py:841
+#, python-brace-format
+msgid ""
+"A root partition is needed to install the system.\n"
+"\n"
+" - Mount point: /\n"
+" - Recommended size: {0} GiB\n"
+" - Minimum size: {1} GiB\n"
+" - Recommended filesystem format: ext4\n"
+msgstr ""
+
+#: usr/lib/live-installer-3/gtk_interface.py:869
+#, python-brace-format
+msgid ""
+"The {part_name} partition is too small.\n"
+"It must be at least {boot_min_size} MiB."
+msgstr ""
+"La partizione {part_name} è troppo piccola.\n"
+"Deve essere di almeno {boot_min_size} MiB."
+
+#: usr/lib/live-installer-3/gtk_interface.py:881
+#, python-brace-format
+msgid ""
+"The {part_name} partition is too small.\n"
+"It must be at least {efi_min_size} MiB."
+msgstr ""
+"La partizione {part_name} è troppo piccola.\n"
+"Deve essere di almeno {efi_min_size} MiB."
+
+#: usr/lib/live-installer-3/gtk_interface.py:909
+#, python-brace-format
+msgid ""
+"The swap partition does not have the correct size:\n"
+"Minimum size: {0}GiB\n"
+"Recommended size: {1}GiB\n"
+"Maximum size: {2}GiB"
+msgstr ""
+"La partizione di swap non ha la dimensione corretta:\n"
+"Dimensione minima: {0}GiB\n"
+"Dimensione raccomandata: {1}GiB\n"
+"Dimensione massima: {2}GiB"
+
+#: usr/lib/live-installer-3/gtk_interface.py:918
+#, python-brace-format
+msgid ""
+"Swap partition {0} is not correctly formatted.\n"
+"Live Installer will format the partition to swap."
+msgstr ""
+"La partizione di swap {0} non è formattata correttamente.\n"
+"Live Installer formatterà la partizione di swap."
+
+#: usr/lib/live-installer-3/gtk_interface.py:939
+msgid ""
+"To ensure compatibility with Windows we recommend\n"
+"you use the first partition of the disk as the EFI partition."
+msgstr ""
+"Per assicurare la compatibilità con Windows raccomandiamo\n"
+"di usare la prima partizione del disco come partizione EFI."
+
+#: usr/lib/live-installer-3/gtk_interface.py:947
+#, python-format
+msgid "<b>Please select a %s partition.</b>"
+msgstr "<b>Prego selezionare una partizione %s.</b>"
+
+#: usr/lib/live-installer-3/gtk_interface.py:948
+#, python-brace-format
+msgid ""
+"A {part_name} partition is needed with the following requirements:\n"
+"\n"
+" - Mount point: {part_mount}\n"
+" - Size: at least {min_size}\n"
+" - Format: {part_format}"
+msgstr ""
+"Serve una partizione {part_name} pcon i seguenti requisiti:\n"
+"\n"
+" - Punto di montaggio: {part_mount}\n"
+" - Dimensione: almeno {min_size}\n"
+" - Formatta come: {part_format}"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1097
+msgid "Setup finished"
+msgstr "Configurazione compeltata"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1098
+msgid "Setup is complete. The system will now reboot."
+msgstr "La configurazione è completa. Ora il sistema verrà riavviato."
+
+#: usr/lib/live-installer-3/gtk_interface.py:1103
+#: usr/lib/live-installer-3/installer.py:1098
+msgid "Installation finished"
+msgstr "Installazione terminata"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1104
+msgid ""
+"Installation is now complete. Do you want to restart your computer to use "
+"the new system?"
+msgstr ""
+"L'installazione è stata completata. Vuoi riavviare il computer per usare il "
+"nuovo sistema?"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1152
+msgid "Localization"
+msgstr "Localizzazione"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1153
+msgid "Language: "
+msgstr "Lingua: "
+
+#: usr/lib/live-installer-3/gtk_interface.py:1154
+msgid "Timezone: "
+msgstr "Fuso orario: "
+
+#: usr/lib/live-installer-3/gtk_interface.py:1155
+msgid "Keyboard layout: "
+msgstr "Layout della tastiera: "
+
+#: usr/lib/live-installer-3/gtk_interface.py:1158
+msgid "User settings"
+msgstr "Impostazioni utente"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1159
+msgid "Real name: "
+msgstr "Nome reale:"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1160
+msgid "Username: "
+msgstr "Nome utente: "
+
+#: usr/lib/live-installer-3/gtk_interface.py:1161
+msgid "Automatic login: "
+msgstr "Login automatico:"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1161
+msgid "enabled"
+msgstr "attivato"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1161
+msgid "disabled"
+msgstr "disattivato"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1162
+msgid "System settings"
+msgstr "Impostazioni di sistema"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1163
+msgid "Hostname: "
+msgstr "Nome dell'host:"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1166
+#: usr/lib/live-installer-3/gtk_interface.py:1185
+msgid "Filesystem operations"
+msgstr "Operazioni sul filesystem"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1167
+msgid "Install Grub on {}"
+msgstr "Installa Grub su {}"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1167
+msgid "Do not install Grub"
+msgstr "Non installare Grub"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1170
+#, python-format
+msgid "Use already-mounted %s."
+msgstr "Utilizzare already-mounted %s."
+
+#: usr/lib/live-installer-3/gtk_interface.py:1179
+msgid "set boot flag"
+msgstr "Imposta flag di avvio"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1180
+msgid "Mount {}{} as {}"
+msgstr "Monta {}{} come {}"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1186
+msgid "Encrypt {}"
+msgstr "Cifratura {}"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1188
+msgid "Encrypt {} and format as {}"
+msgstr "Cifra {} e formatta come {}"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1190
+msgid "Format {} as {}"
+msgstr "Formatta {} come {}"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1427
+#: usr/lib/live-installer-3/gtk_interface.py:1453
+msgid "Grub install"
+msgstr "Installa Grub"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1428
+msgid ""
+"You chose to NOT install Grub on your system.\n"
+"Without a bootloader like Grub your system might not boot.\n"
+"\n"
+"Are you sure you want to continue?"
+msgstr ""
+"Si è scelto di NON installare Grub in questo sistema.\n"
+"Senza un bootloader come Grub il sistema potrebbe non avviarsi.\n"
+"\n"
+"Si è sicuri di voler procedere?"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1454
+msgid ""
+"You chose to install Grub on a partition.\n"
+"It is recommended to install Grub on a disk instead of a partition.\n"
+"\n"
+"Only continue if you are certain that you have another bootloader already "
+"installed.\n"
+"\n"
+"Are you sure you want to continue?"
+msgstr ""
+"Si è scelto di installare Grub su una partizione.\n"
+"Si raccomanda di installare Grub su un disco invece che su una partizione.\n"
+"\n"
+"Continuare solo se si è certi di avere già un altro bootloader installato.\n"
+"\n"
+"Sei sicuro di voler continuare?"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1512
+msgid "Select image"
+msgstr "Seleziona un'immagine"
+
+#: usr/lib/live-installer-3/gtk_interface.py:1538
+msgid "Unable to convert the image."
+msgstr "Non è stato possibile convertire l'immagine"
+
+#: usr/lib/live-installer-3/installer.py:155
+#: usr/lib/live-installer-3/installer.py:180
+msgid "Installation error"
+msgstr "Errore di installazione"
+
+#: usr/lib/live-installer-3/installer.py:165
+msgid ""
+"Installation is now paused. Please read the instructions on the page "
+"carefully before clicking Forward to finish the installation."
+msgstr ""
+"L'installazione è in pausa. Per favore leggi attentamente le istruzioni "
+"sulla pagina e clicca Avanti per completare l'installazione."
+
+#: usr/lib/live-installer-3/installer.py:166
+msgid "Verify that fstab is correct (use blkid to check the UUIDs)."
+msgstr "Verifica che fstab è corretto (usa blkid per controllare gli UUID)"
+
+#: usr/lib/live-installer-3/installer.py:167
+msgid ""
+"A chrooted terminal and fstab will be opened after you close this message."
+msgstr "Seleziona l'immagine"
+
+#: usr/lib/live-installer-3/installer.py:169
+msgid "Installation paused"
+msgstr "Installazione in pausa"
+
+#: usr/lib/live-installer-3/installer.py:234
+#, python-format
+msgid "Encrypting %(partition)s ..."
+msgstr "Cifratura di %(partition)s ..."
+
+#: usr/lib/live-installer-3/installer.py:243
+#, python-format
+msgid "Formatting %(partition)s as %(format)s ..."
+msgstr "Formattazione di %(partition)s in %(format)s ..."
+
+#: usr/lib/live-installer-3/installer.py:317
+#: usr/lib/live-installer-3/installer.py:332
+#, python-format
+msgid "Mounting %(partition)s on %(mountpoint)s"
+msgstr "Mount di %(partition)s in %(mountpoint)s"
+
+#: usr/lib/live-installer-3/installer.py:354
+#, python-format
+msgid ""
+"You must first manually mount your target filesystem(s) at %s to do a custom "
+"install!"
+msgstr ""
+"Devi prima montare il/i filesystem di destinazione in %s per "
+"un'installazione personalizzata!"
+
+#: usr/lib/live-installer-3/installer.py:357
+#: usr/lib/live-installer-3/installer.py:461
+msgid "Not mounted"
+msgstr "Non montato"
+
+#: usr/lib/live-installer-3/installer.py:365
+msgid ""
+"Something is wrong with the installation medium! This is usually caused by "
+"burning tools which are not compatible with {}. Please burn the ISO image to "
+"DVD/USB using a different tool."
+msgstr ""
+"Qualcosa è andato storto con il supporto di installazione! In genere a causa "
+"di strumenti di copia o masterizzazione non compatibili con {}. Si consiglia "
+"di trasferire l'immagine ISO su DVD/USB usando uno strumento differente."
+
+#: usr/lib/live-installer-3/installer.py:368
+msgid "Base filesystem does not exist"
+msgstr "Filesystem non esistente"
+
+#: usr/lib/live-installer-3/installer.py:411
+msgid "Copying"
+msgstr "Copia in corso"
+
+#: usr/lib/live-installer-3/installer.py:418
+#, python-format
+msgid ""
+"System copy ended abruptly.\n"
+"Your system might not function properly (rsync code: %s)."
+msgstr ""
+"La copia del sistema è terminata improvvisamente\n"
+"Il tuo sistema potrebbe non funzionare correttamente (rsync code: %s)."
+
+#: usr/lib/live-installer-3/installer.py:421
+msgid "System copy error"
+msgstr "Errore nella copia del sistema"
+
+#: usr/lib/live-installer-3/installer.py:454
+msgid "Entering the system ..."
+msgstr "Accesso al sistema..."
+
+#: usr/lib/live-installer-3/installer.py:458
+#, python-format
+msgid "%s/dev not mounted - exiting"
+msgstr "%s/dev non montato -uscita"
+
+#: usr/lib/live-installer-3/installer.py:469
+msgid "Installing EFI packages..."
+msgstr "Installazione dei pacchetti EFI"
+
+#: usr/lib/live-installer-3/installer.py:493
+msgid "Installing drivers"
+msgstr "Installazione dei driver in corso"
+
+#: usr/lib/live-installer-3/installer.py:507
+msgid "Writing filesystem mount information to /etc/fstab"
+msgstr "Scrittura delle informazioni di montaggio del filesystem"
+
+#: usr/lib/live-installer-3/installer.py:675
+msgid "Setting locale"
+msgstr "Impostazione della localizzazione"
+
+#: usr/lib/live-installer-3/installer.py:686
+msgid "Adding new user to the system"
+msgstr "Aggiunta nuovo utente al sistema"
+
+#: usr/lib/live-installer-3/installer.py:800
+msgid "Setting hostname"
+msgstr "Impostazione dell'hostname"
+
+#: usr/lib/live-installer-3/installer.py:822
+msgid "Update apt cache"
+msgstr "Aggiorna la cache di apt"
+
+#: usr/lib/live-installer-3/installer.py:824
+msgid "Update the new system"
+msgstr "Aggiorna il nuovo sistema"
+
+#: usr/lib/live-installer-3/installer.py:831
+msgid "Localizing packages"
+msgstr "Localizzazione pacchetti"
+
+#: usr/lib/live-installer-3/installer.py:849
+msgid "Setting keyboard options"
+msgstr "Impostazione delle opzioni della tastiera"
+
+#: usr/lib/live-installer-3/installer.py:914
+msgid "Configuring sensors"
+msgstr "Configurazione sensori"
+
+#: usr/lib/live-installer-3/installer.py:920
+msgid "Removing VirtualBox"
+msgstr "Rimozione VirtualBox"
+
+#: usr/lib/live-installer-3/installer.py:926
+msgid "Removing os-prober"
+msgstr "Rimozione di os-prober"
+
+#: usr/lib/live-installer-3/installer.py:942
+msgid "Installing bootloader"
+msgstr "Installazione del bootloader"
+
+#: usr/lib/live-installer-3/installer.py:970
+msgid ""
+"The grub bootloader was not configured properly! You need to configure it "
+"manually."
+msgstr ""
+"Il bootloader grub non è stato configurato correttamente! È necessaria una "
+"configurazione manuale."
+
+#: usr/lib/live-installer-3/installer.py:973
+msgid "Grub not configured"
+msgstr "Grub non configurato"
+
+#: usr/lib/live-installer-3/installer.py:1006
+msgid "Removing live configuration (packages)"
+msgstr "Rimozione della configurazione live (pacchetti)"
+
+#: usr/lib/live-installer-3/installer.py:1034
+msgid "Cleaning APT"
+msgstr "Pulizia di APT"
+
+#: usr/lib/live-installer-3/installer.py:1081
+msgid "Unmounting partitions"
+msgstr "Smontaggio partizioni"
+
+#: usr/lib/live-installer-3/installer.py:1118
+msgid "Configuring bootloader"
+msgstr "Configurazione del bootloader"
+
+#: usr/lib/live-installer-3/installer.py:1125
+msgid "Checking bootloader"
+msgstr "Controllo del bootloader"
+
+#: usr/lib/live-installer-3/installer.py:1140
+#, python-format
+msgid "No %s file found!"
+msgstr "Non è stato trovato nessun file %s!"
+
+#: usr/lib/live-installer-3/localize.py:42
+msgid "Install additional localized packages"
+msgstr "Installare pacchetti addizionali per la localizzazione"
+
+#: usr/lib/live-installer-3/localize.py:57
+msgid "Localizing KDE"
+msgstr "Localizzazione di KDE"
+
+#: usr/lib/live-installer-3/localize.py:65
+msgid "Localizing LibreOffice"
+msgstr "Localizzazione di LibreOffice"
+
+#: usr/lib/live-installer-3/localize.py:83
+msgid "Localizing AbiWord"
+msgstr "Localizzazione di AbiWord"
+
+#: usr/lib/live-installer-3/localize.py:97
+msgid "Localizing Firefox"
+msgstr "Localizzazione di Firefox"
+
+#: usr/lib/live-installer-3/localize.py:112
+msgid "Localizing Thunderbird"
+msgstr "Localizzazione di Thunderbird"
+
+#: usr/bin/live-installer-3-pkexec:22
+#, sh-format
+msgid "Update the Live Installer"
+msgstr "Aggiorna Live Installer"
+
+#: usr/share/applications/live-installer-3.desktop.in.h:1
+#: usr/share/kde4/services/kcm_live-installer-3.desktop.in.h:1
+#: usr/share/kservices5/kcm_live-installer-3.desktop.in.h:1
+msgid "Install"
+msgstr "Installa"
+
+#: usr/share/applications/live-installer-3.desktop.in.h:2
+#: usr/share/kde4/services/kcm_live-installer-3.desktop.in.h:2
+#: usr/share/kservices5/kcm_live-installer-3.desktop.in.h:2
+msgid "Live Installer"
+msgstr "Live installer"
+
+#: usr/share/applications/live-installer-3.desktop.in.h:3
+#: usr/share/kde4/services/kcm_live-installer-3.desktop.in.h:3
+#: usr/share/kservices5/kcm_live-installer-3.desktop.in.h:3
+msgid "Install the operating system"
+msgstr "Installa il Sistema Operativo"
+
+#. (itstool) path: action/message
+#: usr/share/polkit-1/actions/com.solydxk.pkexec.live-installer-3.policy:8
+msgid "Authentication is required to run the Live Installer"
+msgstr "Serve l'autenticazione per lanciare Live Installer"

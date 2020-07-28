@@ -1,0 +1,75 @@
+#!/bin/bash
+
+PYTHON=$(which python3)
+if [ "$PYTHON" == '' ]; then
+  echo "Cannot find python3 executable - exiting"
+  exit
+fi
+
+APP='live-installer-3'
+
+# Prepare for translations
+# https://www.gnu.org/software/gettext/manual/html_node/Preparing-Shell-Scripts.html
+. gettext.sh
+
+TEXTDOMAIN=$APP
+export TEXTDOMAIN
+TEXTDOMAINDIR=/usr/share/locale
+export TEXTDOMAINDIR
+
+# Get translations
+# Create pot: xgettext -o $APP.pot -L Shell --keyword=eval_gettext $APP
+MSG_TITLE=$(eval_gettext 'Update the Live Installer')
+
+# Set update window background image and font color
+. /etc/live/live-installer-3.conf
+IFS=';' read -ra SGSARR <<< "$splash_graphics"
+for SGS in "${SGSARR[@]}"; do
+    IFS=',' read -ra SG <<< "$SGS"
+    if pgrep -x "${SG[0]}" > /dev/null; then
+      FCLR=${SG[1]}
+      BIMG=${SG[2]}
+    fi
+done
+
+# Handle some arguments before running the application
+# Supported arguments:
+# -o|--oem: OEM installation
+# -n|--nosplash: do not show splash screen (currently disabled by default)
+# -d|--debug: debug with -Wd arguments
+DEBUG='-OO'
+for ARG in $@; do
+  case $ARG in
+    -o|--oem)
+      # Change screen resolution if in OEM mode
+      MODELINE=$(env LANG=C cvt 1360 768 | grep ^Modeline | sed 's/.*odeline//' | sed 's/_[0-9\.]*//')
+      RES=$(echo $MODELINE | cut -d'"' -f 2)
+      VGA=$(env LANG=C xrandr | grep connected | awk '{print $1}')
+      if [[ "$RES" =~ "x" ]] && [ "$VGA" != "" ]; then
+        xrandr --newmode $MODELINE
+        xrandr --addmode $VGA \"$RES\"
+        xrandr --output $VGA --mode \"$RES\"
+      fi
+      ARGS="$ARGS $ARG"
+      shift
+      ;;
+    -d|--debug)
+      DEBUG='-Wd'
+      ;;
+    -n|--nosplash|-p|--nopartitioncheck)
+      ARGS="$ARGS $ARG"
+    ;;
+    *)
+      # unknown option
+    ;;
+  esac
+done
+
+# Create pyc
+$PYTHON -m compileall /usr/lib/live-installer-3/
+
+# Open custom progress window
+$PYTHON ${DEBUG} /usr/lib/live-installer-3/apt_handler.py --packages "live-installer-3*" --title "$MSG_TITLE" --font_color "$FCLR" --background_image "$BIMG"
+
+# Run the live-installer
+$PYTHON ${DEBUG} /usr/lib/live-installer-3/main.py $ARGS

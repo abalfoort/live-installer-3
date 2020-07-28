@@ -1,0 +1,5 @@
+#. (itstool) path: action/message
+#: ./usr/share/polkit-1/actions/com.solydxk.pkexec.live-installer-3.policy:8
+msgid "Authentication is required to run the Live Installer"
+msgstr ""
+

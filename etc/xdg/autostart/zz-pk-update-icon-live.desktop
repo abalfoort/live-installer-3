@@ -1,0 +1,27 @@
+[Desktop Entry]
+Comment=
+Encoding=UTF-8
+Exec=killall pk-update-icon
+GenericName=
+MimeType=
+Name=Disable PK Update Icon
+Name[ca]=Desactiva la icona de PK Update
+Name[da]=Deaktiver PK Opdateringsikonen
+Name[de]=PK-Update-Symbol deaktivieren
+Name[en_GB]=Disable PK Update Icon
+Name[fr]=Désactiver PK Update Icon
+Name[it]=Disabilita l'icona PK Update
+Name[lt]=Išjungti PK Update Icon
+Name[nl]=Schakel PK Update Icon uit
+Name[pt]=Desactivaro icone PK de actualização
+Name[tr]=PK Güncelleme Simgesi Pasif
+Path=
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

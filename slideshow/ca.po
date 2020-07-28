@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the live-installer-3-slideshow package.
+#
+# Translators:
+# Arjen Balfoort <arjenbalfoort@solydxk.com>, 2016
+# Eduard Selma <selma@tinet.cat>, 2015
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010
+msgid ""
+msgstr ""
+"Project-Id-Version: live-installer-3-slideshow\n"
+"POT-Creation-Date: 2019-06-19 11:29+0200\n"
+"PO-Revision-Date: 2017-09-23 21:41+0000\n"
+"Last-Translator: Arjen Balfoort <arjenbalfoort@solydxk.com>\n"
+"Language-Team: Catalan (http://www.transifex.com/solydxk/live-installer-3-"
+"slideshow/language/ca/)\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/10_welcome.html:9
+msgid "Welcome to SolydXK"
+msgstr "Benvinguts a SolydXK"
+
+#. type: Content of: <html><body><div><div><div><p>
+#: slideshow/en/10_welcome.html:12
+msgid "Thank you for choosing SolydXK."
+msgstr "Gràcies per triar SolydXK. "
+
+#. type: Content of: <html><body><div><div><div><p>
+#: slideshow/en/10_welcome.html:13
+msgid "You've chosen a Linux distribution that is:"
+msgstr "Heu triat una distribució que és: "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/10_welcome.html:15
+msgid "Secure and stable"
+msgstr "Segura i estable "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/10_welcome.html:16
+msgid "Fast and responsive"
+msgstr "Ràpida i efectiva "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/10_welcome.html:17
+msgid "Desktop-ready"
+msgstr "A punt per l'escriptori "
+
+#. type: Content of: <html><body><div><div><div><p>
+#: slideshow/en/10_welcome.html:19
+msgid "Enjoy this new release and thank you for choosing SolydXK."
+msgstr "Gràcies per triar SolydXK. Gaudiu d'aquesta nova edició. "
+
+#. type: Content of: <html><body><div><div><div><p>
+#: slideshow/en/10_welcome.html:20
+msgid "The installation takes 15-30 minutes, depending on your settings."
+msgstr ""
+"La instal·lació triga entre 15 i 30 minuts, depenent del vostre maquinari."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/20_giants.html:9
+msgid "Standing on the shoulders of Giants"
+msgstr "Sobre les espatlles de Gegants"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/20_giants.html:13
+msgid ""
+"SolydXK is a Debian-based GNU/Linux distribution derived from and compatible "
+"with Debian."
+msgstr ""
+"SolydXK és una distribució GNU/Linux derivada de Debian i compatible amb "
+"aquesta."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/20_giants.html:14
+msgid ""
+"SolydXK uses either the lightweight Xfce desktop for SolydX or the highly "
+"configurable and stunningly appealing KDE desktop for SolydK."
+msgstr ""
+"SolydXK usa l'escriptori lleuger Xfce per SolydX o bé l'escriptori KDE per "
+"SolydK, molt configurable i atractiu.  "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/20_giants.html:15
+msgid ""
+"Our innovations, the rapid development of Debian and the huge Debian package "
+"selection make SolydXK one of the most attractive desktop operating systems "
+"available to home users."
+msgstr ""
+"Les nostres innovacions i la gran selecció de paquets de Debian fan de Linux "
+"SolydXK un dels sistemes operatius d'escriptori més atractius disponible per "
+"als usuaris domèstics."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/30_desktop-ready.html:9
+msgid "Out of the box"
+msgstr "A punt per a usar"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/30_desktop-ready.html:13
+msgid ""
+"Firefox, Thunderbird, and LibreOffice come pre-installed in SolydXK, so you "
+"can get started immediately with the desktop and the Internet."
+msgstr ""
+"Firefox, Thunderbird i LibreOffice venen preinstal·lats amb Linux SolydXK, "
+"de manera que podeu començar immediatament a utilitzar internet i "
+"l'escriptori."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/30_desktop-ready.html:14
+msgid ""
+"Unlike other Linux distributions SolydXK is also ready to play your music, "
+"internet videos and more."
+msgstr ""
+"A diferència d'altres distribucions Linux SolydXK està preparada per "
+"reproduir la vostra música, vídeos d'internet i més. "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/30_desktop-ready.html:15
+msgid "A wide variety of software can be installed with a click of the mouse."
+msgstr ""
+"Amb un clic del ratolí, podeu instal·lar una àmplia varietat de programari."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/30_desktop-ready.html:16
+msgid ""
+"SolydXK is compatible with most popular file formats such as: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, and many more."
+msgstr ""
+"SolydXK és compatible amb els formats de fitxer més populars: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, i molts més."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/40_office.html:9
+msgid "Office tools are ready to use as soon as you install SolydXK"
+msgstr "Eines d'oficina a punt d'usar així que instal·leu SolydXK "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/40_office.html:13
+msgid ""
+"<em>LibreOffice</em>, a powerful office software suite, comes built into "
+"SolydXK."
+msgstr ""
+"<em>LibreOffice</em>,  un potent paquet ofimàtic, ja ve incorporat a SolydXK "
+"d'origen."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/40_office.html:14
+msgid "<em>LibreOffice</em> is very easy to learn and use."
+msgstr "<em>LibreOffice</em> és molt fàcil d'aprendre i usar."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/40_office.html:15
+msgid ""
+"You can use it to create letters, presentations and spreadsheets, as well as "
+"diagrams and databases."
+msgstr ""
+"Podeu usar-lo per editar cartes, presentacions i fulls de càlcul, així com "
+"diagrames i bases de dades."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/40_office.html:16
+msgid ""
+"<em>LibreOffice</em> uses the standard OpenDocument format and it works with "
+"documents from other popular office applications including WordPerfect and "
+"Microsoft Office."
+msgstr ""
+"<em>LibreOffice</em> usa el format estàndard OpenDocument i és compatible "
+"amb els documents d'altres paquets ofimàtics, tals com WordPerfect i "
+"Microsoft Office."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/50_windows.html:9
+msgid "An alternative to mainstream operating systems"
+msgstr "Una alternativa als Sistemes Operatius més coneguts "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/50_windows.html:13
+msgid "SolydXK is easy to use, powerful and configurable."
+msgstr "SolydXK és fàcil d'usar, potent i configurable. "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/50_windows.html:14
+msgid ""
+"SolydXK is safe and stable. Unlike other operating systems, it is not prone "
+"to computer viruses or spyware, it does not suffer from disk fragmentation, "
+"and it has no registry that requires periodic cleaning."
+msgstr ""
+"SolydXK és segur i estable. A diferència d'altres Sistemes Operatius, no és "
+"procliu a virus ni programes espia, no pateix fragmentació de disc ni té un "
+"Registre que necessiti una neteja periòdica."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/50_windows.html:15
+msgid ""
+"SolydXK can detect other operating systems and install itself beside them. "
+"You can choose which operating system to launch when you start the computer."
+msgstr ""
+"SolydXK pot detectar altres Sistemes Operatius i instal·lar-se juntament amb "
+"ells. Podeu triar també quin Sistema Operatiu s'executarà en iniciar l'equip."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/60_safe.html:9
+msgid "Safe updates"
+msgstr "Actualitzacions segures "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:13
+msgid ""
+"Some operating systems make updating your system harder than it really needs "
+"to be. SolydXK thinks upgrades should be quick and easy, and then get out of "
+"the way."
+msgstr ""
+"Alguns Sistemes Operatius fan que l'actualització del vostre sistema sigui "
+"més complicat del que caldria. SolydXK creu que les actualitzacions han de "
+"ser ràpides i fàcils, i no destorbar un cop fetes."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:14
+msgid ""
+"The Update Manager sits discreetly in your system tray and lets you know "
+"when updates are available. You don't have to apply updates when you don't "
+"want to. The Update Manager won't pop up or annoy you in any way."
+msgstr ""
+"El Gestor d'Actualitzacions de SolydXK roman discretament a la safata de "
+"sistema i us avisarà quan hi hagi actualitzacions disponibles. No cal que "
+"apliqueu les actualitzacions si no ho voleu. El Gestor d'Actualitzacions no "
+"mostrarà finestres emergents ni molestarà de cap altra manera. "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:15
+msgid ""
+"All updated files are maintained and closely checked by trusted developers "
+"and maintainers."
+msgstr ""
+"Tots els fitxers tenen el manteniment i la revisió acurada de "
+"desenvolupadors i mantenidors de confiança. "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:16
+msgid "All files are stored in special secure repositories for your use."
+msgstr ""
+"Tots els fitxers es desen en dipòsits segurs, especials per al vostre ús. "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:17
+msgid "The security repository is synchronized daily."
+msgstr "El dipòsit de seguretat se sincronitza diàriament."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/70_community.html:9
+msgid "A great community"
+msgstr "Una gran comunitat "
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/70_community.html:13
+msgid ""
+"The SolydXK community is one of the best on the Internet. Our users provide "
+"most of our funding, as well as ideas, artwork and sometimes even source "
+"code."
+msgstr ""
+"La comunitat de SolydXK és una de les millors a Internet. Els nostres "
+"usuaris proporcionen la major part del finançament, però també idees, "
+"dissenys i a vegades també codi font."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/70_community.html:14
+msgid ""
+"SolydXK users are happy to share their passion and enthusiasm and are eager "
+"to help. Don't hesitate to ask questions on the forums or to get involved in "
+"the community."
+msgstr ""
+"Els usuaris de SolydXK gaudeixen en compartir la seva passió i entusiasme i "
+"estan disposats a ajudar. No dubteu a fer preguntes als fòrums o a "
+"involucrar-vos amb la comunitat."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/70_community.html:15
+msgid ""
+"Send us your feedback and tell us about your experience. We'll listen to "
+"your ideas and use them to further improve SolydXK."
+msgstr ""
+"Envieu-nos els vostres comentaris i expliqueu-nos la vostra experiència. "
+"Escoltarem les vostres idees i les usarem per a millorar SolydXK. "

@@ -1,0 +1,40 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-09 13:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 2.5.1\n"
+
+#: ./slideshow/en/40_office.html%2Bhtml.body.div.h1:9-9
+msgid "Office tools are ready to use as soon as you install SolydXK"
+msgstr ""
+
+#: ./slideshow/en/40_office.html%2Bhtml.body.div.div.div.ul.li:13-21
+msgid ""
+"<em>LibreOffice</em>, a powerful office software suite, comes built into "
+"SolydXK."
+msgstr ""
+
+#: ./slideshow/en/40_office.html%2Bhtml.body.div.div.div.ul.li:14-21
+msgid "<em>LibreOffice</em> is very easy to learn and use."
+msgstr ""
+
+#: ./slideshow/en/40_office.html%2Bhtml.body.div.div.div.ul.li:15-21
+msgid ""
+"You can use it to create letters, presentations and spreadsheets, as well as "
+"diagrams and databases."
+msgstr ""
+
+#: ./slideshow/en/40_office.html%2Bhtml.body.div.div.div.ul.li:16-21
+msgid ""
+"<em>LibreOffice</em> uses the standard OpenDocument format and it works with "
+"documents from other popular office applications including WordPerfect and "
+"Microsoft Office."
+msgstr ""

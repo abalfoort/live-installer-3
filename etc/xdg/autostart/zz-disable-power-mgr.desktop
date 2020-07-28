@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=/usr/lib/live-installer-3/scripts/disable-power-mgr.sh
+Name=Disable Power Manager
+StartupNotify=false
+Terminal=false
+Type=Application
+Version=1.0

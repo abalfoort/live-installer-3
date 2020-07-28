@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the live-installer-3-slideshow package.
+#
+# Translators:
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010
+# Moo, 2016-2017
+msgid ""
+msgstr ""
+"Project-Id-Version: live-installer-3-slideshow\n"
+"POT-Creation-Date: 2019-06-19 11:29+0200\n"
+"PO-Revision-Date: 2017-09-23 21:41+0000\n"
+"Last-Translator: Arjen Balfoort <arjenbalfoort@solydxk.com>\n"
+"Language-Team: Lithuanian (http://www.transifex.com/solydxk/live-installer-3-"
+"slideshow/language/lt/)\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/10_welcome.html:9
+msgid "Welcome to SolydXK"
+msgstr "Sveiki atvykę į SolydXK"
+
+#. type: Content of: <html><body><div><div><div><p>
+#: slideshow/en/10_welcome.html:12
+msgid "Thank you for choosing SolydXK."
+msgstr "Dėkojame, kad pasirinkote SolydXK."
+
+#. type: Content of: <html><body><div><div><div><p>
+#: slideshow/en/10_welcome.html:13
+msgid "You've chosen a Linux distribution that is:"
+msgstr "Jūs pasirinkote Linux distribuciją, kuri yra:"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/10_welcome.html:15
+msgid "Secure and stable"
+msgstr "Saugi ir stabili"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/10_welcome.html:16
+msgid "Fast and responsive"
+msgstr "Greita ir reaguojanti"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/10_welcome.html:17
+msgid "Desktop-ready"
+msgstr "Su paruoštu naudoti darbalaukiu"
+
+#. type: Content of: <html><body><div><div><div><p>
+#: slideshow/en/10_welcome.html:19
+msgid "Enjoy this new release and thank you for choosing SolydXK."
+msgstr "Mėgaukitės šia nauja laida ir ačiū, kad pasirinkote SolydXK."
+
+#. type: Content of: <html><body><div><div><div><p>
+#: slideshow/en/10_welcome.html:20
+msgid "The installation takes 15-30 minutes, depending on your settings."
+msgstr "Įdiegimas, priklausomai nuo jūsų nustatymų, užtrunka 15-30 minučių."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/20_giants.html:9
+msgid "Standing on the shoulders of Giants"
+msgstr "Atsistoję ant milžino pečių"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/20_giants.html:13
+msgid ""
+"SolydXK is a Debian-based GNU/Linux distribution derived from and compatible "
+"with Debian."
+msgstr ""
+"SolydXK yra Debian pagrįsta GNU/Linux distribucija, kuri yra kilusi iš "
+"Debian ir yra su ja suderinama."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/20_giants.html:14
+msgid ""
+"SolydXK uses either the lightweight Xfce desktop for SolydX or the highly "
+"configurable and stunningly appealing KDE desktop for SolydK."
+msgstr ""
+"SolydXK naudoja arba supaprastintą Xfce darbalaukį, skirtą SolydX, arba "
+"plačiai konfigūruojamą, stulbinančiai patrauklų KDE darbalaukį, skirtą "
+"SolydK."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/20_giants.html:15
+msgid ""
+"Our innovations, the rapid development of Debian and the huge Debian package "
+"selection make SolydXK one of the most attractive desktop operating systems "
+"available to home users."
+msgstr ""
+"Mūsų inovacijos, spartus Debian kūrimas ir milžiniškas Debian paketų "
+"pasirinkimas padaro SolydXK viena iš labiausiai patrauklių, namų naudotojams "
+"prieinamų, darbalaukio operacinių sistemų."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/30_desktop-ready.html:9
+msgid "Out of the box"
+msgstr "Viskas vienoje vietoje"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/30_desktop-ready.html:13
+msgid ""
+"Firefox, Thunderbird, and LibreOffice come pre-installed in SolydXK, so you "
+"can get started immediately with the desktop and the Internet."
+msgstr ""
+"Sistemoje SolydXK, programos Firefox, Thunderbird ir LibreOffice yra iš "
+"anksto įdiegtos, taigi, nedelsdami galite pradėti darbą darbalaukyje ir "
+"internete."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/30_desktop-ready.html:14
+msgid ""
+"Unlike other Linux distributions SolydXK is also ready to play your music, "
+"internet videos and more."
+msgstr ""
+"Kitaip nei kitos Linux distribucijos, SolydXK taip pat yra paruošta groti "
+"jūsų muziką, internetinius vaizdo įrašus ir daugiau."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/30_desktop-ready.html:15
+msgid "A wide variety of software can be installed with a click of the mouse."
+msgstr ""
+"Didelė įvairovė programinės įrangos gali būti įdiegta vienu pelės "
+"spustelėjimu."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/30_desktop-ready.html:16
+msgid ""
+"SolydXK is compatible with most popular file formats such as: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, and many more."
+msgstr ""
+"SolydXK yra suderinama su daugeliu populiarių failų formatų, tokių kaip: "
+"docx, xlsx, doc, xls, pdf, zip, rar, mp3, mpg, ir daug daugiau."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/40_office.html:9
+msgid "Office tools are ready to use as soon as you install SolydXK"
+msgstr "Raštinės įrankiai yra paruošti, iš karto jums įdiegus SolydXK"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/40_office.html:13
+msgid ""
+"<em>LibreOffice</em>, a powerful office software suite, comes built into "
+"SolydXK."
+msgstr ""
+"<em>LibreOffice</em>, galingas raštinės programų rinkinys, pateikiamas jau "
+"įtaisytas į SolydXK."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/40_office.html:14
+msgid "<em>LibreOffice</em> is very easy to learn and use."
+msgstr "<em>LibreOffice</em> yra lengvai naudojamas ir perprantamas."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/40_office.html:15
+msgid ""
+"You can use it to create letters, presentations and spreadsheets, as well as "
+"diagrams and databases."
+msgstr ""
+"Šį programų rinkinį galite naudoti, norėdami kurti tekstus, pateiktis ir "
+"skaičiuokles, o taip pat diagramas bei duomenų bazes."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/40_office.html:16
+msgid ""
+"<em>LibreOffice</em> uses the standard OpenDocument format and it works with "
+"documents from other popular office applications including WordPerfect and "
+"Microsoft Office."
+msgstr ""
+"<em>LibreOffice</em> naudoja standartinį OpenDocument formatą ir veikia su "
+"kitais, populiarių raštinės programų, įskaitant WordPerfect ir Microsoft "
+"Office, dokumentais."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/50_windows.html:9
+msgid "An alternative to mainstream operating systems"
+msgstr "Alternatyva vyraujančioms operacinėms sistemoms"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/50_windows.html:13
+msgid "SolydXK is easy to use, powerful and configurable."
+msgstr "SolydXK yra lengva naudoti, galinga ir konfigūruojama."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/50_windows.html:14
+msgid ""
+"SolydXK is safe and stable. Unlike other operating systems, it is not prone "
+"to computer viruses or spyware, it does not suffer from disk fragmentation, "
+"and it has no registry that requires periodic cleaning."
+msgstr ""
+"SolydXK yra saugi ir stabili. Kitaip nei kitos operacinės sistemos, ji nėra "
+"linkusi užsikrėsti kompiuteriniais virusais ar šnipinėjimo programomis, ji "
+"nepatiria disko fragmentacijos ir joje nėra registro, kuris reikalautų "
+"periodinio valymo."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/50_windows.html:15
+msgid ""
+"SolydXK can detect other operating systems and install itself beside them. "
+"You can choose which operating system to launch when you start the computer."
+msgstr ""
+"SolydXK gali aptikti kitas operacines sistemas ir įsidiegti šalia jų. Įjungę "
+"kompiuterį, galite pasirinkti, kurią operacinę sistemą norėtumėte naudoti."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/60_safe.html:9
+msgid "Safe updates"
+msgstr "Saugūs atnaujinimai"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:13
+msgid ""
+"Some operating systems make updating your system harder than it really needs "
+"to be. SolydXK thinks upgrades should be quick and easy, and then get out of "
+"the way."
+msgstr ""
+"Kai kurios operacinės sistemos padaro jūsų sistemos atnaujinimą sunkesnį, "
+"nei jis turėtų būti. SolydXK mano, kad naujinimai turėtų būti greiti ir "
+"lengvi, ir nesimaišyti po kojom."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:14
+msgid ""
+"The Update Manager sits discreetly in your system tray and lets you know "
+"when updates are available. You don't have to apply updates when you don't "
+"want to. The Update Manager won't pop up or annoy you in any way."
+msgstr ""
+"Atnaujinimų tvarkytuvė nepastebimai budi sistemos dėkle ir praneša jums, kai "
+"yra prieinami atnaujinimai. Jūs neprivalote taikyti atnaujinimų, kai to "
+"daryti nenorite. Atnaujinimų tvarkytuvė nepasirodys ir jokiu kitu būdu jūsų "
+"neerzins."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:15
+msgid ""
+"All updated files are maintained and closely checked by trusted developers "
+"and maintainers."
+msgstr ""
+"Visi atnaujinti failai yra prižiūrimi ir atidžiai tikrinami mūsų patikimų "
+"kūrėjų ir prižiūrėtojų."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:16
+msgid "All files are stored in special secure repositories for your use."
+msgstr "Visi failai, jūsų naudojimui yra talpinami saugiose saugyklose."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/60_safe.html:17
+msgid "The security repository is synchronized daily."
+msgstr "Saugumo saugykla yra kasdieną sinchronizuojama."
+
+#. type: Content of: <html><body><div><h1>
+#: slideshow/en/70_community.html:9
+msgid "A great community"
+msgstr "Nuostabi bendruomenė"
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/70_community.html:13
+msgid ""
+"The SolydXK community is one of the best on the Internet. Our users provide "
+"most of our funding, as well as ideas, artwork and sometimes even source "
+"code."
+msgstr ""
+"SolydXK bendruomenė yra viena geriausių visame internete. Mūsų naudotojai "
+"aprūpina mus finansine parama, o taip pat idėjomis, iliustracijomis, o "
+"kartais, netgi pirminiu programos kodu."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/70_community.html:14
+msgid ""
+"SolydXK users are happy to share their passion and enthusiasm and are eager "
+"to help. Don't hesitate to ask questions on the forums or to get involved in "
+"the community."
+msgstr ""
+"SolydXK naudotojai džiaugiasi galėdami pasidalyti savo aistra ir entuziazmu, "
+"o taip pat gebėjimu padėti. Nesivaržykite užduoti klausimus forumuose ar "
+"įsitraukti į bendruomenę."
+
+#. type: Content of: <html><body><div><div><div><ul><li>
+#: slideshow/en/70_community.html:15
+msgid ""
+"Send us your feedback and tell us about your experience. We'll listen to "
+"your ideas and use them to further improve SolydXK."
+msgstr ""
+"Siųskite mums savo atsiliepimus ir papasakokite apie savo įspūdžius. Mes "
+"išklausysime jūsų idėjas ir panaudosime jas tolimesniam SolydXK tobulinimui."

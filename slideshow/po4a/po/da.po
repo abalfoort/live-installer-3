@@ -1,0 +1,573 @@
+# 
+# Translators:
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010
+# Tony Albers, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: live-installer-3-slideshow\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-15 09:03+0200\n"
+"PO-Revision-Date: 2018-04-11 05:50+0000\n"
+"Last-Translator: Tony Albers\n"
+"Language-Team: Danish (http://www.transifex.com/solydxk/live-installer-3-slideshow/language/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Translate Toolkit 2.0.0\n"
+
+#: en/10_welcome.html+h1:1
+msgid "Welcome to SolydXK"
+msgstr "Velkommen til SolydXK"
+
+#: en/10_welcome.html+div.div.p:5
+msgid "Thank you for choosing SolydXK."
+msgstr "Tak for dit valg af SolydXK."
+
+#: en/10_welcome.html+div.div.p:6
+msgid "You've chosen a Linux distribution that is:"
+msgstr "Du har valgt en Linux-distribution der er:"
+
+#: en/10_welcome.html+div.div.ul.li:8
+msgid "Secure and stable"
+msgstr "Sikker og stabil"
+
+#: en/10_welcome.html+div.div.ul.li:9
+msgid "Fast and responsive"
+msgstr "Hurtig og fleksibel"
+
+#: en/10_welcome.html+div.div.ul.li:10
+msgid "Desktop-ready"
+msgstr "Klar til desktop-anvendelse"
+
+#: en/10_welcome.html+div.div.p:12
+msgid "Enjoy this new release and thank you for choosing SolydXK."
+msgstr "Hav god fornøjelse med denne nye udgave og tak for dit valg af SolydXK."
+
+#: en/10_welcome.html+div.div.p:13
+msgid "The installation takes 15-30 minutes, depending on your settings."
+msgstr "Installationen varer 15-30 minutter alt efter dine valg."
+
+#: en/20_giants.html+h1:1
+msgid "Standing on the shoulders of Giants"
+msgstr "Vi står på skuldrene af giganter"
+
+#: en/20_giants.html+div.div.ul.li:6
+msgid ""
+"SolydXK is a Debian-based GNU/Linux distribution derived from and compatible"
+" with Debian."
+msgstr "SolydXK er en Debian-baseret GNU/Linux-distribution afledt af og kompatibel med Debian."
+
+#: en/20_giants.html+div.div.ul.li:7
+msgid ""
+"SolydXK uses either the lightweight Xfce desktop for SolydX or the highly "
+"configurable and stunningly appealing KDE desktop for SolydK."
+msgstr "SolydXK anvender enten letvægts-skrivebordsmiljøet XFCE i SolydX eller det meget konfigurerbare og overraskende flotte KDE skrivebordsmiljø i SolydK."
+
+#: en/20_giants.html+div.div.ul.li:8
+msgid ""
+"Our innovations, the rapid development of Debian and the huge Debian package"
+" selection make SolydXK one of the most attractive desktop operating systems"
+" available to home users."
+msgstr "Vores nyskabelser, den hurtige udvikling i Debian og det enorme udvalg af programpakker i Debian gør SolydXK til et af de mest effektive desktop-operativsystemer der er tilgængelige til hjemmebrugeren."
+
+#: en/30_desktop-ready.html+h1:1
+msgid "Out of the box"
+msgstr "Fra starten af"
+
+#: en/30_desktop-ready.html+div.div.ul.li:6
+msgid ""
+"Firefox, Thunderbird, and LibreOffice come pre-installed in SolydXK, so you "
+"can get started immediately with the desktop and the Internet."
+msgstr "Firefox, Thunderbird, and LibreOffice er allerede installeret i SolydXK, så du kan med det samme bruge tekstbehandling og internet."
+
+#: en/30_desktop-ready.html+div.div.ul.li:7
+msgid ""
+"Unlike other Linux distributions SolydXK is also ready to play your music, "
+"internet videos and more."
+msgstr "Ulig andre distributioner kan SolydXK også allerede fra første start afspille musik, video'er på internettet og meget mere."
+
+#: en/30_desktop-ready.html+div.div.ul.li:8
+msgid "A wide variety of software can be installed with a click of the mouse."
+msgstr "Et stor udvalg af programmer kan installeres blot med et museklik."
+
+#: en/30_desktop-ready.html+div.div.ul.li:9
+msgid ""
+"SolydXK is compatible with most popular file formats such as: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, and many more."
+msgstr "SolydXK er kompatibel med de mest gængse filformater såsom: docx, xlsx, doc, xls, pdf, zip, rar, mp3, mpg, og mange andre."
+
+#: en/40_office.html+h1:1
+msgid "Office tools are ready to use as soon as you install SolydXK"
+msgstr "Kontorprogrammerne er klar til brug så snart installationen af SolydXK er færdig"
+
+#: en/40_office.html+div.div.ul.li:6
+msgid ""
+"<em>LibreOffice</em>, a powerful office software suite, comes built into "
+"SolydXK."
+msgstr "<em>LibreOffice</em>, en meget stærk kontorpakke er indbygget i SolydXK."
+
+#: en/40_office.html+div.div.ul.li:7
+msgid "<em>LibreOffice</em> is very easy to learn and use."
+msgstr "<em>LibreOffice</em> er nem at lære og nem at bruge."
+
+#: en/40_office.html+div.div.ul.li:8
+msgid ""
+"You can use it to create letters, presentations and spreadsheets, as well as"
+" diagrams and databases."
+msgstr "Du kan bruge den til breve, dias-præsentationer, regneark samt diagrammer og databaser."
+
+#: en/40_office.html+div.div.ul.li:9
+msgid ""
+"<em>LibreOffice</em> uses the standard OpenDocument format and it works with"
+" documents from other popular office applications including WordPerfect and "
+"Microsoft Office."
+msgstr "<em>LibreOffice</em> anvender som statdard OpenDocument formatet og det kan håndtere dokumenter fra f.eks. WordPerfect og Microsoft Office."
+
+#: en/50_windows.html+h1:1
+msgid "An alternative to mainstream operating systems"
+msgstr "Et alternativ til de mest udbredte operativsystemer"
+
+#: en/50_windows.html+div.div.ul.li:6
+msgid "SolydXK is easy to use, powerful and configurable."
+msgstr "SolydXK er let at bruge, kraftfuldt og konfigurerbart."
+
+#: en/50_windows.html+div.div.ul.li:7
+msgid ""
+"SolydXK is safe and stable. Unlike other operating systems, it is not prone "
+"to computer viruses or spyware, it does not suffer from disk fragmentation, "
+"and it has no registry that requires periodic cleaning."
+msgstr "SolydXK er sikkert og stabilt. Ulig andre operativsystemer er det ikke i samme grad sårbart overfor vira og spyware. Det lider ikke under fragmentation af filsystemerne og det har ikke nogen registreringsdatabase der jævnligt kræver oprydning."
+
+#: en/50_windows.html+div.div.ul.li:8
+msgid ""
+"SolydXK can detect other operating systems and install itself beside them. "
+"You can choose which operating system to launch when you start the computer."
+msgstr "SolydXK kan detektere andre operativsystemer og installere sig selv ved siden af. Du kan så vælge hvilket du vil starte når du tænder maskinen."
+
+#: en/60_safe.html+h1:1
+msgid "Safe updates"
+msgstr "Sikre opdateringer"
+
+#: en/60_safe.html+div.div.ul.li:6
+msgid ""
+"Some operating systems make updating your system harder than it really needs"
+" to be. SolydXK thinks upgrades should be quick and easy, and then get out "
+"of the way."
+msgstr "Visse operativsystemer gør det sværere end nødvendigt at anvende maskinen. SolydXK mener at opdateringer skal foretages hurtigt, nemt og så bare ellers ikke være i vejen."
+
+#: en/60_safe.html+div.div.ul.li:7
+msgid ""
+"The Update Manager sits discreetly in your system tray and lets you know "
+"when updates are available. You don't have to apply updates when you don't "
+"want to. The Update Manager won't pop up or annoy you in any way."
+msgstr "Opdateringshåndtering ligger diskret i programlinjen og fortæller dig når der er kommet nye opdateringer. Du behøver ikke installere opdateringer hvis ikke du har tid eller lyst. Opdateringshåndtering vil ikke komme med pop-ups, forhindre dig i at genstarte, lukke normalt ned eller på anden måde genere dig."
+
+#: en/60_safe.html+div.div.ul.li:8
+msgid ""
+"All updated files are maintained and closely checked by trusted developers "
+"and maintainers."
+msgstr "Alle de opdaterede filer er nøje vedligeholdt og kontrolleret af betroede udviklere og vedligeholdsfolk."
+
+#: en/60_safe.html+div.div.ul.li:9
+msgid "All files are stored in special secure repositories for your use."
+msgstr "Alle filer gemmes i særligt sikrede repositorier hvor du kan hente dem."
+
+#: en/60_safe.html+div.div.ul.li:10
+msgid "The security repository is synchronized daily."
+msgstr "Sikkerhedsrepositoriet synkroniseres dagligt."
+
+#: en/70_community.html+h1:1
+msgid "A great community"
+msgstr "Et storartet brugermiljø"
+
+#: en/70_community.html+div.div.ul.li:6
+msgid ""
+"The SolydXK community is one of the best on the Internet. Our users provide "
+"most of our funding, as well as ideas, artwork and sometimes even source "
+"code."
+msgstr "SolydXK brugermiljøet er et af de bedste på internettet. Vores brugere dækker de fleste af vores udgifter, de kommer med de fleste ideer til forbedringer, leverer illustrationer og i nogle tilfælde endda kildekode."
+
+#: en/70_community.html+div.div.ul.li:7
+msgid ""
+"SolydXK users are happy to share their passion and enthusiasm and are eager "
+"to help. Don't hesitate to ask questions on the forums or to get involved in"
+" the community."
+msgstr "SolydXK-brugerne nyder at kunne dele deres passion og entusiasme og er meget villige til at hjælpe. Tøv ikke med at spørge i forummet eller blive engageret i miljøet."
+
+#: en/70_community.html+div.div.ul.li:8
+msgid ""
+"Send us your feedback and tell us about your experience. We'll listen to "
+"your ideas and use them to further improve SolydXK."
+msgstr "Send os gerne dine tilbagemeldinger og fortæl os om dine oplevelser. Vi lytter gerne til dine ideer og forslag og bruge dem til at forbedre SolydXK."
+
+#: en/10_welcome.html+h1:1
+msgid "Welcome to SolydXK"
+msgstr "Velkommen til SolydXK"
+
+#: en/10_welcome.html+div.div.p:5
+msgid "Thank you for choosing SolydXK."
+msgstr "Tak for dit valg af SolydXK."
+
+#: en/10_welcome.html+div.div.p:6
+msgid "You've chosen a Linux distribution that is:"
+msgstr "Du har valgt en Linux-distribution der er:"
+
+#: en/10_welcome.html+div.div.ul.li:8
+msgid "Secure and stable"
+msgstr "Sikker og stabil"
+
+#: en/10_welcome.html+div.div.ul.li:9
+msgid "Fast and responsive"
+msgstr "Hurtig og fleksibel"
+
+#: en/10_welcome.html+div.div.ul.li:10
+msgid "Desktop-ready"
+msgstr "Klar til desktop-anvendelse"
+
+#: en/10_welcome.html+div.div.p:12
+msgid "Enjoy this new release and thank you for choosing SolydXK."
+msgstr "Hav god fornøjelse med denne nye udgave og tak for dit valg af SolydXK."
+
+#: en/10_welcome.html+div.div.p:13
+msgid "The installation takes 15-30 minutes, depending on your settings."
+msgstr "Installationen varer 15-30 minutter alt efter dine valg."
+
+#: en/20_giants.html+h1:1
+msgid "Standing on the shoulders of Giants"
+msgstr "Vi står på skuldrene af giganter"
+
+#: en/20_giants.html+div.div.ul.li:6
+msgid ""
+"SolydXK is a Debian-based GNU/Linux distribution derived from and compatible"
+" with Debian."
+msgstr "SolydXK er en Debian-baseret GNU/Linux-distribution afledt af og kompatibel med Debian."
+
+#: en/20_giants.html+div.div.ul.li:7
+msgid ""
+"SolydXK uses either the lightweight Xfce desktop for SolydX or the highly "
+"configurable and stunningly appealing KDE desktop for SolydK."
+msgstr "SolydXK anvender enten letvægts-skrivebordsmiljøet XFCE i SolydX eller det meget konfigurerbare og overraskende flotte KDE skrivebordsmiljø i SolydK."
+
+#: en/20_giants.html+div.div.ul.li:8
+msgid ""
+"Our innovations, the rapid development of Debian and the huge Debian package"
+" selection make SolydXK one of the most attractive desktop operating systems"
+" available to home users."
+msgstr "Vores nyskabelser, den hurtige udvikling i Debian og det enorme udvalg af programpakker i Debian gør SolydXK til et af de mest effektive desktop-operativsystemer der er tilgængelige til hjemmebrugeren."
+
+#: en/30_desktop-ready.html+h1:1
+msgid "Out of the box"
+msgstr "Fra starten af"
+
+#: en/30_desktop-ready.html+div.div.ul.li:6
+msgid ""
+"Firefox, Thunderbird, and LibreOffice come pre-installed in SolydXK, so you "
+"can get started immediately with the desktop and the Internet."
+msgstr "Firefox, Thunderbird, and LibreOffice er allerede installeret i SolydXK, så du kan med det samme bruge tekstbehandling og internet."
+
+#: en/30_desktop-ready.html+div.div.ul.li:7
+msgid ""
+"Unlike other Linux distributions SolydXK is also ready to play your music, "
+"internet videos and more."
+msgstr "Ulig andre distributioner kan SolydXK også allerede fra første start afspille musik, video'er på internettet og meget mere."
+
+#: en/30_desktop-ready.html+div.div.ul.li:8
+msgid "A wide variety of software can be installed with a click of the mouse."
+msgstr "Et stor udvalg af programmer kan installeres blot med et museklik."
+
+#: en/30_desktop-ready.html+div.div.ul.li:9
+msgid ""
+"SolydXK is compatible with most popular file formats such as: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, and many more."
+msgstr "SolydXK er kompatibel med de mest gængse filformater såsom: docx, xlsx, doc, xls, pdf, zip, rar, mp3, mpg, og mange andre."
+
+#: en/40_office.html+h1:1
+msgid "Office tools are ready to use as soon as you install SolydXK"
+msgstr "Kontorprogrammerne er klar til brug så snart installationen af SolydXK er færdig"
+
+#: en/40_office.html+div.div.ul.li:6
+msgid ""
+"<em>LibreOffice</em>, a powerful office software suite, comes built into "
+"SolydXK."
+msgstr "<em>LibreOffice</em>, en meget stærk kontorpakke er indbygget i SolydXK."
+
+#: en/40_office.html+div.div.ul.li:7
+msgid "<em>LibreOffice</em> is very easy to learn and use."
+msgstr "<em>LibreOffice</em> er nem at lære og nem at bruge."
+
+#: en/40_office.html+div.div.ul.li:8
+msgid ""
+"You can use it to create letters, presentations and spreadsheets, as well as"
+" diagrams and databases."
+msgstr "Du kan bruge den til breve, dias-præsentationer, regneark samt diagrammer og databaser."
+
+#: en/40_office.html+div.div.ul.li:9
+msgid ""
+"<em>LibreOffice</em> uses the standard OpenDocument format and it works with"
+" documents from other popular office applications including WordPerfect and "
+"Microsoft Office."
+msgstr "<em>LibreOffice</em> anvender som statdard OpenDocument formatet og det kan håndtere dokumenter fra f.eks. WordPerfect og Microsoft Office."
+
+#: en/50_windows.html+h1:1
+msgid "An alternative to mainstream operating systems"
+msgstr "Et alternativ til de mest udbredte operativsystemer"
+
+#: en/50_windows.html+div.div.ul.li:6
+msgid "SolydXK is easy to use, powerful and configurable."
+msgstr "SolydXK er let at bruge, kraftfuldt og konfigurerbart."
+
+#: en/50_windows.html+div.div.ul.li:7
+msgid ""
+"SolydXK is safe and stable. Unlike other operating systems, it is not prone "
+"to computer viruses or spyware, it does not suffer from disk fragmentation, "
+"and it has no registry that requires periodic cleaning."
+msgstr "SolydXK er sikkert og stabilt. Ulig andre operativsystemer er det ikke i samme grad sårbart overfor vira og spyware. Det lider ikke under fragmentation af filsystemerne og det har ikke nogen registreringsdatabase der jævnligt kræver oprydning."
+
+#: en/50_windows.html+div.div.ul.li:8
+msgid ""
+"SolydXK can detect other operating systems and install itself beside them. "
+"You can choose which operating system to launch when you start the computer."
+msgstr "SolydXK kan detektere andre operativsystemer og installere sig selv ved siden af. Du kan så vælge hvilket du vil starte når du tænder maskinen."
+
+#: en/60_safe.html+h1:1
+msgid "Safe updates"
+msgstr "Sikre opdateringer"
+
+#: en/60_safe.html+div.div.ul.li:6
+msgid ""
+"Some operating systems make updating your system harder than it really needs"
+" to be. SolydXK thinks upgrades should be quick and easy, and then get out "
+"of the way."
+msgstr "Visse operativsystemer gør det sværere end nødvendigt at anvende maskinen. SolydXK mener at opdateringer skal foretages hurtigt, nemt og så bare ellers ikke være i vejen."
+
+#: en/60_safe.html+div.div.ul.li:7
+msgid ""
+"The Update Manager sits discreetly in your system tray and lets you know "
+"when updates are available. You don't have to apply updates when you don't "
+"want to. The Update Manager won't pop up or annoy you in any way."
+msgstr "Opdateringshåndtering ligger diskret i programlinjen og fortæller dig når der er kommet nye opdateringer. Du behøver ikke installere opdateringer hvis ikke du har tid eller lyst. Opdateringshåndtering vil ikke komme med pop-ups, forhindre dig i at genstarte, lukke normalt ned eller på anden måde genere dig."
+
+#: en/60_safe.html+div.div.ul.li:8
+msgid ""
+"All updated files are maintained and closely checked by trusted developers "
+"and maintainers."
+msgstr "Alle de opdaterede filer er nøje vedligeholdt og kontrolleret af betroede udviklere og vedligeholdsfolk."
+
+#: en/60_safe.html+div.div.ul.li:9
+msgid "All files are stored in special secure repositories for your use."
+msgstr "Alle filer gemmes i særligt sikrede repositorier hvor du kan hente dem."
+
+#: en/60_safe.html+div.div.ul.li:10
+msgid "The security repository is synchronized daily."
+msgstr "Sikkerhedsrepositoriet synkroniseres dagligt."
+
+#: en/70_community.html+h1:1
+msgid "A great community"
+msgstr "Et storartet brugermiljø"
+
+#: en/70_community.html+div.div.ul.li:6
+msgid ""
+"The SolydXK community is one of the best on the Internet. Our users provide "
+"most of our funding, as well as ideas, artwork and sometimes even source "
+"code."
+msgstr "SolydXK brugermiljøet er et af de bedste på internettet. Vores brugere dækker de fleste af vores udgifter, de kommer med de fleste ideer til forbedringer, leverer illustrationer og i nogle tilfælde endda kildekode."
+
+#: en/70_community.html+div.div.ul.li:7
+msgid ""
+"SolydXK users are happy to share their passion and enthusiasm and are eager "
+"to help. Don't hesitate to ask questions on the forums or to get involved in"
+" the community."
+msgstr "SolydXK-brugerne nyder at kunne dele deres passion og entusiasme og er meget villige til at hjælpe. Tøv ikke med at spørge i forummet eller blive engageret i miljøet."
+
+#: en/70_community.html+div.div.ul.li:8
+msgid ""
+"Send us your feedback and tell us about your experience. We'll listen to "
+"your ideas and use them to further improve SolydXK."
+msgstr "Send os gerne dine tilbagemeldinger og fortæl os om dine oplevelser. Vi lytter gerne til dine ideer og forslag og bruge dem til at forbedre SolydXK."
+
+#: en/10_welcome.html+h1:1
+msgid "Welcome to SolydXK"
+msgstr "Velkommen til SolydXK"
+
+#: en/10_welcome.html+div.div.p:5
+msgid "Thank you for choosing SolydXK."
+msgstr "Tak for dit valg af SolydXK."
+
+#: en/10_welcome.html+div.div.p:6
+msgid "You've chosen a Linux distribution that is:"
+msgstr "Du har valgt en Linux-distribution der er:"
+
+#: en/10_welcome.html+div.div.ul.li:8
+msgid "Secure and stable"
+msgstr "Sikker og stabil"
+
+#: en/10_welcome.html+div.div.ul.li:9
+msgid "Fast and responsive"
+msgstr "Hurtig og fleksibel"
+
+#: en/10_welcome.html+div.div.ul.li:10
+msgid "Desktop-ready"
+msgstr "Klar til desktop-anvendelse"
+
+#: en/10_welcome.html+div.div.p:12
+msgid "Enjoy this new release and thank you for choosing SolydXK."
+msgstr "Hav god fornøjelse med denne nye udgave og tak for dit valg af SolydXK."
+
+#: en/10_welcome.html+div.div.p:13
+msgid "The installation takes 15-30 minutes, depending on your settings."
+msgstr "Installationen varer 15-30 minutter alt efter dine valg."
+
+#: en/20_giants.html+h1:1
+msgid "Standing on the shoulders of Giants"
+msgstr "Vi står på skuldrene af giganter"
+
+#: en/20_giants.html+div.div.ul.li:6
+msgid ""
+"SolydXK is a Debian-based GNU/Linux distribution derived from and compatible"
+" with Debian."
+msgstr "SolydXK er en Debian-baseret GNU/Linux-distribution afledt af og kompatibel med Debian."
+
+#: en/20_giants.html+div.div.ul.li:7
+msgid ""
+"SolydXK uses either the lightweight Xfce desktop for SolydX or the highly "
+"configurable and stunningly appealing KDE desktop for SolydK."
+msgstr "SolydXK anvender enten letvægts-skrivebordsmiljøet XFCE i SolydX eller det meget konfigurerbare og overraskende flotte KDE skrivebordsmiljø i SolydK."
+
+#: en/20_giants.html+div.div.ul.li:8
+msgid ""
+"Our innovations, the rapid development of Debian and the huge Debian package"
+" selection make SolydXK one of the most attractive desktop operating systems"
+" available to home users."
+msgstr "Vores nyskabelser, den hurtige udvikling i Debian og det enorme udvalg af programpakker i Debian gør SolydXK til et af de mest effektive desktop-operativsystemer der er tilgængelige til hjemmebrugeren."
+
+#: en/30_desktop-ready.html+h1:1
+msgid "Out of the box"
+msgstr "Fra starten af"
+
+#: en/30_desktop-ready.html+div.div.ul.li:6
+msgid ""
+"Firefox, Thunderbird, and LibreOffice come pre-installed in SolydXK, so you "
+"can get started immediately with the desktop and the Internet."
+msgstr "Firefox, Thunderbird, and LibreOffice er allerede installeret i SolydXK, så du kan med det samme bruge tekstbehandling og internet."
+
+#: en/30_desktop-ready.html+div.div.ul.li:7
+msgid ""
+"Unlike other Linux distributions SolydXK is also ready to play your music, "
+"internet videos and more."
+msgstr "Ulig andre distributioner kan SolydXK også allerede fra første start afspille musik, video'er på internettet og meget mere."
+
+#: en/30_desktop-ready.html+div.div.ul.li:8
+msgid "A wide variety of software can be installed with a click of the mouse."
+msgstr "Et stor udvalg af programmer kan installeres blot med et museklik."
+
+#: en/30_desktop-ready.html+div.div.ul.li:9
+msgid ""
+"SolydXK is compatible with most popular file formats such as: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, and many more."
+msgstr "SolydXK er kompatibel med de mest gængse filformater såsom: docx, xlsx, doc, xls, pdf, zip, rar, mp3, mpg, og mange andre."
+
+#: en/40_office.html+h1:1
+msgid "Office tools are ready to use as soon as you install SolydXK"
+msgstr "Kontorprogrammerne er klar til brug så snart installationen af SolydXK er færdig"
+
+#: en/40_office.html+div.div.ul.li:6
+msgid ""
+"<em>LibreOffice</em>, a powerful office software suite, comes built into "
+"SolydXK."
+msgstr "<em>LibreOffice</em>, en meget stærk kontorpakke er indbygget i SolydXK."
+
+#: en/40_office.html+div.div.ul.li:7
+msgid "<em>LibreOffice</em> is very easy to learn and use."
+msgstr "<em>LibreOffice</em> er nem at lære og nem at bruge."
+
+#: en/40_office.html+div.div.ul.li:8
+msgid ""
+"You can use it to create letters, presentations and spreadsheets, as well as"
+" diagrams and databases."
+msgstr "Du kan bruge den til breve, dias-præsentationer, regneark samt diagrammer og databaser."
+
+#: en/40_office.html+div.div.ul.li:9
+msgid ""
+"<em>LibreOffice</em> uses the standard OpenDocument format and it works with"
+" documents from other popular office applications including WordPerfect and "
+"Microsoft Office."
+msgstr "<em>LibreOffice</em> anvender som statdard OpenDocument formatet og det kan håndtere dokumenter fra f.eks. WordPerfect og Microsoft Office."
+
+#: en/50_windows.html+h1:1
+msgid "An alternative to mainstream operating systems"
+msgstr "Et alternativ til de mest udbredte operativsystemer"
+
+#: en/50_windows.html+div.div.ul.li:6
+msgid "SolydXK is easy to use, powerful and configurable."
+msgstr "SolydXK er let at bruge, kraftfuldt og konfigurerbart."
+
+#: en/50_windows.html+div.div.ul.li:7
+msgid ""
+"SolydXK is safe and stable. Unlike other operating systems, it is not prone "
+"to computer viruses or spyware, it does not suffer from disk fragmentation, "
+"and it has no registry that requires periodic cleaning."
+msgstr "SolydXK er sikkert og stabilt. Ulig andre operativsystemer er det ikke i samme grad sårbart overfor vira og spyware. Det lider ikke under fragmentation af filsystemerne og det har ikke nogen registreringsdatabase der jævnligt kræver oprydning."
+
+#: en/50_windows.html+div.div.ul.li:8
+msgid ""
+"SolydXK can detect other operating systems and install itself beside them. "
+"You can choose which operating system to launch when you start the computer."
+msgstr "SolydXK kan detektere andre operativsystemer og installere sig selv ved siden af. Du kan så vælge hvilket du vil starte når du tænder maskinen."
+
+#: en/60_safe.html+h1:1
+msgid "Safe updates"
+msgstr "Sikre opdateringer"
+
+#: en/60_safe.html+div.div.ul.li:6
+msgid ""
+"Some operating systems make updating your system harder than it really needs"
+" to be. SolydXK thinks upgrades should be quick and easy, and then get out "
+"of the way."
+msgstr "Visse operativsystemer gør det sværere end nødvendigt at anvende maskinen. SolydXK mener at opdateringer skal foretages hurtigt, nemt og så bare ellers ikke være i vejen."
+
+#: en/60_safe.html+div.div.ul.li:7
+msgid ""
+"The Update Manager sits discreetly in your system tray and lets you know "
+"when updates are available. You don't have to apply updates when you don't "
+"want to. The Update Manager won't pop up or annoy you in any way."
+msgstr "Opdateringshåndtering ligger diskret i programlinjen og fortæller dig når der er kommet nye opdateringer. Du behøver ikke installere opdateringer hvis ikke du har tid eller lyst. Opdateringshåndtering vil ikke komme med pop-ups, forhindre dig i at genstarte, lukke normalt ned eller på anden måde genere dig."
+
+#: en/60_safe.html+div.div.ul.li:8
+msgid ""
+"All updated files are maintained and closely checked by trusted developers "
+"and maintainers."
+msgstr "Alle de opdaterede filer er nøje vedligeholdt og kontrolleret af betroede udviklere og vedligeholdsfolk."
+
+#: en/60_safe.html+div.div.ul.li:9
+msgid "All files are stored in special secure repositories for your use."
+msgstr "Alle filer gemmes i særligt sikrede repositorier hvor du kan hente dem."
+
+#: en/60_safe.html+div.div.ul.li:10
+msgid "The security repository is synchronized daily."
+msgstr "Sikkerhedsrepositoriet synkroniseres dagligt."
+
+#: en/70_community.html+h1:1
+msgid "A great community"
+msgstr "Et storartet brugermiljø"
+
+#: en/70_community.html+div.div.ul.li:6
+msgid ""
+"The SolydXK community is one of the best on the Internet. Our users provide "
+"most of our funding, as well as ideas, artwork and sometimes even source "
+"code."
+msgstr "SolydXK brugermiljøet er et af de bedste på internettet. Vores brugere dækker de fleste af vores udgifter, de kommer med de fleste ideer til forbedringer, leverer illustrationer og i nogle tilfælde endda kildekode."
+
+#: en/70_community.html+div.div.ul.li:7
+msgid ""
+"SolydXK users are happy to share their passion and enthusiasm and are eager "
+"to help. Don't hesitate to ask questions on the forums or to get involved in"
+" the community."
+msgstr "SolydXK-brugerne nyder at kunne dele deres passion og entusiasme og er meget villige til at hjælpe. Tøv ikke med at spørge i forummet eller blive engageret i miljøet."
+
+#: en/70_community.html+div.div.ul.li:8
+msgid ""
+"Send us your feedback and tell us about your experience. We'll listen to "
+"your ideas and use them to further improve SolydXK."
+msgstr "Send os gerne dine tilbagemeldinger og fortæl os om dine oplevelser. Vi lytter gerne til dine ideer og forslag og bruge dem til at forbedre SolydXK."

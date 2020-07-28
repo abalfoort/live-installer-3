@@ -1,0 +1,2 @@
+/usr/bin/chroot-partition /usr/bin/live-chroot
+/usr/bin/live-installer-3 /usr/bin/live-installer

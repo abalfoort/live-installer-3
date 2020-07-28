@@ -1,0 +1,45 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-09 13:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 2.5.1\n"
+
+#: ./slideshow/en/10_welcome.html%2Bhtml.body.div.h1:9-9
+msgid "Welcome to SolydXK"
+msgstr ""
+
+#: ./slideshow/en/10_welcome.html%2Bhtml.body.div.div.div.p:12-17
+msgid "Thank you for choosing SolydXK."
+msgstr ""
+
+#: ./slideshow/en/10_welcome.html%2Bhtml.body.div.div.div.p:13-17
+msgid "You've chosen a Linux distribution that is:"
+msgstr ""
+
+#: ./slideshow/en/10_welcome.html%2Bhtml.body.div.div.div.ul.li:15-21
+msgid "Secure and stable"
+msgstr ""
+
+#: ./slideshow/en/10_welcome.html%2Bhtml.body.div.div.div.ul.li:16-21
+msgid "Fast and responsive"
+msgstr ""
+
+#: ./slideshow/en/10_welcome.html%2Bhtml.body.div.div.div.ul.li:17-21
+msgid "Desktop-ready"
+msgstr ""
+
+#: ./slideshow/en/10_welcome.html%2Bhtml.body.div.div.div.p:19-17
+msgid "Enjoy this new release and thank you for choosing SolydXK."
+msgstr ""
+
+#: ./slideshow/en/10_welcome.html%2Bhtml.body.div.div.div.p:20-17
+msgid "The installation takes 15-30 minutes, depending on your settings."
+msgstr ""

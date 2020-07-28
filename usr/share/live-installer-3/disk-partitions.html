@@ -1,0 +1,159 @@
+<html>
+<head>
+<style>
+body {
+  background-color: #d6d6d6;
+  margin: 0px;
+}
+table {
+  width: 100%;
+  height: 100%;
+}
+.partition {
+  position: relative;
+  width: 100%;
+  float: left;
+  background: white;
+  border-radius: 3px;
+  height: 100%;
+}
+.partition-cell {
+  position: relative;
+  margin: 2px 5px 2px 0;
+  padding: 1px;
+  float: left;
+  background: #9c9c9c;
+  border-radius: 3px;
+  height: 100%;
+}
+.partition-text {
+  position: absolute;
+  top: calc(50% - 12px);
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+}
+.partition-os {
+  position: absolute;
+  top: calc(50% + 2px);
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 10px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+}
+.btrfs {
+  background-color: #ff9955;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9955), to(#955931));
+  background-image: -webkit-linear-gradient(top, #ff9955, #955931);
+  background-image: -moz-linear-gradient(top, #ff9955, #955931);
+}
+.fat, .fat16, .fat32, .exfat {
+  background-color: #47872a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#47872a), to(#2e581b));
+  background-image: -webkit-linear-gradient(top, #47872a, #2e581b);
+  background-image: -moz-linear-gradient(top, #47872a, #2e581b);
+}
+.ntfs {
+  background-color: #66a6a8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#66a6a8), to(#497778));
+  background-image: -webkit-linear-gradient(top, #66a6a8, #497778);
+  background-image: -moz-linear-gradient(top, #66a6a8, #497778);
+}
+.nilfs2 {
+  background-color: #826647;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#826647), to(#513f2c));
+  background-image: -webkit-linear-gradient(top, #826647, #513f2c);
+  background-image: -moz-linear-gradient(top, #826647, #513f2c);
+}
+.f2fs {
+  background-color: #df421e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#df421e), to(#862711));
+  background-image: -webkit-linear-gradient(top, #df421e, #862711);
+  background-image: -moz-linear-gradient(top, #df421e, #862711);
+}
+.ext, .ext2, .ext3 {
+  background-color: #2582a0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2582a0), to(#18586b));
+  background-image: -webkit-linear-gradient(top, #2582a0, #18586b);
+  background-image: -moz-linear-gradient(top, #2582a0, #18586b);
+}
+.ext4 {
+  background-color: #21619e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#21619e), to(#17446f));
+  background-image: -webkit-linear-gradient(top, #21619e, #17446f);
+  background-image: -moz-linear-gradient(top, #21619e, #17446f);
+}
+.swap {
+  background-color: #be3a37;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#be3a37), to(#792423));
+  background-image: -webkit-linear-gradient(top, #be3a37, #792423);
+  background-image: -moz-linear-gradient(top, #be3a37, #792423);
+}
+.luks {
+  background-color: #3E3B4D;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3E3B4D), to(#2e2b39));
+  background-image: -webkit-linear-gradient(top, #3E3B4D, #2e2b39);
+  background-image: -moz-linear-gradient(top, #3E3B4D, #2e2b39);
+}
+.hfsplus {
+  background-color: #c0a39e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c0a39e), to(#826e6b));
+  background-image: -webkit-linear-gradient(top, #c0a39e, #826e6b);
+  background-image: -moz-linear-gradient(top, #c0a39e, #826e6b);
+}
+.unknown, .reiserfs, .reiser4, .ufs, .xfs, .zfs, .hfs, .jfs {
+  background-color: #636363;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#636363), to(#444444));
+  background-image: -webkit-linear-gradient(top, #636363, #444444);
+  background-image: -moz-linear-gradient(top, #636363, #444444);
+}
+.shine {
+  position: relative;
+  opacity: .2; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  margin: 1px;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+
+<table><tr>
+
+<!-- Expected format for each partition: CUT_HERE
+
+<td class='partition-cell' title='{0.name}{0.os_fs_info}' width='{0.size_percent}%'>
+  <div class='partition {0.style}'> 
+    <div class='shine' style='width: {0.used_percent}%;'></div> 
+    <div class='partition-text'>{0.html_name}</div>
+    <div class='partition-os'>{0.html_description}</div>
+  </div>
+</td>
+
+CUT_HERE (<- and don't remove these markers ->) -->
+
+{PARTITIONS_HTML}
+
+</tr></table>
+
+</body>
+</html>

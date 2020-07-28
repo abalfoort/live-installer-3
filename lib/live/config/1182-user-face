@@ -1,0 +1,51 @@
+#!/bin/sh
+
+## (c) 2019 Arjen Balfoort (SolydXK). Based on :
+## live-config(7) - System Configuration Scripts
+## Copyright (C) 2006-2013 Daniel Baumann <daniel@debian.org>
+##
+## This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+## This is free software, and you are welcome to redistribute it
+## under certain conditions; see COPYING for details.
+##
+## Purpose: Copy face icon to home directory
+
+Cmdline ()
+{
+    # Reading kernel command line
+    for _PARAMETER in ${LIVE_CONFIG_CMDLINE}
+    do
+        case "${_PARAMETER}" in
+            live-config.username=*|username=*)
+                LIVE_USERNAME="${_PARAMETER#*username=}"
+                ;;
+        esac
+    done
+}
+
+Init ()
+{
+    # Checking if package is already configured
+    if [ -e /var/lib/live/config/user-face ]
+    then
+        exit 0
+    fi
+    
+    echo -n " user-face"
+}
+
+Config ()
+{
+    if [ -e /usr/share/pixmaps/faces/user-generic.png ]
+    then
+        cp /usr/share/pixmaps/faces/user-generic.png /home/${LIVE_USERNAME}/.face
+        chown ${LIVE_USERNAME}:${LIVE_USERNAME} /home/${LIVE_USERNAME}/.face        
+    fi
+    
+    # Creating state file
+    touch /var/lib/live/config/user-face
+}
+
+Cmdline
+Init
+Config

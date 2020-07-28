@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Check if GUI is already started
+if ! pgrep -f python3.*live-installer-3 &>/dev/null; then
+    # In a live session I need to set these environment variables
+    # or else the live installer segfaults
+    if [ -d /live ] || [ -d /lib/live/mount ] || [ -d /run/live ] || [ -d /rofs ]; then
+        pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY live-installer-3-pkexec $@
+    else
+        # OEM setup
+        pkexec live-installer-3-pkexec $@
+    fi
+fi

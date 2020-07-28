@@ -1,0 +1,131 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Use bash and not the default sh
+SHELL := /bin/bash
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+.PHONY: update
+
+source := $(shell dpkg-parsechangelog -S Source)
+pyfiles := $(shell find . -wholename ./debian -prune -o -name '*.py' -print 2>/dev/null)
+bashfiles := $(shell find ./usr/bin/ -type f 2>/dev/null)
+desktopfls := $(shell find . -wholename ./debian -prune -o -wholename ./etc/xdg/autostart -prune -o -name '*.desktop' -print 2>/dev/null)
+policyfiles := $(shell find ./usr/share/polkit-1/actions/ -name "*.policy" 2>/dev/null)
+
+
+# Create mo from the po files
+# https://www.gnu.org/software/make/manual/make.html#Pattern-Rules
+%.mo : %.po
+	mkdir -p ./po/mo/$(basename $(notdir $<))/LC_MESSAGES/
+	msgfmt $< -o ./po/mo/$(basename $(notdir $<))/LC_MESSAGES/$(source).mo
+
+%:
+	dh $@ --with=python3
+
+override_dh_auto_clean:
+	# Cleanup first
+	find ./usr -type d -name "*__pycache__" -exec rm -r "{}" \;
+	find ./usr -type f -name "*.pyc" -delete
+	find ./usr -type f -name "*.*~" -delete
+	rm -rf ./po/mo ./po/pot ./slideshow/pot
+	mkdir ./po/mo ./po/pot ./slideshow/pot
+	# Clean HTML
+	po4a --rm-translations po4a.cfg
+
+override_dh_auto_install: update $(patsubst %.po,%.mo,$(wildcard ./po/*.po))
+
+override_dh_builddeb:
+	dh_builddeb
+	# Cleanup build directory when done
+	rm -rf ./debian/$(source)
+	rm -rf ./debian/$(source)-slideshow
+
+update:
+	# Push pot file to Transifex
+	tx push -s
+
+	# Get translations from Transifex
+	tx pull -a
+
+	# Scan for .py files
+	@ xgettext \
+		--keyword=_ \
+		--language=Python \
+		--output=./po/$(source).pot \
+		--package-name=$(source) \
+		--package-version='' \
+		--from-code=UTF-8 \
+		$(pyfiles) && echo "Python files scanned for translations"
+	
+	# Get strings from package launcher (bash script)
+	@ xgettext \
+		--join-existing \
+		--keyword=eval_gettext  \
+		--language=Shell \
+		--output=./po/$(source).pot \
+		--package-name=$(source) \
+		--package-version='' \
+		--from-code=UTF-8 \
+		$(bashfiles) && echo "Shell launcher scanned for translations"
+
+	# Get strings from the desktop file
+	@ for LAUNCHER in $(desktopfls); do \
+		sed -r \
+			-e '/^(Name|Comment|GenericName|Keywords)\[/d' \
+			-e 's/^(Name=|Comment=|GenericName=|Keywords=)/_\1/' \
+			$$LAUNCHER > $$LAUNCHER.in ; \
+		intltool-extract --type=gettext/ini $$LAUNCHER.in ; \
+		xgettext \
+			--join-existing \
+			--keyword=N_:1 \
+			--output ./po/$(source).pot \
+			$$LAUNCHER.in.h ; \
+	done && echo "Desktop files scanned for translations"
+
+	# Create pot files from html files
+	@ html2po -i ./slideshow/en -o ./slideshow/pot -P --duplicates=merge && echo "HTML pot files created"
+
+	# Get strings from policy files
+	@ for POLICY in $(policyfiles); do \
+		itstool \
+		--out ./po/pot/"$${POLICY##*/}".pot \
+		--its=./po/polkit/polkit.its \
+		$$POLICY; \
+	done && echo "Policy files scanned for translations"
+
+	# Remove headers in generated pot files before merging
+	@ for POTFILE in $(shell echo ./po/pot/*.pot); do \
+		sed -i '1,/^$$/d' $$POTFILE; \
+	done
+	@ msgcat --use-first ./po/pot/*.pot >> ./po/$(source).pot && echo "Temporary pot files merged with existing pot file"
+
+	# Fix charset
+	@ find ./po -type f -name "*.po*" -exec sed -i 's/charset=CHARSET/charset=UTF-8/' {} \;
+
+	# Merge new strings with translations
+	@ for POFILE in $(shell echo ./po/*.po); do \
+		msgmerge --quiet --backup=none --update $$POFILE ./po/$(source).pot ; \
+	done && echo "Po files updated"
+
+	# Apply desktop file modifications
+	@ for LAUNCHER in $(desktopfls); do \
+		intltool-merge --quiet --desktop-style ./po $$LAUNCHER.in $$LAUNCHER ; \
+		rm $$LAUNCHER.in.h $$LAUNCHER.in ; \
+	done && echo "Desktop files updated with new translations"
+
+	# Translate HTML files
+	@ po4a po4a.cfg
+
+	# Do not ship incomplete html translations
+	@ NRNEEDED=$(shell ls ./slideshow/en | wc -l); \
+	for D in $(shell echo ./slideshow/translated/*); do \
+		if [ $$NRNEEDED -gt `ls $${D} | wc -l` ]; then \
+			rm -rvf "$${D}"; \
+		fi; \
+	done && echo "HTML files scanned for translations"

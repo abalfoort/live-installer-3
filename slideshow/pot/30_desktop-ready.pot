@@ -1,0 +1,39 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-09 13:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 2.5.1\n"
+
+#: ./slideshow/en/30_desktop-ready.html%2Bhtml.body.div.h1:9-9
+msgid "Out of the box"
+msgstr ""
+
+#: ./slideshow/en/30_desktop-ready.html%2Bhtml.body.div.div.div.ul.li:13-21
+msgid ""
+"Firefox, Thunderbird, and LibreOffice come pre-installed in SolydXK, so you "
+"can get started immediately with the desktop and the Internet."
+msgstr ""
+
+#: ./slideshow/en/30_desktop-ready.html%2Bhtml.body.div.div.div.ul.li:14-21
+msgid ""
+"Unlike other Linux distributions SolydXK is also ready to play your music, "
+"internet videos and more."
+msgstr ""
+
+#: ./slideshow/en/30_desktop-ready.html%2Bhtml.body.div.div.div.ul.li:15-21
+msgid "A wide variety of software can be installed with a click of the mouse."
+msgstr ""
+
+#: ./slideshow/en/30_desktop-ready.html%2Bhtml.body.div.div.div.ul.li:16-21
+msgid ""
+"SolydXK is compatible with most popular file formats such as: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, and many more."
+msgstr ""

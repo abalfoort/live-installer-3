@@ -1,0 +1,15 @@
+[main]
+host = https://www.transifex.com
+minimum_perc = 80
+
+[live-installer-3.live-installer-3pot]
+source_file = po/live-installer-3.pot
+file_filter = po/<lang>.po
+source_lang = en
+type = PO
+
+[live-installer-3-slideshow.live-installer-3-slideshowpot]
+source_file = slideshow/live-installer-3-slideshow.pot
+file_filter = slideshow/<lang>.po
+source_lang = en
+type = PO

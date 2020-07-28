@@ -1,0 +1,574 @@
+# 
+# Translators:
+# Arjen Balfoort <arjenbalfoort@solydxk.com>, 2016
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011
+# Zoran Hulec <zhulec@yahoo.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: live-installer-3-slideshow\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-15 09:03+0200\n"
+"PO-Revision-Date: 2017-09-23 21:41+0000\n"
+"Last-Translator: Arjen Balfoort <arjenbalfoort@solydxk.com>\n"
+"Language-Team: Croatian (http://www.transifex.com/solydxk/live-installer-3-slideshow/language/hr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Translate Toolkit 2.0.0\n"
+
+#: en/10_welcome.html+h1:1
+msgid "Welcome to SolydXK"
+msgstr "Dobro došli u SolydXK"
+
+#: en/10_welcome.html+div.div.p:5
+msgid "Thank you for choosing SolydXK."
+msgstr "Hvala što ste odabrali SolydXK."
+
+#: en/10_welcome.html+div.div.p:6
+msgid "You've chosen a Linux distribution that is:"
+msgstr "Odabrali ste Linux distribuciju koja je:"
+
+#: en/10_welcome.html+div.div.ul.li:8
+msgid "Secure and stable"
+msgstr "Sigurna i stabilna"
+
+#: en/10_welcome.html+div.div.ul.li:9
+msgid "Fast and responsive"
+msgstr "Brza i responzivna"
+
+#: en/10_welcome.html+div.div.ul.li:10
+msgid "Desktop-ready"
+msgstr "Spremna za desktop"
+
+#: en/10_welcome.html+div.div.p:12
+msgid "Enjoy this new release and thank you for choosing SolydXK."
+msgstr "Uživajte u ovom novom izdanju i hvala na odabiru SolydXK."
+
+#: en/10_welcome.html+div.div.p:13
+msgid "The installation takes 15-30 minutes, depending on your settings."
+msgstr "Instalacija će trajati 15-30 minuta, ovisno o vašim postavkama."
+
+#: en/20_giants.html+h1:1
+msgid "Standing on the shoulders of Giants"
+msgstr "Stoji na ramenima Divova"
+
+#: en/20_giants.html+div.div.ul.li:6
+msgid ""
+"SolydXK is a Debian-based GNU/Linux distribution derived from and compatible"
+" with Debian."
+msgstr "SolydXK je Debian-bazirana GNU/Linux distribucija izvedena iz i kompatibilna s Debianom."
+
+#: en/20_giants.html+div.div.ul.li:7
+msgid ""
+"SolydXK uses either the lightweight Xfce desktop for SolydX or the highly "
+"configurable and stunningly appealing KDE desktop for SolydK."
+msgstr "SolydXK koristi lagani Xfce desktop za SolydX, ili visoko prilagodljivi i nevjerojatno privlačan KDE desktop za SolydK."
+
+#: en/20_giants.html+div.div.ul.li:8
+msgid ""
+"Our innovations, the rapid development of Debian and the huge Debian package"
+" selection make SolydXK one of the most attractive desktop operating systems"
+" available to home users."
+msgstr "Naše inovacije, brzi razvoj Debiana i ogroman izbor Debian paketa čine SolydXK jednim od najatraktivnijih desktop operativnih sustava za kućne korisnike."
+
+#: en/30_desktop-ready.html+h1:1
+msgid "Out of the box"
+msgstr "Iz kutije"
+
+#: en/30_desktop-ready.html+div.div.ul.li:6
+msgid ""
+"Firefox, Thunderbird, and LibreOffice come pre-installed in SolydXK, so you "
+"can get started immediately with the desktop and the Internet."
+msgstr "Firefox, Thunderbird i LibreOffice dolaze kao dio paketa SolydXK, tako da možete odmah početi s radom na radnoj površini i internetu."
+
+#: en/30_desktop-ready.html+div.div.ul.li:7
+msgid ""
+"Unlike other Linux distributions SolydXK is also ready to play your music, "
+"internet videos and more."
+msgstr "Za razliku od drugih Linux distribucija SolydXK je spreman za reprodukciju glazbe, video sadržaja i još mnogo toga."
+
+#: en/30_desktop-ready.html+div.div.ul.li:8
+msgid "A wide variety of software can be installed with a click of the mouse."
+msgstr "Širok izbor softvera može se instalirati klikom miša."
+
+#: en/30_desktop-ready.html+div.div.ul.li:9
+msgid ""
+"SolydXK is compatible with most popular file formats such as: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, and many more."
+msgstr "SolydXK je kompatibilan s većinom popularnih formata datoteka, kao što su: docx, xlsx, doc, xls, pdf, zip, rar, mp3, mpg, i još mnogo toga."
+
+#: en/40_office.html+h1:1
+msgid "Office tools are ready to use as soon as you install SolydXK"
+msgstr "Office alati su spremni za korištenje čim instalirate SolydXK"
+
+#: en/40_office.html+div.div.ul.li:6
+msgid ""
+"<em>LibreOffice</em>, a powerful office software suite, comes built into "
+"SolydXK."
+msgstr "<em>LibreOffice</em>, snažan uredski softver paket, dolazi ugrađen u SolydXK."
+
+#: en/40_office.html+div.div.ul.li:7
+msgid "<em>LibreOffice</em> is very easy to learn and use."
+msgstr "<em>LibreOffice</em> je vrlo jednostavan za naučiti i koristiti."
+
+#: en/40_office.html+div.div.ul.li:8
+msgid ""
+"You can use it to create letters, presentations and spreadsheets, as well as"
+" diagrams and databases."
+msgstr "Možete ga koristiti za stvaranje pisma, prezentacija i proračunskih tablica, kao i dijagrama i baza podataka."
+
+#: en/40_office.html+div.div.ul.li:9
+msgid ""
+"<em>LibreOffice</em> uses the standard OpenDocument format and it works with"
+" documents from other popular office applications including WordPerfect and "
+"Microsoft Office."
+msgstr "<em>LibreOffice</em> koristi standardni OpenDocument format i to radi s dokumentima iz drugih popularnih uredskih aplikacija, uključujući WordPerfect i Microsoft Office."
+
+#: en/50_windows.html+h1:1
+msgid "An alternative to mainstream operating systems"
+msgstr "Alternativa glavnim operativnim sustavima"
+
+#: en/50_windows.html+div.div.ul.li:6
+msgid "SolydXK is easy to use, powerful and configurable."
+msgstr "SolydXK je lagan za upotrebu, moćan i vrlo podesiv."
+
+#: en/50_windows.html+div.div.ul.li:7
+msgid ""
+"SolydXK is safe and stable. Unlike other operating systems, it is not prone "
+"to computer viruses or spyware, it does not suffer from disk fragmentation, "
+"and it has no registry that requires periodic cleaning."
+msgstr "SolydXK je siguran i stabilan. Za razliku od drugih operativnih sustava, nije sklon računalnim virusima ili spyware-u, te ne pati od fragmentacije diska i nema registar koji zahtijeva periodično čišćenje."
+
+#: en/50_windows.html+div.div.ul.li:8
+msgid ""
+"SolydXK can detect other operating systems and install itself beside them. "
+"You can choose which operating system to launch when you start the computer."
+msgstr "SolydXK može otkriti druge operativne sustave i instalirati se pored njih. Možete odabrati koji operativni sustav želite pokrenuti prilikom pokretanja računala."
+
+#: en/60_safe.html+h1:1
+msgid "Safe updates"
+msgstr "Sigurnosne nadogradnje"
+
+#: en/60_safe.html+div.div.ul.li:6
+msgid ""
+"Some operating systems make updating your system harder than it really needs"
+" to be. SolydXK thinks upgrades should be quick and easy, and then get out "
+"of the way."
+msgstr "Neki operativni sustavi čine ažuriranje sustava teže nego što stvarno treba biti. SolydXK misli da bi nadogradnja trebala biti brza i jednostavna, a zatim se maknuti s puta."
+
+#: en/60_safe.html+div.div.ul.li:7
+msgid ""
+"The Update Manager sits discreetly in your system tray and lets you know "
+"when updates are available. You don't have to apply updates when you don't "
+"want to. The Update Manager won't pop up or annoy you in any way."
+msgstr "Upravitelj nadogradnji sjedi diskretno u traci sustava i obavještava vas kada su dostupna ažuriranja. Ne morate primijeniti nadogranje kada ne želite. Update Manager neće se pojaviti ili uznemiravati vas na bilo koji način."
+
+#: en/60_safe.html+div.div.ul.li:8
+msgid ""
+"All updated files are maintained and closely checked by trusted developers "
+"and maintainers."
+msgstr "Sve ažurirane datoteke održavaju i pažljivo provjeravaju pouzdani programeri i održavatelji."
+
+#: en/60_safe.html+div.div.ul.li:9
+msgid "All files are stored in special secure repositories for your use."
+msgstr "Sve datoteke su pohranjene u posebnim sigurnim repositorijima spremnim za korištenje."
+
+#: en/60_safe.html+div.div.ul.li:10
+msgid "The security repository is synchronized daily."
+msgstr "Sigurnosni repozitorij se sinkronizira dnevno."
+
+#: en/70_community.html+h1:1
+msgid "A great community"
+msgstr "Sjajna zajednica"
+
+#: en/70_community.html+div.div.ul.li:6
+msgid ""
+"The SolydXK community is one of the best on the Internet. Our users provide "
+"most of our funding, as well as ideas, artwork and sometimes even source "
+"code."
+msgstr "SolydXK zajednica je jedna od najboljih na Internetu. Naši korisnici osiguravaju većinu naših sredstava, doprinose idejama, ilustracijama, a ponekad čak i izvorni kod."
+
+#: en/70_community.html+div.div.ul.li:7
+msgid ""
+"SolydXK users are happy to share their passion and enthusiasm and are eager "
+"to help. Don't hesitate to ask questions on the forums or to get involved in"
+" the community."
+msgstr "SolydXK korisnici su sretni podijeliti svoju strast i entuzijazam, te žele pomoći. Ne oklijevajte postavljati pitanja na forumima ili se uključiti u zajednicu."
+
+#: en/70_community.html+div.div.ul.li:8
+msgid ""
+"Send us your feedback and tell us about your experience. We'll listen to "
+"your ideas and use them to further improve SolydXK."
+msgstr "Šaljite nam povratne informacije i prenesite nam svoja iskustva. Mi čujemo vaše ideje i koristimo ih u daljnjem usavršavanju SolydXK."
+
+#: en/10_welcome.html+h1:1
+msgid "Welcome to SolydXK"
+msgstr "Dobro došli u SolydXK"
+
+#: en/10_welcome.html+div.div.p:5
+msgid "Thank you for choosing SolydXK."
+msgstr "Hvala što ste odabrali SolydXK."
+
+#: en/10_welcome.html+div.div.p:6
+msgid "You've chosen a Linux distribution that is:"
+msgstr "Odabrali ste Linux distribuciju koja je:"
+
+#: en/10_welcome.html+div.div.ul.li:8
+msgid "Secure and stable"
+msgstr "Sigurna i stabilna"
+
+#: en/10_welcome.html+div.div.ul.li:9
+msgid "Fast and responsive"
+msgstr "Brza i responzivna"
+
+#: en/10_welcome.html+div.div.ul.li:10
+msgid "Desktop-ready"
+msgstr "Spremna za desktop"
+
+#: en/10_welcome.html+div.div.p:12
+msgid "Enjoy this new release and thank you for choosing SolydXK."
+msgstr "Uživajte u ovom novom izdanju i hvala na odabiru SolydXK."
+
+#: en/10_welcome.html+div.div.p:13
+msgid "The installation takes 15-30 minutes, depending on your settings."
+msgstr "Instalacija će trajati 15-30 minuta, ovisno o vašim postavkama."
+
+#: en/20_giants.html+h1:1
+msgid "Standing on the shoulders of Giants"
+msgstr "Stoji na ramenima Divova"
+
+#: en/20_giants.html+div.div.ul.li:6
+msgid ""
+"SolydXK is a Debian-based GNU/Linux distribution derived from and compatible"
+" with Debian."
+msgstr "SolydXK je Debian-bazirana GNU/Linux distribucija izvedena iz i kompatibilna s Debianom."
+
+#: en/20_giants.html+div.div.ul.li:7
+msgid ""
+"SolydXK uses either the lightweight Xfce desktop for SolydX or the highly "
+"configurable and stunningly appealing KDE desktop for SolydK."
+msgstr "SolydXK koristi lagani Xfce desktop za SolydX, ili visoko prilagodljivi i nevjerojatno privlačan KDE desktop za SolydK."
+
+#: en/20_giants.html+div.div.ul.li:8
+msgid ""
+"Our innovations, the rapid development of Debian and the huge Debian package"
+" selection make SolydXK one of the most attractive desktop operating systems"
+" available to home users."
+msgstr "Naše inovacije, brzi razvoj Debiana i ogroman izbor Debian paketa čine SolydXK jednim od najatraktivnijih desktop operativnih sustava za kućne korisnike."
+
+#: en/30_desktop-ready.html+h1:1
+msgid "Out of the box"
+msgstr "Iz kutije"
+
+#: en/30_desktop-ready.html+div.div.ul.li:6
+msgid ""
+"Firefox, Thunderbird, and LibreOffice come pre-installed in SolydXK, so you "
+"can get started immediately with the desktop and the Internet."
+msgstr "Firefox, Thunderbird i LibreOffice dolaze kao dio paketa SolydXK, tako da možete odmah početi s radom na radnoj površini i internetu."
+
+#: en/30_desktop-ready.html+div.div.ul.li:7
+msgid ""
+"Unlike other Linux distributions SolydXK is also ready to play your music, "
+"internet videos and more."
+msgstr "Za razliku od drugih Linux distribucija SolydXK je spreman za reprodukciju glazbe, video sadržaja i još mnogo toga."
+
+#: en/30_desktop-ready.html+div.div.ul.li:8
+msgid "A wide variety of software can be installed with a click of the mouse."
+msgstr "Širok izbor softvera može se instalirati klikom miša."
+
+#: en/30_desktop-ready.html+div.div.ul.li:9
+msgid ""
+"SolydXK is compatible with most popular file formats such as: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, and many more."
+msgstr "SolydXK je kompatibilan s većinom popularnih formata datoteka, kao što su: docx, xlsx, doc, xls, pdf, zip, rar, mp3, mpg, i još mnogo toga."
+
+#: en/40_office.html+h1:1
+msgid "Office tools are ready to use as soon as you install SolydXK"
+msgstr "Office alati su spremni za korištenje čim instalirate SolydXK"
+
+#: en/40_office.html+div.div.ul.li:6
+msgid ""
+"<em>LibreOffice</em>, a powerful office software suite, comes built into "
+"SolydXK."
+msgstr "<em>LibreOffice</em>, snažan uredski softver paket, dolazi ugrađen u SolydXK."
+
+#: en/40_office.html+div.div.ul.li:7
+msgid "<em>LibreOffice</em> is very easy to learn and use."
+msgstr "<em>LibreOffice</em> je vrlo jednostavan za naučiti i koristiti."
+
+#: en/40_office.html+div.div.ul.li:8
+msgid ""
+"You can use it to create letters, presentations and spreadsheets, as well as"
+" diagrams and databases."
+msgstr "Možete ga koristiti za stvaranje pisma, prezentacija i proračunskih tablica, kao i dijagrama i baza podataka."
+
+#: en/40_office.html+div.div.ul.li:9
+msgid ""
+"<em>LibreOffice</em> uses the standard OpenDocument format and it works with"
+" documents from other popular office applications including WordPerfect and "
+"Microsoft Office."
+msgstr "<em>LibreOffice</em> koristi standardni OpenDocument format i to radi s dokumentima iz drugih popularnih uredskih aplikacija, uključujući WordPerfect i Microsoft Office."
+
+#: en/50_windows.html+h1:1
+msgid "An alternative to mainstream operating systems"
+msgstr "Alternativa glavnim operativnim sustavima"
+
+#: en/50_windows.html+div.div.ul.li:6
+msgid "SolydXK is easy to use, powerful and configurable."
+msgstr "SolydXK je lagan za upotrebu, moćan i vrlo podesiv."
+
+#: en/50_windows.html+div.div.ul.li:7
+msgid ""
+"SolydXK is safe and stable. Unlike other operating systems, it is not prone "
+"to computer viruses or spyware, it does not suffer from disk fragmentation, "
+"and it has no registry that requires periodic cleaning."
+msgstr "SolydXK je siguran i stabilan. Za razliku od drugih operativnih sustava, nije sklon računalnim virusima ili spyware-u, te ne pati od fragmentacije diska i nema registar koji zahtijeva periodično čišćenje."
+
+#: en/50_windows.html+div.div.ul.li:8
+msgid ""
+"SolydXK can detect other operating systems and install itself beside them. "
+"You can choose which operating system to launch when you start the computer."
+msgstr "SolydXK može otkriti druge operativne sustave i instalirati se pored njih. Možete odabrati koji operativni sustav želite pokrenuti prilikom pokretanja računala."
+
+#: en/60_safe.html+h1:1
+msgid "Safe updates"
+msgstr "Sigurnosne nadogradnje"
+
+#: en/60_safe.html+div.div.ul.li:6
+msgid ""
+"Some operating systems make updating your system harder than it really needs"
+" to be. SolydXK thinks upgrades should be quick and easy, and then get out "
+"of the way."
+msgstr "Neki operativni sustavi čine ažuriranje sustava teže nego što stvarno treba biti. SolydXK misli da bi nadogradnja trebala biti brza i jednostavna, a zatim se maknuti s puta."
+
+#: en/60_safe.html+div.div.ul.li:7
+msgid ""
+"The Update Manager sits discreetly in your system tray and lets you know "
+"when updates are available. You don't have to apply updates when you don't "
+"want to. The Update Manager won't pop up or annoy you in any way."
+msgstr "Upravitelj nadogradnji sjedi diskretno u traci sustava i obavještava vas kada su dostupna ažuriranja. Ne morate primijeniti nadogranje kada ne želite. Update Manager neće se pojaviti ili uznemiravati vas na bilo koji način."
+
+#: en/60_safe.html+div.div.ul.li:8
+msgid ""
+"All updated files are maintained and closely checked by trusted developers "
+"and maintainers."
+msgstr "Sve ažurirane datoteke održavaju i pažljivo provjeravaju pouzdani programeri i održavatelji."
+
+#: en/60_safe.html+div.div.ul.li:9
+msgid "All files are stored in special secure repositories for your use."
+msgstr "Sve datoteke su pohranjene u posebnim sigurnim repositorijima spremnim za korištenje."
+
+#: en/60_safe.html+div.div.ul.li:10
+msgid "The security repository is synchronized daily."
+msgstr "Sigurnosni repozitorij se sinkronizira dnevno."
+
+#: en/70_community.html+h1:1
+msgid "A great community"
+msgstr "Sjajna zajednica"
+
+#: en/70_community.html+div.div.ul.li:6
+msgid ""
+"The SolydXK community is one of the best on the Internet. Our users provide "
+"most of our funding, as well as ideas, artwork and sometimes even source "
+"code."
+msgstr "SolydXK zajednica je jedna od najboljih na Internetu. Naši korisnici osiguravaju većinu naših sredstava, doprinose idejama, ilustracijama, a ponekad čak i izvorni kod."
+
+#: en/70_community.html+div.div.ul.li:7
+msgid ""
+"SolydXK users are happy to share their passion and enthusiasm and are eager "
+"to help. Don't hesitate to ask questions on the forums or to get involved in"
+" the community."
+msgstr "SolydXK korisnici su sretni podijeliti svoju strast i entuzijazam, te žele pomoći. Ne oklijevajte postavljati pitanja na forumima ili se uključiti u zajednicu."
+
+#: en/70_community.html+div.div.ul.li:8
+msgid ""
+"Send us your feedback and tell us about your experience. We'll listen to "
+"your ideas and use them to further improve SolydXK."
+msgstr "Šaljite nam povratne informacije i prenesite nam svoja iskustva. Mi čujemo vaše ideje i koristimo ih u daljnjem usavršavanju SolydXK."
+
+#: en/10_welcome.html+h1:1
+msgid "Welcome to SolydXK"
+msgstr "Dobro došli u SolydXK"
+
+#: en/10_welcome.html+div.div.p:5
+msgid "Thank you for choosing SolydXK."
+msgstr "Hvala što ste odabrali SolydXK."
+
+#: en/10_welcome.html+div.div.p:6
+msgid "You've chosen a Linux distribution that is:"
+msgstr "Odabrali ste Linux distribuciju koja je:"
+
+#: en/10_welcome.html+div.div.ul.li:8
+msgid "Secure and stable"
+msgstr "Sigurna i stabilna"
+
+#: en/10_welcome.html+div.div.ul.li:9
+msgid "Fast and responsive"
+msgstr "Brza i responzivna"
+
+#: en/10_welcome.html+div.div.ul.li:10
+msgid "Desktop-ready"
+msgstr "Spremna za desktop"
+
+#: en/10_welcome.html+div.div.p:12
+msgid "Enjoy this new release and thank you for choosing SolydXK."
+msgstr "Uživajte u ovom novom izdanju i hvala na odabiru SolydXK."
+
+#: en/10_welcome.html+div.div.p:13
+msgid "The installation takes 15-30 minutes, depending on your settings."
+msgstr "Instalacija će trajati 15-30 minuta, ovisno o vašim postavkama."
+
+#: en/20_giants.html+h1:1
+msgid "Standing on the shoulders of Giants"
+msgstr "Stoji na ramenima Divova"
+
+#: en/20_giants.html+div.div.ul.li:6
+msgid ""
+"SolydXK is a Debian-based GNU/Linux distribution derived from and compatible"
+" with Debian."
+msgstr "SolydXK je Debian-bazirana GNU/Linux distribucija izvedena iz i kompatibilna s Debianom."
+
+#: en/20_giants.html+div.div.ul.li:7
+msgid ""
+"SolydXK uses either the lightweight Xfce desktop for SolydX or the highly "
+"configurable and stunningly appealing KDE desktop for SolydK."
+msgstr "SolydXK koristi lagani Xfce desktop za SolydX, ili visoko prilagodljivi i nevjerojatno privlačan KDE desktop za SolydK."
+
+#: en/20_giants.html+div.div.ul.li:8
+msgid ""
+"Our innovations, the rapid development of Debian and the huge Debian package"
+" selection make SolydXK one of the most attractive desktop operating systems"
+" available to home users."
+msgstr "Naše inovacije, brzi razvoj Debiana i ogroman izbor Debian paketa čine SolydXK jednim od najatraktivnijih desktop operativnih sustava za kućne korisnike."
+
+#: en/30_desktop-ready.html+h1:1
+msgid "Out of the box"
+msgstr "Iz kutije"
+
+#: en/30_desktop-ready.html+div.div.ul.li:6
+msgid ""
+"Firefox, Thunderbird, and LibreOffice come pre-installed in SolydXK, so you "
+"can get started immediately with the desktop and the Internet."
+msgstr "Firefox, Thunderbird i LibreOffice dolaze kao dio paketa SolydXK, tako da možete odmah početi s radom na radnoj površini i internetu."
+
+#: en/30_desktop-ready.html+div.div.ul.li:7
+msgid ""
+"Unlike other Linux distributions SolydXK is also ready to play your music, "
+"internet videos and more."
+msgstr "Za razliku od drugih Linux distribucija SolydXK je spreman za reprodukciju glazbe, video sadržaja i još mnogo toga."
+
+#: en/30_desktop-ready.html+div.div.ul.li:8
+msgid "A wide variety of software can be installed with a click of the mouse."
+msgstr "Širok izbor softvera može se instalirati klikom miša."
+
+#: en/30_desktop-ready.html+div.div.ul.li:9
+msgid ""
+"SolydXK is compatible with most popular file formats such as: docx, xlsx, "
+"doc, xls, pdf, zip, rar, mp3, mpg, and many more."
+msgstr "SolydXK je kompatibilan s većinom popularnih formata datoteka, kao što su: docx, xlsx, doc, xls, pdf, zip, rar, mp3, mpg, i još mnogo toga."
+
+#: en/40_office.html+h1:1
+msgid "Office tools are ready to use as soon as you install SolydXK"
+msgstr "Office alati su spremni za korištenje čim instalirate SolydXK"
+
+#: en/40_office.html+div.div.ul.li:6
+msgid ""
+"<em>LibreOffice</em>, a powerful office software suite, comes built into "
+"SolydXK."
+msgstr "<em>LibreOffice</em>, snažan uredski softver paket, dolazi ugrađen u SolydXK."
+
+#: en/40_office.html+div.div.ul.li:7
+msgid "<em>LibreOffice</em> is very easy to learn and use."
+msgstr "<em>LibreOffice</em> je vrlo jednostavan za naučiti i koristiti."
+
+#: en/40_office.html+div.div.ul.li:8
+msgid ""
+"You can use it to create letters, presentations and spreadsheets, as well as"
+" diagrams and databases."
+msgstr "Možete ga koristiti za stvaranje pisma, prezentacija i proračunskih tablica, kao i dijagrama i baza podataka."
+
+#: en/40_office.html+div.div.ul.li:9
+msgid ""
+"<em>LibreOffice</em> uses the standard OpenDocument format and it works with"
+" documents from other popular office applications including WordPerfect and "
+"Microsoft Office."
+msgstr "<em>LibreOffice</em> koristi standardni OpenDocument format i to radi s dokumentima iz drugih popularnih uredskih aplikacija, uključujući WordPerfect i Microsoft Office."
+
+#: en/50_windows.html+h1:1
+msgid "An alternative to mainstream operating systems"
+msgstr "Alternativa glavnim operativnim sustavima"
+
+#: en/50_windows.html+div.div.ul.li:6
+msgid "SolydXK is easy to use, powerful and configurable."
+msgstr "SolydXK je lagan za upotrebu, moćan i vrlo podesiv."
+
+#: en/50_windows.html+div.div.ul.li:7
+msgid ""
+"SolydXK is safe and stable. Unlike other operating systems, it is not prone "
+"to computer viruses or spyware, it does not suffer from disk fragmentation, "
+"and it has no registry that requires periodic cleaning."
+msgstr "SolydXK je siguran i stabilan. Za razliku od drugih operativnih sustava, nije sklon računalnim virusima ili spyware-u, te ne pati od fragmentacije diska i nema registar koji zahtijeva periodično čišćenje."
+
+#: en/50_windows.html+div.div.ul.li:8
+msgid ""
+"SolydXK can detect other operating systems and install itself beside them. "
+"You can choose which operating system to launch when you start the computer."
+msgstr "SolydXK može otkriti druge operativne sustave i instalirati se pored njih. Možete odabrati koji operativni sustav želite pokrenuti prilikom pokretanja računala."
+
+#: en/60_safe.html+h1:1
+msgid "Safe updates"
+msgstr "Sigurnosne nadogradnje"
+
+#: en/60_safe.html+div.div.ul.li:6
+msgid ""
+"Some operating systems make updating your system harder than it really needs"
+" to be. SolydXK thinks upgrades should be quick and easy, and then get out "
+"of the way."
+msgstr "Neki operativni sustavi čine ažuriranje sustava teže nego što stvarno treba biti. SolydXK misli da bi nadogradnja trebala biti brza i jednostavna, a zatim se maknuti s puta."
+
+#: en/60_safe.html+div.div.ul.li:7
+msgid ""
+"The Update Manager sits discreetly in your system tray and lets you know "
+"when updates are available. You don't have to apply updates when you don't "
+"want to. The Update Manager won't pop up or annoy you in any way."
+msgstr "Upravitelj nadogradnji sjedi diskretno u traci sustava i obavještava vas kada su dostupna ažuriranja. Ne morate primijeniti nadogranje kada ne želite. Update Manager neće se pojaviti ili uznemiravati vas na bilo koji način."
+
+#: en/60_safe.html+div.div.ul.li:8
+msgid ""
+"All updated files are maintained and closely checked by trusted developers "
+"and maintainers."
+msgstr "Sve ažurirane datoteke održavaju i pažljivo provjeravaju pouzdani programeri i održavatelji."
+
+#: en/60_safe.html+div.div.ul.li:9
+msgid "All files are stored in special secure repositories for your use."
+msgstr "Sve datoteke su pohranjene u posebnim sigurnim repositorijima spremnim za korištenje."
+
+#: en/60_safe.html+div.div.ul.li:10
+msgid "The security repository is synchronized daily."
+msgstr "Sigurnosni repozitorij se sinkronizira dnevno."
+
+#: en/70_community.html+h1:1
+msgid "A great community"
+msgstr "Sjajna zajednica"
+
+#: en/70_community.html+div.div.ul.li:6
+msgid ""
+"The SolydXK community is one of the best on the Internet. Our users provide "
+"most of our funding, as well as ideas, artwork and sometimes even source "
+"code."
+msgstr "SolydXK zajednica je jedna od najboljih na Internetu. Naši korisnici osiguravaju većinu naših sredstava, doprinose idejama, ilustracijama, a ponekad čak i izvorni kod."
+
+#: en/70_community.html+div.div.ul.li:7
+msgid ""
+"SolydXK users are happy to share their passion and enthusiasm and are eager "
+"to help. Don't hesitate to ask questions on the forums or to get involved in"
+" the community."
+msgstr "SolydXK korisnici su sretni podijeliti svoju strast i entuzijazam, te žele pomoći. Ne oklijevajte postavljati pitanja na forumima ili se uključiti u zajednicu."
+
+#: en/70_community.html+div.div.ul.li:8
+msgid ""
+"Send us your feedback and tell us about your experience. We'll listen to "
+"your ideas and use them to further improve SolydXK."
+msgstr "Šaljite nam povratne informacije i prenesite nam svoja iskustva. Mi čujemo vaše ideje i koristimo ih u daljnjem usavršavanju SolydXK."

@@ -1,0 +1,985 @@
+live-installer-3 (2020.07.09) stable; urgency=low
+
+  * Fix not listing drives with only extended partition
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 09 Jul 2020 13:18:46 +0200
+
+live-installer-3 (2020.06.28) stable; urgency=low
+
+  * Save packages to remove in /etc/live/live-installer-3.conf
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 28 Jun 2020 17:31:45 +0200
+
+live-installer-3 (2020.06.21) stable; urgency=low
+
+  * Optimize post install package removal
+  * Create vboxusers group for new user when in VB
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 21 Jun 2020 11:29:28 +0200
+
+live-installer-3 (2020.06.18) stable; urgency=low
+
+  * Fix bug in 0139-x11-intel-fix
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 18 Jun 2020 16:01:48 +0200
+
+live-installer-3 (2020.06.17) stable; urgency=low
+
+  * Fix laptop with old intel chipset not waking up: /lib/live/config/0139-x11-intel-fix
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 17 Jun 2020 08:51:16 +0200
+
+live-installer-3 (2020.06.10) stable; urgency=low
+
+  * Do not force format selected swap partition
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 10 Jun 2020 16:30:01 +0200
+
+live-installer-3 (2020.05.26) stable; urgency=low
+
+  * Another try to fix _ name error
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 26 May 2020 16:44:21 +0200
+
+live-installer-3 (2020.05.24) stable; urgency=low
+
+  * Fix NameError: name '_' is not defined
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 24 May 2020 16:19:44 +0200
+
+live-installer-3 (2020.05.22) stable; urgency=low
+
+  * Better error handling when selecting user language
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 22 May 2020 07:59:00 +0200
+
+live-installer-3 (2020.05.15) stable; urgency=low
+
+  * Use fstrim.timer if available
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 15 May 2020 12:36:48 +0200
+
+live-installer-3 (2020.01.31) stable; urgency=low
+
+  * Fixed dialogs.py
+  * Fix ResourceWarning: subprocess N is still running in apt_handler.py
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 31 Jan 2020 08:39:08 +0100
+
+live-installer-3 (2020.01.24) stable; urgency=low
+
+  * Change deprecated code (use -Wd flag with python3)
+  * Debugging for Debian Bullseye
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 24 Jan 2020 11:54:14 +0100
+
+live-installer-3 (2019.11.25) stable; urgency=low
+
+  * Disable power management
+  * Updated translation: sr
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 25 Nov 2019 12:02:13 +0100
+
+live-installer-3 (2019.11.08) stable; urgency=low
+
+  * Updated translation: pt, da
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 08 Nov 2019 17:00:49 +0100
+
+live-installer-3 (2019.10.12) stable; urgency=low
+
+  * Fix get debian version function on testing
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 12 Oct 2019 17:30:29 +0200
+
+live-installer-3 (2019.09.29) stable; urgency=low
+
+  * Fix bug concatonating string with list
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 29 Sep 2019 19:36:59 +0200
+
+live-installer-3 (2019.09.28) stable; urgency=low
+
+  * Depend on python3-pyqt4 or python3-pyqt5
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 28 Sep 2019 17:54:19 +0200
+
+live-installer-3 (2019.09.23) stable; urgency=low
+
+  * Remove sysv-rc dependency
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 23 Sep 2019 19:24:32 +0200
+
+live-installer-3 (2019.09.17) stable; urgency=low
+
+  * Fix live-installer-3.conf
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 17 Sep 2019 14:39:03 +0200
+
+live-installer-3 (2019.09.05) stable; urgency=low
+
+  * Resolve bug with editing mounts without fs format
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 05 Sep 2019 10:46:35 +0200
+
+live-installer-3 (2019.09.02) stable; urgency=low
+
+  * Remove unneeded /etc/fstab.d
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 02 Sep 2019 16:23:44 +0200
+
+live-installer-3 (2019.08.30) stable; urgency=low
+
+  * Change min EFI partition size to 500 MiB
+  * Save EFI and boot sizes in conf file
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 30 Aug 2019 23:10:59 +0200
+
+live-installer-3 (2019.08.29) stable; urgency=low
+
+  * Updated translation: de
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 29 Aug 2019 16:09:56 +0200
+
+live-installer-3 (2019.08.25) stable; urgency=low
+
+  * Updated translation: ca
+  * Named parameters for Gtk.MessageDialog
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 25 Aug 2019 08:22:59 +0200
+
+live-installer-3 (2019.08.23) stable; urgency=low
+
+  * Resolve bug live user not having password
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 23 Aug 2019 22:57:11 +0200
+
+live-installer-3 (2019.08.22) stable; urgency=low
+
+  * Check for allowed system file systems
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 22 Aug 2019 10:21:04 +0200
+
+live-installer-3 (2019.08.15) stable; urgency=low
+
+  * Fix full format when device size is too small
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 15 Aug 2019 21:22:21 +0200
+
+live-installer-3 (2019.08.06) stable; urgency=low
+
+  * Use more generic icon for  partition edit
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 06 Aug 2019 10:37:34 +0200
+
+live-installer-3 (2019.07.25) stable; urgency=low
+
+  * Bug: shutdown when upgrading live-installer-3:
+  * had to remove systemd service to cleanly shut down system
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 25 Jul 2019 09:55:17 +0200
+
+live-installer-3 (2019.07.20) stable; urgency=low
+
+  * Clean shut down of live system
+  * Fix automatic land selection bug with new ISOs
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 20 Jul 2019 15:07:37 +0200
+
+live-installer-3 (2019.06.30) stable; urgency=low
+
+  * Check if already started
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 30 Jun 2019 15:49:30 +0200
+
+live-installer-3 (2019.06.28) stable; urgency=low
+
+  * Add missing dependencies
+  * Add labeling for missing file systems
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 28 Jun 2019 16:12:02 +0200
+
+live-installer-3 (2019.06.09) stable; urgency=low
+
+  * Use luks2 when encrypting
+  * Set right permissions for tmpfs of clamav
+  * Remove full screen mode by pressing f-key 
+  * Only apt update once per session
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 09 Jun 2019 19:42:04 +0200
+
+live-installer-3 (2019.05.25) stable; urgency=low
+
+  * Updated translation: ca
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 25 May 2019 18:31:24 +0200
+
+live-installer-3 (2019.05.18) stable; urgency=low
+
+  * Remove locales parameter from boot parameters
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 18 May 2019 16:46:51 +0200
+
+live-installer-3 (2019.05.03) stable; urgency=low
+
+  * Make live-installer distribution independent
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 03 May 2019 18:08:18 +0200
+
+live-installer-3 (2019.04.25) stable; urgency=low
+
+  * Custom update window
+  * Updated translation: it
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 25 Apr 2019 16:33:54 +0200
+
+live-installer-3 (2019.04.08) stable; urgency=low
+
+  * Add config component to copy user-generic face image to home directory
+  * Asign current fs when selecting root partition
+  * Updated translations: de, pt
+  * Resolve bug not finding partitions through fstab
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 08 Apr 2019 15:46:46 +0200
+
+live-installer-3 (2019.02.28) stable; urgency=low
+
+  * Prevent root mount to have no selected format
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 28 Feb 2019 08:06:25 +0100
+
+live-installer-3 (2019.02.24) stable; urgency=low
+
+  * Do not install lightning-l10n packages
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 24 Feb 2019 15:34:16 +0100
+
+live-installer-3 (2019.02.18) stable; urgency=low
+
+  * Show update progressbar percentage
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 18 Feb 2019 15:59:48 +0100
+
+live-installer-3 (2019.02.15) stable; urgency=low
+
+  * Create new machine-id when installing
+  * Localize distribution.ini for mozilla
+  * Find path for prefs.js when localizing mozilla
+  * Do not install grub files when user does not want to install grub
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 15 Feb 2019 18:29:44 +0100
+
+live-installer-3 (2019.02.13) stable; urgency=low
+
+  * Updated translations: pt, lt
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 13 Feb 2019 08:41:42 +0100
+
+live-installer-3 (2019.02.11) stable; urgency=low
+
+  * Update live-installer-3 on application start
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 11 Feb 2019 09:16:16 +0100
+
+live-installer-3 (2019.02.09) stable; urgency=low
+
+  * Include bootloader-id with grub-install
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 09 Feb 2019 19:38:10 +0100
+
+live-installer-3 (2019.01.30) stable; urgency=low
+
+  * Also take camera picture with fswebcam
+  * Show minimum, recommended and maximum swap size message
+  * Check GObject version with Gtk object, not Python version
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 30 Jan 2019 16:46:33 +0100
+
+live-installer-3 (2019.01.29) stable; urgency=low
+
+  * Check swap partition
+  * Improve format for empty disk
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 29 Jan 2019 09:59:40 +0100
+
+live-installer-3 (2019.01.24) stable; urgency=low
+
+  * Remove psutil and use os.statvfs
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 24 Jan 2019 11:33:16 +0100
+
+live-installer-3 (2019.01.22) stable; urgency=low
+
+  * Updated translations: fr
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 22 Jan 2019 09:09:34 +0100
+
+live-installer-3 (2019.01.12) stable; urgency=low
+
+  * Added dependency python3-psutil
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 12 Jan 2019 08:24:23 +0100
+
+live-installer-3 (2018.12.29) stable; urgency=low
+
+  * Make sure that /boot is ext2/3/4
+  * Make sure that /boot/efi is vfat
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 29 Dec 2018 22:33:53 +0100
+
+live-installer-3 (2018.12.12) stable; urgency=low
+
+  * Decode binary return from Webkit2 to utf8
+  * Remove symbolic links and use .links file
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 12 Dec 2018 18:36:50 +0100
+
+live-installer-3 (2018.12.05) stable; urgency=low
+
+  * Use -pbkdf2 key derivation for openssl 1.1.1+
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 05 Dec 2018 11:00:34 +0100
+
+live-installer-3 (2018.12.04) stable; urgency=low
+
+  * Updated translations: da, pt
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 04 Dec 2018 12:03:01 +0100
+
+live-installer-3 (2018.11.21) stable; urgency=low
+
+  * Clear dialog when removing mount
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 21 Nov 2018 14:12:21 +0100
+
+live-installer-3 (2018.11.20) stable; urgency=low
+
+  * Resolve issue when spaces in mount point
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 20 Nov 2018 13:24:42 +0100
+
+live-installer-3 (2018.11.19) stable; urgency=low
+
+  * Only create .face file when it does not exist
+  * Pre-mount for boot partition
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 19 Nov 2018 17:30:36 +0100
+
+live-installer-3 (2018.10.26) stable; urgency=low
+
+  * Updated translation: de
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 26 Oct 2018 13:32:41 +0200
+
+live-installer-3 (2018.10.22) stable; urgency=low
+
+  * Use WebKit1 and WebKit2
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 22 Oct 2018 15:43:56 +0200
+
+live-installer-3 (2018.10.19) stable; urgency=low
+
+  * Revert to WebKit: missing Python bindings form WebKit2
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 19 Oct 2018 14:48:43 +0200
+
+live-installer-3 (2018.10.17) stable; urgency=low
+
+  * Updated live user groups
+  * Use WebKit2 (gir1.2-webkit2-4.0)
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 17 Oct 2018 10:10:53 +0200
+
+live-installer-3 (2018.10.06) stable; urgency=low
+
+  * Do not mount /boot on non-linux file system
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 06 Oct 2018 15:20:31 +0200
+
+live-installer-3 (2018.09.29) stable; urgency=low
+
+  * Change use of isoquery to include more languages
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 29 Sep 2018 17:14:04 +0200
+
+live-installer-3 (2018.09.27) stable; urgency=low
+
+  * Better catch language list error: list index out of range
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 27 Sep 2018 08:52:12 +0200
+
+live-installer-3 (2018.09.16) stable; urgency=low
+
+  * Pass -p/--nopartitioncheck to live-installer-3 to skip partition size check
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 16 Sep 2018 10:33:07 +0200
+
+live-installer-3 (2018.09.12) stable; urgency=low
+
+  * Added vboxusers group to new user
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 12 Sep 2018 17:05:51 +0200
+
+live-installer-3 (2018.09.07) stable; urgency=low
+
+  * Make live medium path accessible for stretch and buster
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 07 Sep 2018 17:48:17 +0200
+
+live-installer-3 (2018.09.05) stable; urgency=low
+
+  * Fix bug not setting boot flag when installing on mmcblk drives
+  * Fix bug wrong path to EFI files when only using vfat /boot partition
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 05 Sep 2018 11:03:47 +0200
+
+live-installer-3 (2018.09.04) stable; urgency=low
+
+  * Support nilfs2 and f2fs file systems for flash drives
+  * Also install EFI when needed and only a vfat /boot partition is defined
+  * Fix splash laying over dialog boxes during startup
+  * Partition dialog: move partition label text below partition format
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 04 Sep 2018 11:41:54 +0200
+
+live-installer-3 (2018.08.01) stable; urgency=low
+
+  * Updated translations: tr
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 01 Aug 2018 08:52:48 +0200
+
+live-installer-3 (2018.07.10) stable; urgency=low
+
+  * Upgrade to python3-geoip2
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 10 Jul 2018 09:22:24 +0200
+
+live-installer-3 (2018.07.09) stable; urgency=low
+
+  * Use geoipupdate instead of geoip-database-contrib
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 09 Jul 2018 14:13:15 +0200
+
+live-installer-3 (2018.07.03) stable; urgency=low
+
+  * Implement proxy handling for urlopen
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 03 Jul 2018 10:06:04 +0200
+
+live-installer-3 (2018.06.27) stable; urgency=low
+
+  * Fix labeling for ntfs and btrfs
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 27 Jun 2018 11:31:27 +0200
+
+live-installer-3 (2018.06.01) stable; urgency=low
+
+  * URL check
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 01 Jun 2018 09:45:34 +0200
+
+live-installer-3 (2018.05.31) stable; urgency=low
+
+  * Get user IP address from .com domain
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 31 May 2018 11:01:49 +0200
+
+live-installer-3 (2018.04.25) stable; urgency=low
+
+  * Changed url to ip script
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 25 Apr 2018 14:31:46 +0200
+
+live-installer-3 (2018.04.24) stable; urgency=low
+
+  * Improve internet connection check
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 24 Apr 2018 22:45:36 +0200
+
+live-installer-3 (2018.04.11) stable; urgency=low
+
+  * Added Danish translations
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 11 Apr 2018 10:35:33 +0200
+
+live-installer-3 (2018.04.10) stable; urgency=low
+
+  * Fix OEM setup
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 10 Apr 2018 09:42:26 +0200
+
+live-installer-3 (2018.03.16) stable; urgency=low
+
+  * Set locale settings for Firefox 59 and up
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 16 Mar 2018 08:58:17 +0100
+
+live-installer-3 (2018.02.27) stable; urgency=low
+
+  * Fix splash
+  * Consistently write home and efi label when set
+  * Unmount partition before formatting
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 27 Feb 2018 16:32:00 +0100
+
+live-installer-3 (2018.02.12) stable; urgency=low
+
+  * Use pkexec for administrative privileges
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 12 Feb 2018 17:35:06 +0100
+
+live-installer-3 (2018.01.24) stable; urgency=low
+
+  * Temporarily disable splash
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 24 Jan 2018 12:44:48 +0100
+
+live-installer-3 (2018.01.16) stable; urgency=low
+
+  * Improve urllib error handling
+  * Make splash screen more stable
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 16 Jan 2018 17:16:06 +0100
+
+live-installer-3 (2018.01.14) stable; urgency=low
+
+  * Updated translations
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 14 Jan 2018 11:52:12 +0100
+
+live-installer-3 (2018.01.05) stable; urgency=low
+
+  * Add xkb-plugin to xfce4-panel while live
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 05 Jan 2018 00:17:37 +0100
+
+live-installer-3 (2018.01.03) stable; urgency=low
+
+  * Include localizing Lightning calendar
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 03 Jan 2018 12:25:25 +0100
+
+live-installer-3 (2017.12.30) stable; urgency=low
+
+  * Switch fullscreen/windowed with F/ESC
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 30 Dec 2017 16:29:33 +0100
+
+live-installer-3 (2017.12.24) stable; urgency=low
+
+  * Fix bug always installing Broadcom drivers
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 24 Dec 2017 19:48:43 +0100
+
+live-installer-3 (2017.12.22) stable; urgency=low
+
+  * Use system locale when system is not US localized
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 22 Dec 2017 18:30:35 +0100
+
+live-installer-3 (2017.12.20) stable; urgency=low
+
+  * Check internet connection using repositories in /etc/apt/sources.list
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 20 Dec 2017 10:05:05 +0100
+
+live-installer-3 (2017.12.06) stable; urgency=low
+
+  * Resolve bug not copying Grub translation files
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 06 Dec 2017 19:13:08 +0100
+
+live-installer-3 (2017.11.19) stable; urgency=low
+
+  * Catch crash when no available drives are listed
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 19 Nov 2017 15:32:51 +0100
+
+live-installer-3 (2017.11.04) stable; urgency=low
+
+  * Include splash screen
+  * Fix several small bugs
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 04 Nov 2017 11:26:38 +0100
+
+live-installer-3 (2017.10.31) stable; urgency=low
+
+  * Improving GUI
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 31 Oct 2017 09:35:04 +0100
+
+live-installer-3 (2017.10.30) stable; urgency=low
+
+  * Debugging glade files
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 30 Oct 2017 10:45:32 +0100
+
+live-installer-3 (2017.10.18) stable; urgency=low
+
+  * Comment out some tmpfs entries in fstab for SSD systems.
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 18 Oct 2017 08:50:55 +0200
+
+live-installer-3 (2017.09.26) stable; urgency=low
+
+  * Add use of kdesu if kdesudo is not available
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 26 Sep 2017 08:51:59 +0200
+
+live-installer-3 (2017.09.18) stable; urgency=low
+
+  * Disable pk-update-icon in live mode
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 15 Sep 2017 08:31:26 +0200
+
+live-installer-3 (2017.08.17) stable; urgency=low
+
+  * Change generation of live user password
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 01 Sep 2017 17:09:16 +0200
+
+live-installer-3 (2017.08.16) stable; urgency=low
+
+  * BUG: passwords were shortened to 8 characters by mkpasswd
+  * Force mkpasswd to use sha-256 encryption to solve this
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 16 Aug 2017 20:36:50 +0200
+
+live-installer-3 (2017.07.18) stable; urgency=low
+
+  * Complete rewrite of localization
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 18 Jul 2017 07:26:35 +0200
+
+live-installer-3 (2017.07.17) stable; urgency=low
+
+  * Changed LANG= to GRUB_LANG= in /etc/default/grub
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 17 Jul 2017 14:54:13 +0200
+
+live-installer-3 (2017.07.15) stable; urgency=low
+
+  * Added entry for KCM (systemsettings) and Xfce system settings
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 15 Jul 2017 10:45:32 +0200
+
+live-installer-3 (2017.07.13) stable; urgency=low
+
+  * Copy missing Grub2 translation files
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 13 Jul 2017 08:51:53 +0200
+
+live-installer-3 (2017.07.12) stable; urgency=low
+
+  * Localize Grub2 when needed
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 12 Jul 2017 17:03:21 +0200
+
+live-installer-3 (2017.07.11) stable; urgency=low
+
+  * Prefer hunspell instead of myspell if locale for package exists
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 11 Jul 2017 14:19:59 +0200
+
+live-installer-3 (2017.07.05) stable; urgency=low
+
+  * Disable light-locker on login
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 05 Jul 2017 16:59:11 +0200
+
+live-installer-3 (2017.06.19) stable; urgency=low
+
+  * Fix bug labeling FAT partitions: mtools > dosfstools
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 19 Jun 2017 17:53:35 +0200
+
+live-installer-3 (2017.04.23) stable; urgency=low
+
+  * Fix bug not adding power manager plugin for SolydX 9
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 23 Apr 2017 17:46:24 +0200
+
+live-installer-3 (2017.04.22) stable; urgency=low
+
+  * Fix bug not recognizing eMMC drives as SDD (fstab config)
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 22 Apr 2017 17:26:00 +0200
+
+live-installer-3 (2017.04.19) stable; urgency=low
+
+  * Fix missing apt options in cleanup.sh
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 19 Apr 2017 08:37:05 +0200
+
+live-installer-3 (2017.04.12) stable; urgency=low
+
+  * Fix bug implicit string conversion in mounts
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 12 Apr 2017 12:55:32 +0200
+
+live-installer-3 (2017.04.04) stable; urgency=low
+
+  * Optimized empty disk partitioning
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 04 Apr 2017 09:35:54 +0200
+
+live-installer-3 (2017.04.03) stable; urgency=low
+
+  * Show error when assigning root partition when size is lower than given (8Gb).
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 03 Apr 2017 10:23:20 +0200
+
+live-installer-3 (2017.03.27) stable; urgency=low
+
+  * Removed dependency on LVM2
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 27 Mar 2017 13:51:15 +0200
+
+live-installer-3 (2017.03.25) stable; urgency=low
+
+  * Make encryption of swap partition possible
+  * Save passphrase in keyfile when several encrypted partitions use the same passphrase
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 24 Mar 2017 14:26:48 +0100
+
+live-installer-3 (2017.03.24) stable; urgency=low
+
+  * Make it possible to encrypt the swap partition
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 23 Mar 2017 22:16:38 +0100
+
+live-installer-3 (2017.03.23) stable; urgency=low
+
+  * Fix bug not listing drives without a discription
+  * Fix face button crashing
+  * Add excluded devices: fd0, mmcblk0boot0, mmcblk0boot1, mmcblk0rpmb
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 23 Mar 2017 16:26:08 +0100
+
+live-installer-3 (2017.03.19) stable; urgency=low
+
+  * Fix bug in SolydXK-9 creating root owned /home/user/.cache
+  * Minimize unnecessary error output of mount/umount commands
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 19 Mar 2017 17:25:59 +0100
+
+live-installer-3 (2017.03.14) stable; urgency=low
+
+  * Fix bug not being able to use btrfs
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 14 Mar 2017 19:54:15 +0100
+
+live-installer-3 (2017.03.10) stable; urgency=low
+
+  * Updated helper icons
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 10 Mar 2017 16:48:14 +0100
+
+live-installer-3 (2017.03.02) stable; urgency=low
+
+  * Preserve environment variables
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 02 Mar 2017 11:43:29 +0100
+
+live-installer-3 (2017.02.17) stable; urgency=low
+
+  * Only make use of /etc/apt/apt.conf.d/89live-installer when the installer starts.
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 17 Feb 2017 15:09:27 +0100
+
+live-installer-3 (2017.02.14) stable; urgency=low
+
+  * Add esp flag to efi partition
+  * Remove dip group from first user
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 14 Feb 2017 20:19:40 +0100
+
+live-installer-3 (2017.02.06) stable; urgency=low
+
+  * Implement SolydXK configuration path changes
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 06 Feb 2017 11:27:10 +0100
+
+live-installer-3 (2017.02.03) stable; urgency=low
+
+  * Added udisks2 dependency
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 03 Feb 2017 20:06:34 +0100
+
+live-installer-3 (2017.02.02) stable; urgency=low
+
+  * Debugging for stretch
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 02 Feb 2017 08:55:09 +0100
+
+live-installer-3 (2017.01.11) stable; urgency=low
+
+  * Include /var/log/clamav in fstab for SSD
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 11 Jan 2017 19:30:36 +0100
+
+live-installer-3 (2017.01.03) stable; urgency=low
+
+  * Updated translations
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 03 Jan 2017 16:09:03 +0100
+
+live-installer-3 (2016.09.05) stable; urgency=low
+
+  * Fix Windows label extraction with multiple versions due to upgrades
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 05 Sep 2016 08:45:44 +0200
+
+live-installer-3 (2016.09.04) stable; urgency=low
+
+  * Continue installing even after rsync error
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 04 Sep 2016 09:17:32 +0200
+
+live-installer-3 (2016.09.03) stable; urgency=low
+
+  * Catch exception when reading Windows version on system
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 03 Sep 2016 10:47:53 +0200
+
+live-installer-3 (2016.07.26) stable; urgency=low
+
+  * Solved rsync issue in EEs by eliminating logging for that process
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 26 Jul 2016 20:26:35 +0200
+
+live-installer-3 (2016.07.22) stable; urgency=low
+
+  * sourcing a file in python ends in a sh error
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 22 Jul 2016 10:36:00 +0200
+
+live-installer-3 (2016.07.07) stable; urgency=low
+
+  * Make user.default the default user Mozilla profile directory
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 07 Jul 2016 22:53:37 +0200
+
+live-installer-3 (2016.06.16) stable; urgency=low
+
+  * Fix Firefox/Thunderbird localization issues
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 16 Jun 2016 10:50:45 +0200
+
+live-installer-3 (2016.06.13) stable; urgency=low
+
+  * User defined mount points
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 13 Jun 2016 09:37:31 +0200
+
+live-installer-3 (2016.06.08) stable; urgency=low
+
+  * Handle --force-yes for Stretch
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 08 Jun 2016 12:50:15 +0200
+
+live-installer-3 (2016.05.07) stable; urgency=low
+
+  * Let user change swap partition if swap mount not set automatically
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 07 May 2016 16:43:55 +0200
+
+live-installer-3 (2016.05.02) stable; urgency=low
+
+  * Remove nomodeset only in VirtualBox
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 02 May 2016 10:47:15 +0200
+
+live-installer-3 (2016.04.30) stable; urgency=low
+
+  * Remove nomodeset from boot parameters when doing a regular installation
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 30 Apr 2016 14:37:22 +0200
+
+live-installer-3 (2016.04.24) stable; urgency=low
+
+  * Updated live-chroot: check for existing mount
+  * Updated translations
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 24 Apr 2016 18:48:08 +0200
+
+live-installer-3 (2016.04.11) stable; urgency=low
+
+  * General debugging
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 11 Apr 2016 08:03:48 +0200
+
+live-installer-3 (2016.04.10) stable; urgency=low
+
+  * Bug resolved: multi-boot OEM setup format wrong root partitions
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 10 Apr 2016 12:02:24 +0200
+
+live-installer-3 (2016.04.09) stable; urgency=low
+
+  * Fix broken pipe error in logger.py
+  * Remove copy from /etc/skel
+  * Create oem user in group root
+  * Create new screen resolution for OEM user
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 09 Apr 2016 10:46:47 +0200
+
+live-installer-3 (2016.04.05) stable; urgency=low
+
+  * Encrypt home partition on OEM Setup
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 05 Apr 2016 08:12:13 +0200
+
+live-installer-3 (2016.03.29) stable; urgency=low
+
+  * Added console-setup as a dependency
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 29 Mar 2016 13:20:58 +0200
+
+live-installer-3 (2016.03.26) stable; urgency=low
+
+  * Configure power supply when on laptop
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 26 Mar 2016 07:48:20 +0100
+
+live-installer-3 (2016.03.25) stable; urgency=low
+
+  * Reload translations when internet connection has been established
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 25 Mar 2016 12:48:55 +0100
+
+live-installer-3 (2016.03.24) stable; urgency=low
+
+  * Include OEM install
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 24 Mar 2016 08:18:44 +0100
+
+live-installer-3 (2016.03.05) stable; urgency=low
+
+  * Improved EFI installation for pen drives
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 05 Mar 2016 19:23:18 +0100
+
+live-installer-3 (2016.01.31) stable; urgency=low
+
+  * Removed mouse pointer change when formatting an empty drive
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 31 Jan 2016 19:00:00 +0100
+
+live-installer-3 (2016.01.21) stable; urgency=low
+
+  * Updated translations
+  * Solved bug: incorrect grub update when using custom boot parameters
+  * Create symbolic link /usr/bin/live-installer to live-installer-3
+  * Flat logo in background information pages
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 21 Jan 2016 08:00:00 +0100
+
+live-installer-3 (2016.01.18) stable; urgency=low
+
+  * Python2.7 to Python3 of live-installer 2016.01.01
+  * Update new system if possible
+  * Improved handling of manually mounted partitions during custom install
+  * Resolved bug: hanging on re-encrypting previously encrypted partition
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 18 Jan 2016 09:00:00 +0100

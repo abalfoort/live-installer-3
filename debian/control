@@ -1,0 +1,70 @@
+Source: live-installer-3
+Section: admin
+Priority: optional
+Maintainer: Arjen Balfoort <arjenbalfoort@solydxk.com>
+Build-Depends: debhelper-compat (= 12)
+  , python3
+  , po4a
+  , intltool
+  , itstool
+  , transifex-client
+  , translate-toolkit
+  , dh-python
+  , gettext
+Standards-Version: 4.5.0
+
+Package: live-installer-3
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+  , python3
+  , python3-gi
+  , gir1.2-webkit2-4.0 (>= 2.22.0) | gir1.2-webkit-3.0
+  , gir1.2-gtk-3.0
+  , python3-parted
+  , parted
+  , gparted
+  , python3-geoip2
+  , geoipupdate
+  , python3-pyqt4 | python3-pyqt5
+  , python3-pil
+  , streamer | fswebcam
+  , imagemagick
+  , desktop-file-utils
+  , menu
+  , gdisk
+  , isoquery
+  , iso-codes
+  , locales
+  , adduser
+  , rsync
+  , whois
+  , passwd
+  , cryptsetup
+  , console-setup
+  , dbus
+  , udisks2
+  , gir1.2-udisks-2.0
+  , ntfs-3g
+  , f2fs-tools
+  , nilfs-tools
+  , wget
+  , zenity
+  , btrfs-progs
+  , exfat-utils
+  , dosfstools
+  , jfsutils
+  , xfsprogs
+  , x11-xkb-utils
+Recommends: live-installer-3-slideshow
+Conflicts: live-installer
+Replaces: live-installer
+Description: Install the operating system.
+ Install the operating system to your pc or laptop.
+
+Package: live-installer-3-slideshow
+Architecture: all
+Depends: ${misc:Depends}, live-installer-3
+Conflicts: live-installer-slideshow
+Replaces: live-installer-slideshow
+Description: Slideshow for the installer.
+ A slideshow for the Live Installer.
