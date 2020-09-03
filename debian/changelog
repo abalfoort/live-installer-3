@@ -1,3 +1,30 @@
+live-installer-3 (2020.08.31) stable; urgency=low
+
+  * Use LUKS1 for root and boot partitions, LUKS2 for all other partitions
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 31 Aug 2020 15:35:31 +0200
+
+live-installer-3 (2020.08.30) stable; urgency=low
+
+  * Change dependency: python3-geoip | python3-geoip2
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 30 Aug 2020 12:52:22 +0200
+
+live-installer-3 (2020.08.29) stable; urgency=low
+
+  * Fix bug: splash: command not found when creating grub.cfg
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 29 Aug 2020 11:50:07 +0200
+
+live-installer-3 (2020.08.24) stable; urgency=low
+
+  * Downgrade from LUKS2 to LUKS1 because Grub2 does not yet support LUKS2
+  * No unencrypted /boot needed for root encryption with efi
+  * Save key files per partition
+  * Fix regression not configuring crypttab correctly
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Fri, 24 Aug 2020 10:53:20 +0200
+
 live-installer-3 (2020.07.09) stable; urgency=low
 
   * Fix not listing drives with only extended partition
