@@ -451,6 +451,24 @@ def clean_html(html):
     return re.sub(clean_re, '', html)
 
 
+def replace_pattern_in_file(pattern, replace_string, file, append_if_not_exists=True):
+    if os.path.exists(file):
+        cont = None
+        p_obj = re.compile(pattern, re.MULTILINE)
+        with open(file, 'r') as f:
+            cont = f.read()
+        if re.search(p_obj, cont):
+            cont = re.sub(p_obj, replace_string, cont)
+        else:
+            if append_if_not_exists:
+                cont = cont + "\n" + replace_string + "\n"
+            else:
+                cont = None
+        if cont:
+            with open(file, 'w') as f:
+                f.write(cont)
+
+
 def get_pen_drives():
     pen_drives = []
     client = UDisks.Client.new_sync(None)

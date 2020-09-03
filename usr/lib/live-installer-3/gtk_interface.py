@@ -859,8 +859,7 @@ class InstallerWindow():
                 part_name = 'EFI'
                 for partition in self.setup.partitions:
                     # Check if we need a /boot partition
-                    if partition.mount_as == partitioning.ROOT_MOUNT_POINT and \
-                       (partition.format_as == 'f2fs' or partition.encrypt):
+                    if partition.mount_as == partitioning.ROOT_MOUNT_POINT and partition.format_as == 'f2fs':
                         needs_boot = True
                     # Check if this a /boot or /boot/efi partition
                     if not found_boot and partition.mount_as == partitioning.BOOT_MOUNT_POINT:

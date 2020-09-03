@@ -11,7 +11,7 @@
 from utils import shell_exec, shell_exec_popen, getoutput, chroot_exec, \
                   get_config_dict, has_internet_connection, in_virtualbox, \
                   get_boot_parameters, get_files_from_dir, is_package_installed, \
-                  linux_distribution
+                  linux_distribution, replace_pattern_in_file, comment_line
 from localize import Localize
 from encryption import clear_partition, encrypt_partition, write_crypttab, \
                        create_keyfile
@@ -26,6 +26,7 @@ import shutil
 # i18n: http://docs.python.org/3/library/gettext.html
 import gettext
 from gettext import gettext as _
+from ntpath import dirname
 gettext.textdomain('live-installer-3')
 
 CONFIG_FILE = '/etc/live/live-installer-3.conf'
@@ -236,8 +237,14 @@ class InstallerEngine(threading.Thread):
                     # Make sure the partition is not mounted
                     partitioning.do_unmount(partition.path, True)
                     # Clear and encrypt the partition
-                    clear_partition(partition)
-                    partition.path = encrypt_partition(partition)
+                    #clear_partition(partition)
+                    if partition.mount_as == partitioning.ROOT_MOUNT_POINT or \
+                       partition.mount_as == partitioning.BOOT_MOUNT_POINT:
+                        # Use LUKS1 for root and boot partitions
+                        partition.path = encrypt_partition(partition)
+                    else:
+                        # Use LUKS2 for all other partitions
+                        partition.path = encrypt_partition(partition, 2)
 
                 # report it. should grab the total count of filesystems to be formatted ..
                 msg = _("Formatting %(partition)s as %(format)s ..." % {'partition':partition.path, 'format':partition.format_as})
@@ -522,18 +529,23 @@ class InstallerEngine(threading.Thread):
                        "\n".join(getoutput("blkid", logger=self.setup.log)), border * 2), 'InstallerEngine.init_install', "info")
 
         # Check if partitions need to be encrypted and decide if we need to create a key file
-        keyfile_path = None
-        self.setup.enc_keyfile = None
-        nr_partitions = 0
+        keyfile_partition = None
+        prev_keyfile_partition = None
+        enc_root_configured = False
         for partition in self.sorted_partitions:
             if partition.encrypt:
-                nr_partitions += 1
-                if keyfile_path is None:
-                    keyfile_path = join(partition.mount_as, '.lukskey')
-        if nr_partitions <= 1:
-            keyfile_path = None
-        if keyfile_path is not None:
-            self.setup.log.write(("Path to luks key file: %s" % keyfile_path), 'InstallerEngine.init_install', "debug")
+                if partition.mount_as == partitioning.ROOT_MOUNT_POINT:
+                    # Encrypted root: save key file here.
+                    keyfile_partition = partition
+                    break
+                else:
+                    # Save key file on first partition only when there are
+                    # more than one partitions encrypted (excl. swap).
+                    if prev_keyfile_partition:
+                        keyfile_partition = prev_keyfile_partition
+                        break
+                    elif partition.mount_as != partitioning.SWAP_MOUNT_POINT:
+                        prev_keyfile_partition = partition
 
         for partition in self.sorted_partitions:
             #print((">> fstab partition mount point = %s" % partition.mount_as))
@@ -555,22 +567,68 @@ class InstallerEngine(threading.Thread):
             comment = False
             if self.setup.username[-4:] == "-oem" and partition.mount_as == partitioning.HOME_MOUNT_POINT:
                 comment = True
-            self.write_fstab(fstab_path, partition.path, partition.mount_as, partition_type, comment)
+            self.write_fstab(fstab_path, partition, partition_type, comment)
 
             # crypttab/keyfile
             if partition.encrypt or partition.type == 'luks':
                 if partition.enc_status['device'] != '':
-                    # First create keyfile (write_crypttab checks if it exists)
                     key = None
-                    # Do not include encrypted partition if key file is saved there:
-                    # update-initramfs would fail if you do and your system will be unbootable
-                    if keyfile_path is not None:
-                        if partition.mount_as != dirname(keyfile_path):
-                            # All encrypted partitions have the same password: create key file
-                            create_keyfile(join(self.setup.target_dir, keyfile_path.lstrip(sep)), partition)
-                            key = keyfile_path
+
+                    # Create key file
+                    if keyfile_partition is not None:
+                        # Root is encrypted
+                        if partition.mount_as == partitioning.ROOT_MOUNT_POINT:
+                            key = join(keyfile_partition.mount_as, "keys/%s.key" % basename(partition.path))
+                            key_pattern = join(dirname(key), '*.key')
+                            
+                            if self.setup.gptonefi:
+                                keyfile_path = join(self.setup.target_dir, key.lstrip(sep))
+                                self.setup.log.write(("Path to key file: %s" % keyfile_path), 'InstallerEngine.init_install', "debug")
+                                create_keyfile(keyfile_path, partition)
+                            else:
+                                # Do not set key file on non-efi systems
+                                key = None
+                            
+                            conf_hook = join(self.setup.target_dir, 'etc/cryptsetup-initramfs/conf-hook')
+                            
+                            # Make sure cryptsetup-initramfs is installed
+                            self.exec_cmd("apt-get install cryptsetup-initramfs")
+                            
+                            # Add keyfile to initrd
+                            replace_pattern_in_file(r'^#?KEYFILE_PATTERN\s*=.*', 'KEYFILE_PATTERN="{kp}"'.format(kp=key_pattern), conf_hook)
+                            
+                            # Add cryptsetup and its dependencies to the initramfs image.
+                            # By default, they're only added when
+                            # a device is detected that needs to be unlocked at initramfs stage
+                            # (such as root or resume devices or ones with explicit 'initramfs' flag
+                            # in /etc/crypttab).
+                            replace_pattern_in_file(r'^#?CRYPTSETUP\s*=.*', 'CRYPTSETUP=y', conf_hook)
+                            
+                            # Set restrictive umask for initramfs
+                            initramfs_conf = join(self.setup.target_dir, 'etc/initramfs-tools/initramfs.conf')
+                            replace_pattern_in_file(r'^#?UMASK\s*=.*', 'UMASK=0077', initramfs_conf)
+                            
+                            # Let Grub know there is an encrypted boot partition
+                            default_grub = join(self.setup.target_dir, "etc/default/grub")
+                            replace_pattern_in_file(r'^#?GRUB_ENABLE_CRYPTODISK\s*=.*', 'GRUB_ENABLE_CRYPTODISK=y', default_grub)
+                                
+                            enc_root_configured = True
+                                
+                            
+                        elif partition.mount_as != keyfile_partition.mount_as:
+                            # Non-root encrypted partitions
+                            key = join(keyfile_partition.mount_as, "keys/%s.key" % basename(partition.path))
+                            keyfile_path = join(self.setup.target_dir, key.lstrip(sep))
+                            self.setup.log.write(("Path to key file: %s" % keyfile_path), 'InstallerEngine.init_install', "debug")
+                            create_keyfile(keyfile_path, partition)
+
                     # Write /etc/crypttab
                     write_crypttab(crypttab_path, partition, key)
+                    
+            if not enc_root_configured:
+                # root partition has not been encrypted:
+                # add cryptsetup-initramfs to list of removable packages
+                self.setup.packages_remove.append('cryptsetup-initramfs')
 
         # Configure system for SSD or installing to detachable device
         if self.ssd or self.detachable:
@@ -722,23 +780,13 @@ class InstallerEngine(threading.Thread):
         #self.exec_cmd("echo 'root:{}' | chpasswd -e".format(pwd))
 
         # Set autologin for user if they so elected
+        conf = join(self.setup.target_dir, 'etc/lightdm/lightdm.conf')
         if self.setup.autologin:
             # LightDM
-            self.exec_cmd(r"sed -i -r 's/^#?(autologin-user)\s*=.*/\1={user}/' /etc/lightdm/lightdm.conf".format(user=self.setup.username))
-            # MDM
-            self.exec_cmd(r"sed -i -r -e '/^AutomaticLogin(Enable)?\s*=/d' -e 's/^(\[daemon\])/\1\nAutomaticLoginEnable=true\nAutomaticLogin={user}/' /etc/mdm/mdm.conf".format(user=self.setup.username))
-            # GDM3
-            self.exec_cmd(r"sed -i -r -e '/^(#\s*)?AutomaticLogin(Enable)?\s*=/d' -e 's/^(\[daemon\])/\1\nAutomaticLoginEnable=true\nAutomaticLogin={user}/' /etc/gdm3/daemon.conf".format(user=self.setup.username))
-            # KDE4
-            self.exec_cmd(r"sed -i -r -e 's/^#?(AutomaticLoginEnable)\s*=.*/\1=true/' -e 's/^#?(AutomaticLoginUser)\s*.*/\1={user}/' /etc/kde4/kdm/kdmrc".format(user=self.setup.username))
-            # LXDM
-            self.exec_cmd(r"sed -i -r -e 's/^#?(autologin)\s*=.*/\1={user}/' /etc/lxdm/lxdm.conf".format(user=self.setup.username))
-            # SLiM
-            self.exec_cmd(r"sed -i -r -e 's/^#?(default_user)\s.*/\1  {user}/' -e 's/^#?(auto_login)\s.*/\1  yes/' /etc/slim.conf".format(user=self.setup.username))
+            replace_pattern_in_file(r'^#?autologin-user\s*=.*', 'autologin-user={user}'.format(user=self.setup.username), conf)
         else:
             # Remove autologin in live session with Lightdm
-            self.exec_cmd(r"sed -i -r 's/^#?(autologin-user)\s*=.*/\1=/' /etc/lightdm/lightdm.conf")
-            self.exec_cmd(r"sed -i -e '/^autologin/ s/^#*/#/' /etc/lightdm/lightdm.conf")
+            comment_line('autologin-user', conf)
 
         # Add user's face if it doesn't already exist
         face_path = "%s%s/%s/.face" % (self.setup.target_dir, partitioning.HOME_MOUNT_POINT, self.setup.username)
@@ -763,7 +811,7 @@ class InstallerEngine(threading.Thread):
         else:
             return chroot_exec(command, self.setup.target_dir, self.setup.language)
 
-    def write_fstab(self, fstab_path, partition_path, partition_mount_as, partition_type, comment=False):
+    def write_fstab(self, fstab_path, partition, partition_type, comment=False):
         # Get file system options
         opts = 'defaults'
         if partition_type == 'swap':
@@ -776,8 +824,11 @@ class InstallerEngine(threading.Thread):
             elif partition_type == 'f2fs':
                 opts = 'rw,noatime,background_gc=on,user_xattr,acl,active_logs=6'
         
-        # Get partition UUID
-        uuid = "UUID=%s" % getoutput('blkid -s UUID -o value ' + partition_path, logger=self.setup.log) or partition_path
+        if partition.encrypt or partition.type == 'luks':
+            uuid = partition.path
+        else:
+            # Get partition UUID
+            uuid = "UUID=%s" % getoutput('blkid -s UUID -o value ' + partition.path, logger=self.setup.log) or partition.path
 
         # Skip mounting home if setting up the OEM user
         # This gives the OEM user the chance to encrypt the home directory
@@ -785,10 +836,10 @@ class InstallerEngine(threading.Thread):
             uuid = "#%s" % uuid
 
         # Decide when to use fsck
-        fsck = 0 if partition_type in ('ntfs', 'swap', 'vfat', 'nilfs2') else 1 if partition_mount_as == partitioning.ROOT_MOUNT_POINT else 2
+        fsck = 0 if partition_type in ('ntfs', 'swap', 'vfat', 'nilfs2') else 1 if partition.mount_as == partitioning.ROOT_MOUNT_POINT else 2
         
         # Build fstab line for partition
-        new_line = '%s\t%s\t%s\t%s\t0\t%s\n' % (uuid, partition_mount_as, partition_type, opts, fsck)
+        new_line = '%s\t%s\t%s\t%s\t0\t%s\n' % (uuid, partition.mount_as, partition_type, opts, fsck)
 
         with open(fstab_path, "a") as fstab:
             fstab.write(new_line)
@@ -806,15 +857,16 @@ class InstallerEngine(threading.Thread):
 
         hosts_path = "%s/etc/hosts" % self.setup.target_dir
         with open(hosts_path, "w") as hostsfh:
-            hostsfh.write("127.0.0.1\tlocalhost\n")
-            hostsfh.write("127.0.1.1\t%s\n" % self.setup.hostname)
-            hostsfh.write("# The following lines are desirable for IPv6 capable hosts\n")
-            hostsfh.write("::1     localhost ip6-localhost ip6-loopback\n")
-            hostsfh.write("fe00::0 ip6-localnet\n")
-            hostsfh.write("ff00::0 ip6-mcastprefix\n")
-            hostsfh.write("ff02::1 ip6-allnodes\n")
-            hostsfh.write("ff02::2 ip6-allrouters\n")
-            hostsfh.write("ff02::3 ip6-allhosts\n")
+            cont = "127.0.0.1\tlocalhost\n" \
+                   "127.0.1.1\t%s\n" \
+                   "# The following lines are desirable for IPv6 capable hosts\n" \
+                   "::1     localhost ip6-localhost ip6-loopback\n" \
+                   "fe00::0 ip6-localnet\n" \
+                   "ff00::0 ip6-mcastprefix\n" \
+                   "ff02::1 ip6-allnodes\n" \
+                   "ff02::2 ip6-allrouters\n" \
+                   "ff02::3 ip6-allhosts\n" % self.setup.hostname
+            hostsfh.write(cont)
 
         # Upgrade the system if needed
         if has_internet_connection():
@@ -905,8 +957,9 @@ class InstallerEngine(threading.Thread):
             self.local_exec("chmod 440 %s" % oem_no_pwd)
             
             # Force pkexec not to ask a password
-            policy = "%s/usr/share/polkit-1/actions/com.solydxk.pkexec.live-installer-3.policy" % self.setup.target_dir
-            self.local_exec("sed -i 's/auth_admin/yes/g' %s" % policy)
+            policy = join(self.setup.target_dir, "usr/share/polkit-1/actions/com.solydxk.pkexec.live-installer-3.policy")
+            replace_pattern_in_file(r'auth_admin', 'yes', policy)
+            
 
         # Configure sensors
         if exists("%s/usr/sbin/sensors-detect" % self.setup.target_dir):
@@ -938,6 +991,44 @@ class InstallerEngine(threading.Thread):
                   "cp -afuv $F $MO; done".format(self.setup.target_dir)
             self.local_exec(cmd)
             
+
+            # Save current boot parameters
+            default_grub = join(self.setup.target_dir, "etc/default/grub")
+            if exists(default_grub) and len(self.boot_parms) > 0:
+                if in_virtualbox():
+                    # We needed nomodeset in a live session in VB but not when installed
+                    if 'nomodeset' in self.boot_parms:
+                        self.boot_parms.remove('nomodeset')
+                    # When booting in EFI in VirtualBox with an encrypted partition Plymouth will break the system!
+                    if 'splash' in self.boot_parms:
+                        for partition in self.sorted_partitions:
+                            if partition.mount_as:
+                                if partition.encrypt or partition.type == 'luks':
+                                    self.setup.log.write("Remove splash from boot parameters", "InstallerEngine.finish_install", "info")
+                                    self.boot_parms.remove('splash')
+                                    break
+
+                replace_pattern_in_file(r'^#?GRUB_CMDLINE_LINUX_DEFAULT\s*=.*', 'GRUB_CMDLINE_LINUX_DEFAULT="{parms}"'.format(parms=' '.join(self.boot_parms)), default_grub)
+
+                # Configure Plymouth
+                if exists("%s/bin/plymouth" % self.setup.target_dir) and 'splash' in self.boot_parms:
+                    replace_pattern_in_file(r'^#?GRUB_GFXMODE\s*=.*', 'GRUB_GFXMODE=1024x768', default_grub)
+
+                # Create grub.cfg
+                self.do_configure_grub()
+                grub_retries = 0
+                while not self.do_check_grub():
+                    self.do_configure_grub()
+                    grub_retries = grub_retries + 1
+                    if grub_retries >= 5:
+                        msg = _("The grub bootloader was not configured properly! You need to configure it manually.")
+                        self.setup.log.write(msg, "InstallerEngine.finish_install")
+                        self.show_dialog(WARNING,
+                                       _("Grub not configured"),
+                                       msg)
+                        break
+                
+                
             if not self.setup.oem_setup:
                 self.update_progress(pulse=True, message=_("Installing bootloader"))
                 
@@ -961,46 +1052,6 @@ class InstallerEngine(threading.Thread):
                     self.setup.log.write(" --> Running grub-install", "InstallerEngine.finish_install", "info")
                     self.exec_cmd('grub-install --force {0} {1}'.format(grub_efi_var, self.setup.grub_device))
 
-                self.do_configure_grub()
-                grub_retries = 0
-                while not self.do_check_grub():
-                    self.do_configure_grub()
-                    grub_retries = grub_retries + 1
-                    if grub_retries >= 5:
-                        msg = _("The grub bootloader was not configured properly! You need to configure it manually.")
-                        self.setup.log.write(msg, "InstallerEngine.finish_install")
-                        self.show_dialog(WARNING,
-                                       _("Grub not configured"),
-                                       msg)
-                        break
-
-            # Save current boot parameters
-            default_grub = "%s/etc/default/grub" % self.setup.target_dir
-            if exists(default_grub) and len(self.boot_parms) > 0:
-                if in_virtualbox():
-                    # We needed nomodeset in a live session in VB but not when installed
-                    if 'nomodeset' in self.boot_parms:
-                        self.boot_parms.remove('nomodeset')
-                    # When booting in EFI in VirtualBox with an encrypted partition Plymouth will break the system!
-                    if 'splash' in self.boot_parms:
-                        for partition in self.sorted_partitions:
-                            if partition.mount_as:
-                                if partition.encrypt or partition.type == 'luks':
-                                    self.setup.log.write("Remove splash from boot parameters", "InstallerEngine.finish_install", "info")
-                                    self.boot_parms.remove('splash')
-                                    break
-
-                cmd = "sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT=\"%s\"/' %s" % (' '.join(self.boot_parms), default_grub)
-                self.local_exec(cmd)
-
-                # Configure Plymouth
-                if exists("%s/bin/plymouth" % self.setup.target_dir) and 'splash' in self.boot_parms:
-                    cmd = "sed -i -e \'/GRUB_GFXMODE=/ c GRUB_GFXMODE=1024x768\' %s" % default_grub
-                    self.local_exec(cmd)
-                    
-                # /etc/default/grub could have been changed: update Grub
-                self.exec_cmd('update-grub')
-                    
         # remove live-packages (or w/e)
         self.setup.log.write(" --> Removing live packages", "InstallerEngine.finish_install", "info")
         msg = _("Removing live configuration (packages)")
@@ -1011,23 +1062,30 @@ class InstallerEngine(threading.Thread):
                 f.write(' '.join(self.setup.packages_remove))
             self.local_exec("cp %s %s/root/" % (packages_remove, self.setup.target_dir))
             # But remove the live packages
-            self.exec_cmd("apt-get purge {0} ^live-*".format(self.setup.apt_options))
+            self.exec_cmd("apt-get purge ^live-*")
         else:
             pck_str = ''
+            
+            # We are in oem setup
             if self.setup.oem_setup:
                 pr_file = '/root/packages-remove'
                 if exists(pr_file):
                     with open(pr_file, 'r') as f:
                         self.setup.packages_remove = f.read().split()
+            
+            # Show some progress
             self.update_progress(pulse=True, message=msg)
+            
+            # Check each package if it is installed and create packages string
             for package in self.setup.packages_remove:
-                # Check if the package is installed and create packages string
                 if is_package_installed(package):
                     pck_str += '{} '.format(package)
-                self.exec_cmd('apt-get purge {0} {1}'.format(self.setup.apt_options, pck_str))
-            if not pck_str:
+            
+            if pck_str:
+                self.exec_cmd('apt-get purge {0}'.format(pck_str))
+            else:
                 # At least remove all live packages
-                self.exec_cmd("apt-get purge {0} ^live-*".format(self.setup.apt_options))
+                self.exec_cmd("apt-get purge ^live-*")
         
         # Clean APT
         self.setup.log.write(" --> Cleaning APT", "InstallerEngine.finish_install", "info")
@@ -1047,6 +1105,12 @@ class InstallerEngine(threading.Thread):
         self.local_exec("chmod +x %s/cleanup.sh" % self.setup.target_dir)
         self.exec_cmd(". /cleanup.sh")
         os.remove("%s/cleanup.sh" % self.setup.target_dir)
+        
+        # We need to update initramfs in case of partition encryption
+        # Note: before cleanup you would have to use: /usr/sbin/update-initramfs.orig.initramfs-tools -u
+        self.setup.log.write(" --> Update Initramfs", "InstallerEngine.finish_install", "info")
+        self.update_progress(pulse=True, message=_("Update Initramfs"))
+        self.exec_cmd("update-initramfs -u")
         
         # Remove temporary files
         for f in self.setup.post_install_remove:

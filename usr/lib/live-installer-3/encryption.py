@@ -12,13 +12,19 @@ def clear_partition(partition):
     if compare_package_versions(openssl_version, '1.1.1') == 'smaller':
         # deprecated key derivation in openssl 1.1.1+
         enc_key = '-aes-256-ctr'
-    shell_exec("openssl enc {0} -pass pass:\"$(dd if=/dev/urandom bs=128 count=1 2>/dev/null | base64)\" -nosalt < /dev/zero > {1}".format(enc_key, partition.enc_status['device']))
+    # Check "man openssl-enc" for options
+    shell_exec("head -c 5M /dev/zero | openssl enc {0} -pass pass:\"$(dd if=/dev/urandom bs=128 count=1 2>/dev/null | base64)\" -nosalt > {1}".format(enc_key, partition.enc_status['device']))
 
 
-def encrypt_partition(partition):
+def encrypt_partition(partition, luks_version=1):
     unmount_partition(partition)
     # Cannot use echo to pass the passphrase to cryptsetup because that adds a carriadge return
-    shell_exec("printf \"{}\" | cryptsetup luksFormat --type luks2 --cipher aes-xts-plain64 --key-size 512 --hash sha512 --iter-time 5000 --use-random {}".format(partition.enc_passphrase, partition.enc_status['device']))
+    # Use LUKS1 for now because grub does not support LUKS2, yet: 
+    # https://git.savannah.gnu.org/cgit/grub.git/commit/?id=365e0cc3e7e44151c14dd29514c2f870b49f9755
+    shell_exec("printf \"{passphras}\" | cryptsetup --cipher aes-xts-plain64 --key-size 512 --hash sha512 " \
+               "--use-random --type luks{luks_version} --iter-time 5000 luksFormat {device}".format(passphras=partition.enc_passphrase, 
+                                                                                                    luks_version=luks_version, 
+                                                                                                    device=partition.enc_status['device']))
     return connect_block_device(partition)
 
 
@@ -30,7 +36,7 @@ def unmount_partition(partition):
 
 def connect_block_device(partition):
     mapped_name = os.path.basename(partition.enc_status['device'])
-    shell_exec("printf \"{}\" | cryptsetup open --type luks {} {}".format(partition.enc_passphrase, partition.enc_status['device'], mapped_name))
+    shell_exec("printf \"{}\" | cryptsetup open {} {}".format(partition.enc_passphrase, partition.enc_status['device'], mapped_name))
     status = get_status(partition.path)
     return status['active']
 
@@ -44,7 +50,7 @@ def is_connected(partition):
 
 
 def is_encrypted(partition_path):
-    if "crypt" in get_filesystem(partition_path).lower():
+    if "crypt" in get_filesystem(partition_path).lower() or '/dev/mapper' in partition_path:
         return True
     return False
 
@@ -92,12 +98,22 @@ def get_uuid(partition_path):
     return ''
 
 
+def get_partition_path(uuid):
+    ret = getoutput("blkid -U {}".format(uuid.replace('UUID=', '')))
+    if isinstance(ret, str):
+        return ret
+    elif ret:
+        return ret[0]
+    return ''
+
+
 def create_keyfile(keyfile_path, partition):
     # Note: do this outside the chroot.
     # https://www.martineve.com/2012/11/02/luks-encrypting-multiple-partitions-on-debianubuntu-with-a-single-passphrase/
     if not os.path.exists(keyfile_path):
+        os.makedirs(os.path.dirname(keyfile_path), exist_ok=True)
         #print((">> Create keyfile = %s" % keyfile_path))
-        shell_exec("dd if=/dev/urandom of=%s bs=1024 count=4" % keyfile_path)
+        shell_exec("dd if=/dev/urandom of=%s bs=512 count=8 iflag=fullblock" % keyfile_path)
         shell_exec("chmod 0400 %s" % keyfile_path)
     #print((">> Add key to keyfile for device %s" % partition.enc_status['device']))
     shell_exec("printf \"%s\" | cryptsetup luksAddKey %s %s" % (partition.enc_passphrase, partition.enc_status['device'], keyfile_path))
@@ -111,4 +127,24 @@ def write_crypttab(crypttab_path, partition, keyfile_path=None):
     if partition.type == 'swap':
         swap = 'swap,'
     with open(crypttab_path, "a") as crypttab:
-        crypttab.write("%s %s %s %sluks,timeout=60\n" % (os.path.basename(partition.path), crypttab_uuid, keyfile_path, swap))
+        crypttab.write("%s %s %s %sluks\n" % (os.path.basename(partition.path), crypttab_uuid, keyfile_path, swap))
+
+
+# Returns dictionary {device: {target_name, uuid, key_file}}
+def get_crypttab_info(crypttab_path):
+    crypttab_info = {}
+    if os.path.exists(crypttab_path):
+        with open(crypttab_path, 'r') as f:
+            for line in f.readlines():
+                line = line.strip()
+                lineData = line.split()
+                uuid = lineData[1].split('=')[0]
+                device = get_partition_path(uuid)
+                if device != '':
+                    key_file = lineData[2]
+                    if key_file == 'none':
+                        key_file = ''
+                    crypttab_info[device] = {'target_name': lineData[0],
+                                             'uuid': uuid,
+                                             'key_file': key_file}
+    return crypttab_info

@@ -979,7 +979,7 @@ class PartitionDialog(object):
                 select_fs = 'ext4'
             self.cmb_use_as_handler.fillComboBox(filesystems, select_fs)
             self.txt_label.set_text(BOOT_LABEL)
-            self.disable_encryption()
+            #self.disable_encryption()
         elif mount_as == EFI_MOUNT_POINT:
             fat_fs = ['fat', 'vfat']
             if 'fat' in self.partition.type:
@@ -1045,7 +1045,7 @@ class PartitionDialog(object):
         if widget.get_active():
             # Show warning message
             mount_as = self.cmb_mount_point_handler.getValue()
-            if mount_as == ROOT_MOUNT_POINT:
+            if mount_as == ROOT_MOUNT_POINT and not installer.setup.gptonefi:
                 encrypt = QuestionDialog(_("Encryption"),
                                          _("You chose to encrypt the root partition.\n\n"
                                            "You will need to mount {0} on a separate non-encrypted partition (500 MiB).\n"
