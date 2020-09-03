@@ -23,7 +23,7 @@ Depends: ${misc:Depends}, ${python3:Depends}
   , python3-parted
   , parted
   , gparted
-  , python3-geoip2
+  , python3-geoip | python3-geoip2
   , geoipupdate
   , python3-pyqt4 | python3-pyqt5
   , python3-pil
@@ -39,7 +39,7 @@ Depends: ${misc:Depends}, ${python3:Depends}
   , rsync
   , whois
   , passwd
-  , cryptsetup
+  , cryptsetup-initramfs
   , console-setup
   , dbus
   , udisks2
