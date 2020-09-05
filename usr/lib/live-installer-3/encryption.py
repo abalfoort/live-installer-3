@@ -21,9 +21,9 @@ def encrypt_partition(partition, luks_version=1):
     # Cannot use echo to pass the passphrase to cryptsetup because that adds a carriadge return
     # Use LUKS1 for now because grub does not support LUKS2, yet: 
     # https://git.savannah.gnu.org/cgit/grub.git/commit/?id=365e0cc3e7e44151c14dd29514c2f870b49f9755
-    shell_exec("printf \"{passphras}\" | cryptsetup --cipher aes-xts-plain64 --key-size 512 --hash sha512 " \
-               "--use-random --type luks{luks_version} --iter-time 5000 luksFormat {device}".format(passphras=partition.enc_passphrase, 
-                                                                                                    luks_version=luks_version, 
+    shell_exec("printf \"{passphrase}\" | cryptsetup --cipher aes-xts-plain64 --key-size 512 --hash sha512 " \
+               "--use-random --type luks{luks_version} --iter-time 5000 luksFormat {device}".format(passphrase=partition.enc_passphrase,
+                                                                                                    luks_version=luks_version,
                                                                                                     device=partition.enc_status['device']))
     return connect_block_device(partition)
 
