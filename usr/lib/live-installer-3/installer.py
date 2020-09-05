@@ -11,7 +11,8 @@
 from utils import shell_exec, shell_exec_popen, getoutput, chroot_exec, \
                   get_config_dict, has_internet_connection, in_virtualbox, \
                   get_boot_parameters, get_files_from_dir, is_package_installed, \
-                  linux_distribution, replace_pattern_in_file, comment_line
+                  linux_distribution, replace_pattern_in_file, comment_line, \
+                  get_resolutions
 from localize import Localize
 from encryption import clear_partition, encrypt_partition, write_crypttab, \
                        create_keyfile
@@ -1012,7 +1013,9 @@ class InstallerEngine(threading.Thread):
 
                 # Configure Plymouth
                 if exists("%s/bin/plymouth" % self.setup.target_dir) and 'splash' in self.boot_parms:
-                    replace_pattern_in_file(r'^#?GRUB_GFXMODE\s*=.*', 'GRUB_GFXMODE=1024x768', default_grub)
+                    # Get highest available resolution
+                    res = get_resolutions()[-1]
+                    replace_pattern_in_file(r'^#?GRUB_GFXMODE\s*=.*', 'GRUB_GFXMODE={},1024x768,auto'.format(res), default_grub)
 
                 # Create grub.cfg
                 self.do_configure_grub()

@@ -1,3 +1,9 @@
+live-installer-3 (2020.09.05) stable; urgency=low
+
+  * Set highest resolution for Plymouth/Grub
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 05 Sep 2020 09:18:51 +0200
+
 live-installer-3 (2020.08.31) stable; urgency=low
 
   * Use LUKS1 for root and boot partitions, LUKS2 for all other partitions

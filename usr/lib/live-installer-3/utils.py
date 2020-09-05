@@ -18,6 +18,7 @@ import fnmatch
 import apt
 import math
 import csv
+import operator
 
 
 def shell_exec_popen(command, kwargs={}):
@@ -467,6 +468,64 @@ def replace_pattern_in_file(pattern, replace_string, file, append_if_not_exists=
         if cont:
             with open(file, 'w') as f:
                 f.write(cont)
+
+
+# Get valid screen resolutions
+def get_resolutions(minRes='', maxRes='', reverse_order=False, use_vesa=False):
+    cmd = None
+    resolutions = []
+    default_res = ['640x480', '800x600', '1024x768', '1280x1024', '1600x1200']
+
+    cmd = "xrandr | awk '{print $1}' | egrep '[0-9]+x[0-9]+$'"
+    if use_vesa:
+        vbeModes = '/sys/bus/platform/drivers/uvesafb/uvesafb.0/vbe_modes'
+        if exists(vbeModes):
+            cmd = "cat %s | cut -d'-' -f1" % vbeModes
+        elif is_package_installed('hwinfo'):
+            cmd = "hwinfo --framebuffer | awk '{print $3}' | egrep '[0-9]+x[0-9]+$' | uniq"        
+
+    resolutions = getoutput(cmd, 5)
+    if not resolutions[0]:
+        resolutions = default_res
+
+    # Remove any duplicates from the list
+    resList = list(set(resolutions))
+
+    avlRes = []
+    avlResTmp = []
+    minW = 0
+    minH = 0
+    maxW = 0
+    maxH = 0
+
+    # Split the minimum and maximum resolutions
+    if 'x' in minRes:
+        minResList = minRes.split('x')
+        minW = str_to_nr(minResList[0], True)
+        minH = str_to_nr(minResList[1], True)
+    if 'x' in maxRes:
+        maxResList = maxRes.split('x')
+        maxW = str_to_nr(maxResList[0], True)
+        maxH = str_to_nr(maxResList[1], True)
+
+    # Fill the list with screen resolutions
+    for line in resList:
+        for item in line.split():
+            itemChk = re.search(r'\d+x\d+', line)
+            if itemChk:
+                itemList = item.split('x')
+                itemW = str_to_nr(itemList[0], True)
+                itemH = str_to_nr(itemList[1], True)
+                # Check if it can be added
+                if itemW >= minW and itemH >= minH and (maxW == 0 or itemW <= maxW) and (maxH == 0 or itemH <= maxH):
+                    #print(("Resolution added: %(res)s" % { "res": item }))
+                    avlResTmp.append([itemW, itemH])
+
+    # Sort the list and return as readable resolution strings
+    avlResTmp.sort(key=operator.itemgetter(0), reverse=reverse_order)
+    for res in avlResTmp:
+        avlRes.append(str(res[0]) + 'x' + str(res[1]))
+    return avlRes
 
 
 def get_pen_drives():
