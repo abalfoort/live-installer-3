@@ -39,6 +39,7 @@ Depends: ${misc:Depends}, ${python3:Depends}
   , rsync
   , whois
   , passwd
+  , cryptsetup | cryptsetup-run
   , cryptsetup-initramfs
   , console-setup
   , dbus
