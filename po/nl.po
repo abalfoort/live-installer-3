@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: live-installer-3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-31 15:35+0200\n"
+"POT-Creation-Date: 2020-10-18 14:21+0200\n"
 "PO-Revision-Date: 2020-08-27 14:16+0000\n"
 "Last-Translator: Arjen Balfoort <arjenbalfoort@hotmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/abalfoort/live-installer-3/"
@@ -39,13 +39,13 @@ msgid "Removable:"
 msgstr "Verwijderbaar:"
 
 #: usr/lib/live-installer-3/partitioning.py:432
-#: usr/lib/live-installer-3/gtk_interface.py:835
-#: usr/lib/live-installer-3/gtk_interface.py:839
-#: usr/lib/live-installer-3/gtk_interface.py:868
-#: usr/lib/live-installer-3/gtk_interface.py:880
-#: usr/lib/live-installer-3/gtk_interface.py:908
-#: usr/lib/live-installer-3/gtk_interface.py:916
-#: usr/lib/live-installer-3/gtk_interface.py:945
+#: usr/lib/live-installer-3/gtk_interface.py:829
+#: usr/lib/live-installer-3/gtk_interface.py:833
+#: usr/lib/live-installer-3/gtk_interface.py:862
+#: usr/lib/live-installer-3/gtk_interface.py:874
+#: usr/lib/live-installer-3/gtk_interface.py:902
+#: usr/lib/live-installer-3/gtk_interface.py:910
+#: usr/lib/live-installer-3/gtk_interface.py:939
 msgid "Installation Tool"
 msgstr "Installatieprogramma"
 
@@ -82,12 +82,12 @@ msgid "Extended partition"
 msgstr "Uitgebreide partitie"
 
 #: usr/lib/live-installer-3/partitioning.py:722
-#: usr/lib/live-installer-3/gtk_interface.py:605
+#: usr/lib/live-installer-3/gtk_interface.py:599
 msgid "Free space"
 msgstr "Vrije ruimte"
 
 #: usr/lib/live-installer-3/partitioning.py:739
-#: usr/lib/live-installer-3/gtk_interface.py:641
+#: usr/lib/live-installer-3/gtk_interface.py:635
 msgid "Encryption password"
 msgstr "Versleutelwachtwoord"
 
@@ -105,17 +105,17 @@ msgid "Edit partition"
 msgstr "Partitie bewerken"
 
 #: usr/lib/live-installer-3/partitioning.py:917
-#: usr/lib/live-installer-3/gtk_interface.py:597
+#: usr/lib/live-installer-3/gtk_interface.py:591
 msgid "Device"
 msgstr "Apparaat"
 
 #: usr/lib/live-installer-3/partitioning.py:918
-#: usr/lib/live-installer-3/gtk_interface.py:602
+#: usr/lib/live-installer-3/gtk_interface.py:596
 msgid "Format as"
 msgstr "Formatteren als"
 
 #: usr/lib/live-installer-3/partitioning.py:919
-#: usr/lib/live-installer-3/gtk_interface.py:601
+#: usr/lib/live-installer-3/gtk_interface.py:595
 msgid "Mount point"
 msgstr "Koppelpunt"
 
@@ -134,7 +134,7 @@ msgstr "Wachtwoord"
 #: usr/lib/live-installer-3/partitioning.py:1049
 #: usr/lib/live-installer-3/partitioning.py:1058
 #: usr/lib/live-installer-3/partitioning.py:1129
-#: usr/lib/live-installer-3/gtk_interface.py:637
+#: usr/lib/live-installer-3/gtk_interface.py:631
 msgid "Encryption"
 msgstr "Versleuteling"
 
@@ -171,12 +171,12 @@ msgstr ""
 "Weet u zeker dat u wilt doorgaan?"
 
 #: usr/lib/live-installer-3/partitioning.py:1115
-#: usr/lib/live-installer-3/gtk_interface.py:783
+#: usr/lib/live-installer-3/gtk_interface.py:777
 msgid "Please provide an encryption password."
 msgstr "Voer a.u.b. een versleutelwachtwoord in."
 
 #: usr/lib/live-installer-3/partitioning.py:1118
-#: usr/lib/live-installer-3/gtk_interface.py:786
+#: usr/lib/live-installer-3/gtk_interface.py:780
 msgid "Your encryption passwords do not match."
 msgstr "Uw versleutelwachtwoorden komen niet overeen"
 
@@ -192,11 +192,11 @@ msgstr ""
 msgid "You need to choose a mount point for partition:"
 msgstr "U dient een koppelpunt te kiezen voor uw partitie:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:83
+#: usr/lib/live-installer-3/gtk_interface.py:82
 msgid "{} Installer"
 msgstr "{} Installatieprogramma"
 
-#: usr/lib/live-installer-3/gtk_interface.py:316
+#: usr/lib/live-installer-3/gtk_interface.py:314
 #, python-format
 msgid ""
 "Please, click on the network manager's system tray icon to connect to the "
@@ -213,20 +213,20 @@ msgstr ""
 "Zonder een internetconnectie zal uw systeem niet geupdate worden en kunnen "
 "sommige pakketten niet in uw taal geconfigureerd worden."
 
-#: usr/lib/live-installer-3/gtk_interface.py:319
-#: usr/lib/live-installer-3/gtk_interface.py:423
+#: usr/lib/live-installer-3/gtk_interface.py:317
+#: usr/lib/live-installer-3/gtk_interface.py:417
 msgid "No internet connection"
 msgstr "Geen internetconnectie"
 
-#: usr/lib/live-installer-3/gtk_interface.py:359
+#: usr/lib/live-installer-3/gtk_interface.py:357
 msgid "Quit?"
 msgstr "Afsluiten?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:359
+#: usr/lib/live-installer-3/gtk_interface.py:357
 msgid "Are you sure you want to quit the installer?"
 msgstr "Weet u zeker dat u het installatieprogramma wilt afsluiten?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:421
+#: usr/lib/live-installer-3/gtk_interface.py:415
 msgid ""
 "Cannot download and install additional locale packages: no internet "
 "connection\n"
@@ -236,174 +236,174 @@ msgstr ""
 "er is geen internetverbinding\n"
 "De configuratie zal wel worden ingesteld op de door u geselecteerde taal."
 
-#: usr/lib/live-installer-3/gtk_interface.py:548
+#: usr/lib/live-installer-3/gtk_interface.py:542
 msgid "{} OEM Setup"
 msgstr "{} OEM Setup"
 
-#: usr/lib/live-installer-3/gtk_interface.py:564
-#: usr/lib/live-installer-3/gtk_interface.py:584
+#: usr/lib/live-installer-3/gtk_interface.py:558
+#: usr/lib/live-installer-3/gtk_interface.py:578
 msgid "Language"
 msgstr "Taal"
 
-#: usr/lib/live-installer-3/gtk_interface.py:565
+#: usr/lib/live-installer-3/gtk_interface.py:559
 msgid "Timezone"
 msgstr "Tijdzone"
 
-#: usr/lib/live-installer-3/gtk_interface.py:566
+#: usr/lib/live-installer-3/gtk_interface.py:560
 msgid "Keyboard layout"
 msgstr "Toetsenbordindeling"
 
-#: usr/lib/live-installer-3/gtk_interface.py:567
+#: usr/lib/live-installer-3/gtk_interface.py:561
 msgid "User info"
 msgstr "Gebruikersinformatie"
 
-#: usr/lib/live-installer-3/gtk_interface.py:568
+#: usr/lib/live-installer-3/gtk_interface.py:562
 msgid "Partitioning"
 msgstr "Partitioneren"
 
-#: usr/lib/live-installer-3/gtk_interface.py:569
+#: usr/lib/live-installer-3/gtk_interface.py:563
 msgid "Please make sure you wish to manage partitions manually"
 msgstr "Wees er zeker van dat u de partities handmatig wenst te beheren"
 
-#: usr/lib/live-installer-3/gtk_interface.py:570
+#: usr/lib/live-installer-3/gtk_interface.py:564
 msgid "Summary"
 msgstr "Samenvatting"
 
-#: usr/lib/live-installer-3/gtk_interface.py:571
+#: usr/lib/live-installer-3/gtk_interface.py:565
 msgid "Installing {}..."
 msgstr "Installeren van {}..."
 
-#: usr/lib/live-installer-3/gtk_interface.py:572
+#: usr/lib/live-installer-3/gtk_interface.py:566
 msgid "Installation is paused: please finish the custom installation"
 msgstr ""
 "Installatie is tijdelijk onderbroken: voltooi a.u.b. de aangepaste "
 "installatie"
 
-#: usr/lib/live-installer-3/gtk_interface.py:579
-#: usr/lib/live-installer-3/gtk_interface.py:609
+#: usr/lib/live-installer-3/gtk_interface.py:573
+#: usr/lib/live-installer-3/gtk_interface.py:603
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: usr/lib/live-installer-3/gtk_interface.py:580
-#: usr/lib/live-installer-3/gtk_interface.py:610
+#: usr/lib/live-installer-3/gtk_interface.py:574
+#: usr/lib/live-installer-3/gtk_interface.py:604
 msgid "Back"
 msgstr "Terug"
 
-#: usr/lib/live-installer-3/gtk_interface.py:581
-#: usr/lib/live-installer-3/gtk_interface.py:611
-#: usr/lib/live-installer-3/gtk_interface.py:702
+#: usr/lib/live-installer-3/gtk_interface.py:575
+#: usr/lib/live-installer-3/gtk_interface.py:605
+#: usr/lib/live-installer-3/gtk_interface.py:696
 msgid "Forward"
 msgstr "Volgende"
 
-#: usr/lib/live-installer-3/gtk_interface.py:585
+#: usr/lib/live-installer-3/gtk_interface.py:579
 msgid "Country"
 msgstr "Land"
 
-#: usr/lib/live-installer-3/gtk_interface.py:588
+#: usr/lib/live-installer-3/gtk_interface.py:582
 msgid "Selected timezone:"
 msgstr "Gekozen tijdzone:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:589
+#: usr/lib/live-installer-3/gtk_interface.py:583
 msgid "Select timezone"
 msgstr "Tijdzone selecteren"
 
-#: usr/lib/live-installer-3/gtk_interface.py:592
+#: usr/lib/live-installer-3/gtk_interface.py:586
 msgid "Refresh"
 msgstr "Verversen"
 
-#: usr/lib/live-installer-3/gtk_interface.py:593
+#: usr/lib/live-installer-3/gtk_interface.py:587
 msgid "_Expert mode"
 msgstr "_Expert modus"
 
-#: usr/lib/live-installer-3/gtk_interface.py:594
+#: usr/lib/live-installer-3/gtk_interface.py:588
 msgid "_Edit partitions"
 msgstr "Partities bewerken"
 
-#: usr/lib/live-installer-3/gtk_interface.py:598
+#: usr/lib/live-installer-3/gtk_interface.py:592
 msgid "Grub"
 msgstr "Grub"
 
-#: usr/lib/live-installer-3/gtk_interface.py:599
+#: usr/lib/live-installer-3/gtk_interface.py:593
 msgid "Type"
 msgstr "Type"
 
-#: usr/lib/live-installer-3/gtk_interface.py:600
+#: usr/lib/live-installer-3/gtk_interface.py:594
 msgid "Label"
 msgstr "Label"
 
-#: usr/lib/live-installer-3/gtk_interface.py:603
+#: usr/lib/live-installer-3/gtk_interface.py:597
 msgid "Encrypt"
 msgstr "Versleutel"
 
-#: usr/lib/live-installer-3/gtk_interface.py:604
+#: usr/lib/live-installer-3/gtk_interface.py:598
 msgid "Size"
 msgstr "Grootte"
 
-#: usr/lib/live-installer-3/gtk_interface.py:614
+#: usr/lib/live-installer-3/gtk_interface.py:608
 msgid "Layout"
 msgstr "Indeling"
 
-#: usr/lib/live-installer-3/gtk_interface.py:615
+#: usr/lib/live-installer-3/gtk_interface.py:609
 msgid "Variant"
 msgstr "Variant"
 
-#: usr/lib/live-installer-3/gtk_interface.py:616
+#: usr/lib/live-installer-3/gtk_interface.py:610
 msgid "Use this box to test your keyboard layout."
 msgstr "Gebruik dit veld om uw toetsenbordindeling uit te proberen"
 
-#: usr/lib/live-installer-3/gtk_interface.py:617
+#: usr/lib/live-installer-3/gtk_interface.py:611
 msgid "Model"
 msgstr "Model"
 
-#: usr/lib/live-installer-3/gtk_interface.py:620
+#: usr/lib/live-installer-3/gtk_interface.py:614
 msgid "Click to change your picture"
 msgstr "Klik om uw foto te wijzigen"
 
-#: usr/lib/live-installer-3/gtk_interface.py:621
+#: usr/lib/live-installer-3/gtk_interface.py:615
 msgid "Take a photo..."
 msgstr "Neem een foto..."
 
-#: usr/lib/live-installer-3/gtk_interface.py:622
+#: usr/lib/live-installer-3/gtk_interface.py:616
 msgid "Browse for more pictures..."
 msgstr "Browse voor meer afbeeldingen..."
 
-#: usr/lib/live-installer-3/gtk_interface.py:623
+#: usr/lib/live-installer-3/gtk_interface.py:617
 msgid "Your full name"
 msgstr "Uw volledige naam"
 
-#: usr/lib/live-installer-3/gtk_interface.py:624
+#: usr/lib/live-installer-3/gtk_interface.py:618
 msgid "This will be shown in the About Me application."
 msgstr "Dit zal getoond worden in de 'Over mij'-toepassing"
 
-#: usr/lib/live-installer-3/gtk_interface.py:625
+#: usr/lib/live-installer-3/gtk_interface.py:619
 msgid "Your username"
 msgstr "Uw gebruikersnaam"
 
-#: usr/lib/live-installer-3/gtk_interface.py:626
+#: usr/lib/live-installer-3/gtk_interface.py:620
 msgid "This is the name you will use to log in to your computer."
 msgstr "Dit is de naam die u zult gebruiken om u aan te melden op uw computer"
 
-#: usr/lib/live-installer-3/gtk_interface.py:627
+#: usr/lib/live-installer-3/gtk_interface.py:621
 msgid "Your password"
 msgstr "Uw wachtwoord"
 
-#: usr/lib/live-installer-3/gtk_interface.py:628
+#: usr/lib/live-installer-3/gtk_interface.py:622
 msgid "Please enter your password twice to ensure it is correct."
 msgstr "Voer uw wachtwoord a.u.b. twee maal in om fouten te voorkomen"
 
-#: usr/lib/live-installer-3/gtk_interface.py:630
+#: usr/lib/live-installer-3/gtk_interface.py:624
 msgid "Hostname"
 msgstr "Computernaam"
 
-#: usr/lib/live-installer-3/gtk_interface.py:631
+#: usr/lib/live-installer-3/gtk_interface.py:625
 msgid "This hostname will be the computer's name on the network."
 msgstr "Deze computernaam wordt de naam van uw computer in het netwerk"
 
-#: usr/lib/live-installer-3/gtk_interface.py:632
+#: usr/lib/live-installer-3/gtk_interface.py:626
 msgid "Automatic login"
 msgstr "Automatisch aanmelden"
 
-#: usr/lib/live-installer-3/gtk_interface.py:633
+#: usr/lib/live-installer-3/gtk_interface.py:627
 msgid ""
 "If enabled, the login screen is skipped when the system starts, and you are "
 "signed into your desktop session automatically."
@@ -411,19 +411,19 @@ msgstr ""
 "Indien ingeschakeld, wordt het inlogscherm overgeslagen als het systeem "
 "start, en wordt u automatisch aangemeld bij de desktop-sessie."
 
-#: usr/lib/live-installer-3/gtk_interface.py:635
+#: usr/lib/live-installer-3/gtk_interface.py:629
 msgid "Log in automatically on system boot"
 msgstr "Automatisch aanmelden tijdens het opstarten"
 
-#: usr/lib/live-installer-3/gtk_interface.py:638
+#: usr/lib/live-installer-3/gtk_interface.py:632
 msgid "Encrypt home partition"
 msgstr "Home partitie versleutelen"
 
-#: usr/lib/live-installer-3/gtk_interface.py:639
+#: usr/lib/live-installer-3/gtk_interface.py:633
 msgid "If enabled, the home partition will be encrypted."
 msgstr "Wanneer geselecteerd zal de home partitie versleuteld worden."
 
-#: usr/lib/live-installer-3/gtk_interface.py:642
+#: usr/lib/live-installer-3/gtk_interface.py:636
 msgid ""
 "WARNING: when you loose your encryption password, you won't be able to "
 "recover your data! During boot you will be asked for your password to unlock "
@@ -435,11 +435,11 @@ msgstr ""
 "gevraagd waarmee de partitie beschikbaar komt. Dit is niet "
 "noodzakelijkerwijs hetzelfde wachtwoord als uw login wachtwoord."
 
-#: usr/lib/live-installer-3/gtk_interface.py:647
+#: usr/lib/live-installer-3/gtk_interface.py:641
 msgid "Your picture"
 msgstr "Uw foto"
 
-#: usr/lib/live-installer-3/gtk_interface.py:648
+#: usr/lib/live-installer-3/gtk_interface.py:642
 msgid ""
 "This picture represents your user account. It is used in the login screen "
 "and a few other places."
@@ -447,7 +447,7 @@ msgstr ""
 "Deze foto vertegenwoordigt uw gebruikersaccount. Hij wordt gebruikt in het "
 "aanmeldscherm en op enkele andere plaatsen."
 
-#: usr/lib/live-installer-3/gtk_interface.py:652
+#: usr/lib/live-installer-3/gtk_interface.py:646
 msgid ""
 "You have selected to manage your partitions manually, this feature is for "
 "ADVANCED USERS ONLY."
@@ -455,18 +455,18 @@ msgstr ""
 "U hebt ervoor gekozen om uw partities handmatig te beheren; deze functie is "
 "ALLEEN BEDOELD VOOR ERVAREN GEBRUIKERS."
 
-#: usr/lib/live-installer-3/gtk_interface.py:654
+#: usr/lib/live-installer-3/gtk_interface.py:648
 #, python-format
 msgid "Before continuing, please mount your target filesystem(s) at %s."
 msgstr ""
 "Voordat u doorgaat: koppel uw doel-bestandssyste(e)m(en) a.u.b. aan op %s."
 
-#: usr/lib/live-installer-3/gtk_interface.py:656
+#: usr/lib/live-installer-3/gtk_interface.py:650
 #, python-format
 msgid "Do NOT mount virtual devices such as /dev, /proc, /sys, etc on %s/."
 msgstr "Koppel GEEN virtuele apparaten als /dev, /proc en /sys aan op %s/."
 
-#: usr/lib/live-installer-3/gtk_interface.py:658
+#: usr/lib/live-installer-3/gtk_interface.py:652
 #, python-format
 msgid ""
 "During the install, you will be given time to chroot into %s and install any "
@@ -476,11 +476,11 @@ msgstr ""
 "om de benodigde pakketten te installeren voor het opstarten van uw nieuwe "
 "systeem."
 
-#: usr/lib/live-installer-3/gtk_interface.py:660
+#: usr/lib/live-installer-3/gtk_interface.py:654
 msgid "During the install, you will be required to write your own /etc/fstab."
 msgstr "Tijdens de installatie zult u uw eigen /etc/fstab moeten schrijven."
 
-#: usr/lib/live-installer-3/gtk_interface.py:662
+#: usr/lib/live-installer-3/gtk_interface.py:656
 msgid ""
 "If you aren't sure what any of this means, please go back and deselect "
 "manual partition management."
@@ -488,13 +488,13 @@ msgstr ""
 "Als u niet precies weet wat dit allemaal betekent: ga dan alstublieft terug "
 "en maak uw keuze voor handmatig partitiebeheer ongedaan."
 
-#: usr/lib/live-installer-3/gtk_interface.py:666
+#: usr/lib/live-installer-3/gtk_interface.py:660
 msgid "Please do the following and then click Forward to finish installation:"
 msgstr ""
 "Doe a.u.b. het onderstaande en klik dan op Volgende om de installatie te "
 "voltooien:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:668
+#: usr/lib/live-installer-3/gtk_interface.py:662
 #, python-brace-format
 msgid ""
 "Create {0}/etc/fstab for the filesystems as they will be mounted in your new "
@@ -506,7 +506,7 @@ msgstr ""
 "aangekoppeld op {0} (zonder het voorvoegsel {0} te gebruiken in de "
 "koppelingspaden zelf)."
 
-#: usr/lib/live-installer-3/gtk_interface.py:670
+#: usr/lib/live-installer-3/gtk_interface.py:664
 #, python-format
 msgid ""
 "Install any packages that may be needed for first boot (mdadm, cryptsetup, "
@@ -517,7 +517,7 @@ msgstr ""
 "(mdadm, cryptsetup, dmraid, etc) door \"sudo chroot %s\" aan te roepen, "
 "gevolgd door de relevante apt-get/aptitude-installaties."
 
-#: usr/lib/live-installer-3/gtk_interface.py:672
+#: usr/lib/live-installer-3/gtk_interface.py:666
 #, python-format
 msgid ""
 "Note that in order for update-initramfs to work properly in some cases (such "
@@ -529,7 +529,7 @@ msgstr ""
 "hebben, met gebruikmaking van dezelfde blokapparaatnamen zoals die "
 "verschijnen in %s/etc/fstab."
 
-#: usr/lib/live-installer-3/gtk_interface.py:674
+#: usr/lib/live-installer-3/gtk_interface.py:668
 #, python-brace-format
 msgid ""
 "Double-check that your {0}/etc/fstab is correct, matches what your new "
@@ -539,39 +539,39 @@ msgstr ""
 "wat uw systeem zal hebben bij eerste opstart, en overeenkomt met wat thans "
 "is aangekoppeld op {0}."
 
-#: usr/lib/live-installer-3/gtk_interface.py:678
+#: usr/lib/live-installer-3/gtk_interface.py:672
 msgid "Overview"
 msgstr "Overzicht"
 
-#: usr/lib/live-installer-3/gtk_interface.py:764
+#: usr/lib/live-installer-3/gtk_interface.py:758
 msgid "Please provide your full name."
 msgstr "Voer a.u.b. uw volledige naam in"
 
-#: usr/lib/live-installer-3/gtk_interface.py:767
+#: usr/lib/live-installer-3/gtk_interface.py:761
 msgid "Please provide a username."
 msgstr "Voer a.u.b. een gebruikersnaam in"
 
-#: usr/lib/live-installer-3/gtk_interface.py:770
+#: usr/lib/live-installer-3/gtk_interface.py:764
 msgid "Please provide a username without -oem."
 msgstr "Voer a.u.b. een gebruikersnaam zonder -oem in."
 
-#: usr/lib/live-installer-3/gtk_interface.py:773
+#: usr/lib/live-installer-3/gtk_interface.py:767
 msgid "Please provide a password for your user account."
 msgstr "Voer a.u.b. een wachtwoord in voor uw gebruikersaccount"
 
-#: usr/lib/live-installer-3/gtk_interface.py:776
+#: usr/lib/live-installer-3/gtk_interface.py:770
 msgid "Your passwords do not match."
 msgstr "Uw wachtwoorden komen niet overeen"
 
-#: usr/lib/live-installer-3/gtk_interface.py:779
+#: usr/lib/live-installer-3/gtk_interface.py:773
 msgid "Please provide a hostname."
 msgstr "Voer a.u.b. een computernaam in"
 
-#: usr/lib/live-installer-3/gtk_interface.py:790
+#: usr/lib/live-installer-3/gtk_interface.py:784
 msgid "Your username cannot start with a digit."
 msgstr "Uw gebruikersnaam mag niet met een getal beginnen."
 
-#: usr/lib/live-installer-3/gtk_interface.py:793
+#: usr/lib/live-installer-3/gtk_interface.py:787
 msgid ""
 "The hostname is incorrect:\n"
 "not more than 63 characters between periods\n"
@@ -581,17 +581,17 @@ msgstr ""
 "niet meer dan 63 tekens tussen punten\n"
 "en maximaal 255 tekens in totaal."
 
-#: usr/lib/live-installer-3/gtk_interface.py:798
+#: usr/lib/live-installer-3/gtk_interface.py:792
 msgid "Error"
 msgstr "Fout"
 
-#: usr/lib/live-installer-3/gtk_interface.py:816
-#: usr/lib/live-installer-3/gtk_interface.py:984
-#: usr/lib/live-installer-3/gtk_interface.py:992
+#: usr/lib/live-installer-3/gtk_interface.py:810
+#: usr/lib/live-installer-3/gtk_interface.py:978
+#: usr/lib/live-installer-3/gtk_interface.py:986
 msgid "Apply"
 msgstr "Toepassen"
 
-#: usr/lib/live-installer-3/gtk_interface.py:836
+#: usr/lib/live-installer-3/gtk_interface.py:830
 #, python-format
 msgid ""
 "Please indicate a filesystem to format the root (%s) partition with before "
@@ -600,12 +600,12 @@ msgstr ""
 "Geef a.u.b. voordat u doorgaat, een bestandssysteem aan voor het formatteren "
 "van de rootpartitie (%s)"
 
-#: usr/lib/live-installer-3/gtk_interface.py:840
+#: usr/lib/live-installer-3/gtk_interface.py:834
 #, python-format
 msgid "<b>Please select a root (%s) partition.</b>"
 msgstr "<b>Kies a.u.b. een rootpartitie (%s)</b>"
 
-#: usr/lib/live-installer-3/gtk_interface.py:841
+#: usr/lib/live-installer-3/gtk_interface.py:835
 #, python-brace-format
 msgid ""
 "A root partition is needed to install the system.\n"
@@ -622,7 +622,7 @@ msgstr ""
 " - Minimum grootte: {1} GiB\n"
 " - Aangeraden formattering: ext4\n"
 
-#: usr/lib/live-installer-3/gtk_interface.py:868
+#: usr/lib/live-installer-3/gtk_interface.py:862
 #, python-brace-format
 msgid ""
 "The {part_name} partition is too small.\n"
@@ -631,7 +631,7 @@ msgstr ""
 "De {part_name} partitie is te klein.\n"
 "Deze dient tenminste {boot_min_size} MiB te zijn."
 
-#: usr/lib/live-installer-3/gtk_interface.py:880
+#: usr/lib/live-installer-3/gtk_interface.py:874
 #, python-brace-format
 msgid ""
 "The {part_name} partition is too small.\n"
@@ -640,7 +640,7 @@ msgstr ""
 "De {part_name} partitie is te klein.\n"
 "Deze dient tenminste {efi_min_size} MiB te zijn."
 
-#: usr/lib/live-installer-3/gtk_interface.py:908
+#: usr/lib/live-installer-3/gtk_interface.py:902
 #, python-brace-format
 msgid ""
 "The swap partition does not have the correct size:\n"
@@ -653,7 +653,7 @@ msgstr ""
 "Aanbevolen grootte: {1}GiB\n"
 "Maximale grootte: {2}GiB"
 
-#: usr/lib/live-installer-3/gtk_interface.py:917
+#: usr/lib/live-installer-3/gtk_interface.py:911
 #, python-brace-format
 msgid ""
 "Swap partition {0} is not correctly formatted.\n"
@@ -662,7 +662,7 @@ msgstr ""
 "Swap partitie {0} is niet juist geformatteerd.\n"
 "Live Installer zal de partitie formatteren naar swap."
 
-#: usr/lib/live-installer-3/gtk_interface.py:938
+#: usr/lib/live-installer-3/gtk_interface.py:932
 msgid ""
 "To ensure compatibility with Windows we recommend\n"
 "you use the first partition of the disk as the EFI partition."
@@ -670,12 +670,12 @@ msgstr ""
 "Om verenigbaarheid met Windows zeker te stellen, raden wij u aan\n"
 "om de eerste partitie van de schijf als de EFI partitie te gebruiken."
 
-#: usr/lib/live-installer-3/gtk_interface.py:946
+#: usr/lib/live-installer-3/gtk_interface.py:940
 #, python-format
 msgid "<b>Please select a %s partition.</b>"
 msgstr "<b>Kies a.u.b. een %s partitie.</b>"
 
-#: usr/lib/live-installer-3/gtk_interface.py:947
+#: usr/lib/live-installer-3/gtk_interface.py:941
 #, python-brace-format
 msgid ""
 "A {part_name} partition is needed with the following requirements:\n"
@@ -690,20 +690,20 @@ msgstr ""
 " - Omvang: ten minste {min_size}\n"
 " - Formattering: {part_format}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1096
+#: usr/lib/live-installer-3/gtk_interface.py:1090
 msgid "Setup finished"
 msgstr "Setup afgerond"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1097
+#: usr/lib/live-installer-3/gtk_interface.py:1091
 msgid "Setup is complete. The system will now reboot."
 msgstr "Setup is afgerond. Het systeem zal nu herstarten."
 
-#: usr/lib/live-installer-3/gtk_interface.py:1102
-#: usr/lib/live-installer-3/installer.py:1162
+#: usr/lib/live-installer-3/gtk_interface.py:1096
+#: usr/lib/live-installer-3/installer.py:1165
 msgid "Installation finished"
 msgstr "Installatie voltooid"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1103
+#: usr/lib/live-installer-3/gtk_interface.py:1097
 msgid ""
 "Installation is now complete. Do you want to restart your computer to use "
 "the new system?"
@@ -711,98 +711,98 @@ msgstr ""
 "De installatie is nu voltooid. Wilt u uw computer herstarten om het nieuwe "
 "besturingssysteem te gebruiken?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1151
+#: usr/lib/live-installer-3/gtk_interface.py:1145
 msgid "Localization"
 msgstr "Lokalisatie"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1152
+#: usr/lib/live-installer-3/gtk_interface.py:1146
 msgid "Language: "
 msgstr "Taal: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1153
+#: usr/lib/live-installer-3/gtk_interface.py:1147
 msgid "Timezone: "
 msgstr "Tijdzone: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1154
+#: usr/lib/live-installer-3/gtk_interface.py:1148
 msgid "Keyboard layout: "
 msgstr "Toetsenbordindeling: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1157
+#: usr/lib/live-installer-3/gtk_interface.py:1151
 msgid "User settings"
 msgstr "Gebruikersinstellingen"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1158
+#: usr/lib/live-installer-3/gtk_interface.py:1152
 msgid "Real name: "
 msgstr "Echte naam: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1159
+#: usr/lib/live-installer-3/gtk_interface.py:1153
 msgid "Username: "
 msgstr "Gebruikersnaam: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1160
+#: usr/lib/live-installer-3/gtk_interface.py:1154
 msgid "Automatic login: "
 msgstr "Automatisch aanmelden: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1160
+#: usr/lib/live-installer-3/gtk_interface.py:1154
 msgid "enabled"
 msgstr "ingeschakeld"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1160
+#: usr/lib/live-installer-3/gtk_interface.py:1154
 msgid "disabled"
 msgstr "uitgeschakeld"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1161
+#: usr/lib/live-installer-3/gtk_interface.py:1155
 msgid "System settings"
 msgstr "Systeeminstellingen"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1162
+#: usr/lib/live-installer-3/gtk_interface.py:1156
 msgid "Hostname: "
 msgstr "Computernaam: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1165
-#: usr/lib/live-installer-3/gtk_interface.py:1184
+#: usr/lib/live-installer-3/gtk_interface.py:1159
+#: usr/lib/live-installer-3/gtk_interface.py:1178
 msgid "Filesystem operations"
 msgstr "Bewerkingen van bestandssysteem"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1166
+#: usr/lib/live-installer-3/gtk_interface.py:1160
 msgid "Install Grub on {}"
 msgstr "Installeer Grub op {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1166
+#: usr/lib/live-installer-3/gtk_interface.py:1160
 msgid "Do not install Grub"
 msgstr "Installeer geen Grub"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1169
+#: usr/lib/live-installer-3/gtk_interface.py:1163
 #, python-format
 msgid "Use already-mounted %s."
 msgstr "Gebruik de reeds gekoppelde %s."
 
-#: usr/lib/live-installer-3/gtk_interface.py:1178
+#: usr/lib/live-installer-3/gtk_interface.py:1172
 msgid "set boot flag"
 msgstr "zet boot vlag"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1179
+#: usr/lib/live-installer-3/gtk_interface.py:1173
 msgid "Mount {}{} as {}"
 msgstr "Koppel {}{} als {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1185
+#: usr/lib/live-installer-3/gtk_interface.py:1179
 msgid "Encrypt {}"
 msgstr "Versleutel {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1187
+#: usr/lib/live-installer-3/gtk_interface.py:1181
 msgid "Encrypt {} and format as {}"
 msgstr "Versleutel {} en formatteer als {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1189
+#: usr/lib/live-installer-3/gtk_interface.py:1183
 msgid "Format {} as {}"
 msgstr "Formatteer {} als {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1426
-#: usr/lib/live-installer-3/gtk_interface.py:1452
+#: usr/lib/live-installer-3/gtk_interface.py:1444
+#: usr/lib/live-installer-3/gtk_interface.py:1470
 msgid "Grub install"
 msgstr "Grub installatie"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1427
+#: usr/lib/live-installer-3/gtk_interface.py:1445
 msgid ""
 "You chose to NOT install Grub on your system.\n"
 "Without a bootloader like Grub your system might not boot.\n"
@@ -814,7 +814,7 @@ msgstr ""
 "\n"
 "Weet u zeker dat u wilt doorgaan?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1453
+#: usr/lib/live-installer-3/gtk_interface.py:1471
 msgid ""
 "You chose to install Grub on a partition.\n"
 "It is recommended to install Grub on a disk instead of a partition.\n"
@@ -832,20 +832,20 @@ msgstr ""
 "\n"
 "Weet u zeker dat u wilt doorgaan?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1511
+#: usr/lib/live-installer-3/gtk_interface.py:1529
 msgid "Select image"
 msgstr "Selecteer afbeelding"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1537
+#: usr/lib/live-installer-3/gtk_interface.py:1555
 msgid "Unable to convert the image."
 msgstr "De afbeelding kan niet geconverteerd worden."
 
-#: usr/lib/live-installer-3/installer.py:156
-#: usr/lib/live-installer-3/installer.py:181
+#: usr/lib/live-installer-3/installer.py:157
+#: usr/lib/live-installer-3/installer.py:182
 msgid "Installation error"
 msgstr "Installatiefout"
 
-#: usr/lib/live-installer-3/installer.py:166
+#: usr/lib/live-installer-3/installer.py:167
 msgid ""
 "Installation is now paused. Please read the instructions on the page "
 "carefully before clicking Forward to finish the installation."
@@ -853,37 +853,37 @@ msgstr ""
 "De installatie is thans tijdelijk onderbroken. Lees a.u.b. zorgvuldig de "
 "instructies op de pagina en klik op Volgende om de installatie te voltooien."
 
-#: usr/lib/live-installer-3/installer.py:167
+#: usr/lib/live-installer-3/installer.py:168
 msgid "Verify that fstab is correct (use blkid to check the UUIDs)."
 msgstr ""
 "Controleer dat fstab is correct (gebruik blkid om de UUID's te controleren)."
 
-#: usr/lib/live-installer-3/installer.py:168
+#: usr/lib/live-installer-3/installer.py:169
 msgid ""
 "A chrooted terminal and fstab will be opened after you close this message."
 msgstr "Een terminal en fstab worden geopend nadat dit scherm wordt gesloten."
 
-#: usr/lib/live-installer-3/installer.py:170
+#: usr/lib/live-installer-3/installer.py:171
 msgid "Installation paused"
 msgstr "Installatie tijdelijk onderbroken"
 
-#: usr/lib/live-installer-3/installer.py:235
+#: usr/lib/live-installer-3/installer.py:236
 #, python-format
 msgid "Encrypting %(partition)s ..."
 msgstr "Versleutelen van %(partition)s ..."
 
-#: usr/lib/live-installer-3/installer.py:250
+#: usr/lib/live-installer-3/installer.py:251
 #, python-format
 msgid "Formatting %(partition)s as %(format)s ..."
 msgstr "Bezig met formatteren van %(partition)s als %(format)s..."
 
-#: usr/lib/live-installer-3/installer.py:324
-#: usr/lib/live-installer-3/installer.py:339
+#: usr/lib/live-installer-3/installer.py:325
+#: usr/lib/live-installer-3/installer.py:340
 #, python-format
 msgid "Mounting %(partition)s on %(mountpoint)s"
 msgstr "Bezig met aankoppelen van %(partition)s aan %(mountpoint)s"
 
-#: usr/lib/live-installer-3/installer.py:361
+#: usr/lib/live-installer-3/installer.py:362
 #, python-format
 msgid ""
 "You must first manually mount your target filesystem(s) at %s to do a custom "
@@ -892,12 +892,12 @@ msgstr ""
 "U dient eerst uw doel bestandssysteem(en) te koppelen op %s voordat u een "
 "aangepaste installatie kunt uitvoeren!"
 
-#: usr/lib/live-installer-3/installer.py:364
-#: usr/lib/live-installer-3/installer.py:468
+#: usr/lib/live-installer-3/installer.py:365
+#: usr/lib/live-installer-3/installer.py:469
 msgid "Not mounted"
 msgstr "Niet gekoppeld"
 
-#: usr/lib/live-installer-3/installer.py:372
+#: usr/lib/live-installer-3/installer.py:373
 msgid ""
 "Something is wrong with the installation medium! This is usually caused by "
 "burning tools which are not compatible with {}. Please burn the ISO image to "
@@ -907,15 +907,15 @@ msgstr ""
 "door brand software die niet compatibel is met {}. Gelieve de ISO naar DVD/"
 "USB te branden met een andere tool."
 
-#: usr/lib/live-installer-3/installer.py:375
+#: usr/lib/live-installer-3/installer.py:376
 msgid "Base filesystem does not exist"
 msgstr "Basis bestandssysteem bestaat niet"
 
-#: usr/lib/live-installer-3/installer.py:418
+#: usr/lib/live-installer-3/installer.py:419
 msgid "Copying"
 msgstr "Kopiëren van"
 
-#: usr/lib/live-installer-3/installer.py:425
+#: usr/lib/live-installer-3/installer.py:426
 #, python-format
 msgid ""
 "System copy ended abruptly.\n"
@@ -924,73 +924,73 @@ msgstr ""
 "Systeem kopiëren mislukt.\n"
 "Uw systeem zal mogelijk niet goed functioneren (rsync code: %s)."
 
-#: usr/lib/live-installer-3/installer.py:428
+#: usr/lib/live-installer-3/installer.py:429
 msgid "System copy error"
 msgstr "Systeem kopie fout"
 
-#: usr/lib/live-installer-3/installer.py:461
+#: usr/lib/live-installer-3/installer.py:462
 msgid "Entering the system ..."
 msgstr "Nieuwe systeem aan het binnengaan..."
 
-#: usr/lib/live-installer-3/installer.py:465
+#: usr/lib/live-installer-3/installer.py:466
 #, python-format
 msgid "%s/dev not mounted - exiting"
 msgstr "%s/dev niet gekoppeld - afsluiten"
 
-#: usr/lib/live-installer-3/installer.py:476
+#: usr/lib/live-installer-3/installer.py:477
 msgid "Installing EFI packages..."
 msgstr "EFI pakketten installeren..."
 
-#: usr/lib/live-installer-3/installer.py:500
+#: usr/lib/live-installer-3/installer.py:501
 msgid "Installing drivers"
 msgstr "Drivers installeren"
 
-#: usr/lib/live-installer-3/installer.py:514
+#: usr/lib/live-installer-3/installer.py:515
 msgid "Writing filesystem mount information to /etc/fstab"
 msgstr ""
 "Aankoppelingsinformatie bestandssysteem wordt weggeschreven naar /etc/fstab"
 
-#: usr/lib/live-installer-3/installer.py:733
+#: usr/lib/live-installer-3/installer.py:734
 msgid "Setting locale"
 msgstr "Taal en land instellen"
 
-#: usr/lib/live-installer-3/installer.py:744
+#: usr/lib/live-installer-3/installer.py:745
 msgid "Adding new user to the system"
 msgstr "Gebruiker wordt toegevoegd aan systeem"
 
-#: usr/lib/live-installer-3/installer.py:851
+#: usr/lib/live-installer-3/installer.py:852
 msgid "Setting hostname"
 msgstr "Computernaam instellen"
 
-#: usr/lib/live-installer-3/installer.py:874
+#: usr/lib/live-installer-3/installer.py:875
 msgid "Update apt cache"
 msgstr "Apt cache bewerken"
 
-#: usr/lib/live-installer-3/installer.py:876
+#: usr/lib/live-installer-3/installer.py:877
 msgid "Update the new system"
 msgstr "Het nieuwe systeem updaten"
 
-#: usr/lib/live-installer-3/installer.py:883
+#: usr/lib/live-installer-3/installer.py:884
 msgid "Localizing packages"
 msgstr "Pakketten regionaliseren"
 
-#: usr/lib/live-installer-3/installer.py:901
+#: usr/lib/live-installer-3/installer.py:902
 msgid "Setting keyboard options"
 msgstr "Toetsenbordopties instellen"
 
-#: usr/lib/live-installer-3/installer.py:967
+#: usr/lib/live-installer-3/installer.py:968
 msgid "Configuring sensors"
 msgstr "Sensors configureren"
 
-#: usr/lib/live-installer-3/installer.py:973
+#: usr/lib/live-installer-3/installer.py:974
 msgid "Removing VirtualBox"
 msgstr "VirtualBox verwijderen"
 
-#: usr/lib/live-installer-3/installer.py:979
+#: usr/lib/live-installer-3/installer.py:980
 msgid "Removing os-prober"
 msgstr "Verwijder os-prober"
 
-#: usr/lib/live-installer-3/installer.py:1024
+#: usr/lib/live-installer-3/installer.py:1027
 msgid ""
 "The grub bootloader was not configured properly! You need to configure it "
 "manually."
@@ -998,39 +998,39 @@ msgstr ""
 "Opstartlader Grub werd niet juist ingesteld! U dient deze handmatig in te "
 "stellen."
 
-#: usr/lib/live-installer-3/installer.py:1027
+#: usr/lib/live-installer-3/installer.py:1030
 msgid "Grub not configured"
 msgstr "Grub niet geconfigureerd"
 
-#: usr/lib/live-installer-3/installer.py:1033
+#: usr/lib/live-installer-3/installer.py:1036
 msgid "Installing bootloader"
 msgstr "Opstartlader installeren"
 
-#: usr/lib/live-installer-3/installer.py:1057
+#: usr/lib/live-installer-3/installer.py:1060
 msgid "Removing live configuration (packages)"
 msgstr "Live-configuratie (pakketten) aan het verwijderen"
 
-#: usr/lib/live-installer-3/installer.py:1092
+#: usr/lib/live-installer-3/installer.py:1095
 msgid "Cleaning APT"
 msgstr "APT schoonmaken"
 
-#: usr/lib/live-installer-3/installer.py:1112
+#: usr/lib/live-installer-3/installer.py:1115
 msgid "Update Initramfs"
 msgstr "Initramfs updaten"
 
-#: usr/lib/live-installer-3/installer.py:1145
+#: usr/lib/live-installer-3/installer.py:1148
 msgid "Unmounting partitions"
 msgstr "Partities loskoppelen"
 
-#: usr/lib/live-installer-3/installer.py:1182
+#: usr/lib/live-installer-3/installer.py:1185
 msgid "Configuring bootloader"
 msgstr "Opstartlader instellen"
 
-#: usr/lib/live-installer-3/installer.py:1189
+#: usr/lib/live-installer-3/installer.py:1192
 msgid "Checking bootloader"
 msgstr "Opstartlader controleren"
 
-#: usr/lib/live-installer-3/installer.py:1204
+#: usr/lib/live-installer-3/installer.py:1207
 #, python-format
 msgid "No %s file found!"
 msgstr "Geen %s bestand gevonden!"

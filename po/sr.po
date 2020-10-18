@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: live-installer-3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-31 15:35+0200\n"
+"POT-Creation-Date: 2020-10-18 14:21+0200\n"
 "PO-Revision-Date: 2020-08-27 14:14+0000\n"
 "Last-Translator: Arjen Balfoort <arjenbalfoort@hotmail.com>\n"
 "Language-Team: Serbian (http://www.transifex.com/abalfoort/live-installer-3/"
@@ -40,13 +40,13 @@ msgid "Removable:"
 msgstr "Уклоњиво:"
 
 #: usr/lib/live-installer-3/partitioning.py:432
-#: usr/lib/live-installer-3/gtk_interface.py:835
-#: usr/lib/live-installer-3/gtk_interface.py:839
-#: usr/lib/live-installer-3/gtk_interface.py:868
-#: usr/lib/live-installer-3/gtk_interface.py:880
-#: usr/lib/live-installer-3/gtk_interface.py:908
-#: usr/lib/live-installer-3/gtk_interface.py:916
-#: usr/lib/live-installer-3/gtk_interface.py:945
+#: usr/lib/live-installer-3/gtk_interface.py:829
+#: usr/lib/live-installer-3/gtk_interface.py:833
+#: usr/lib/live-installer-3/gtk_interface.py:862
+#: usr/lib/live-installer-3/gtk_interface.py:874
+#: usr/lib/live-installer-3/gtk_interface.py:902
+#: usr/lib/live-installer-3/gtk_interface.py:910
+#: usr/lib/live-installer-3/gtk_interface.py:939
 msgid "Installation Tool"
 msgstr "Алат за инсталацију"
 
@@ -83,12 +83,12 @@ msgid "Extended partition"
 msgstr "Додатна партиција"
 
 #: usr/lib/live-installer-3/partitioning.py:722
-#: usr/lib/live-installer-3/gtk_interface.py:605
+#: usr/lib/live-installer-3/gtk_interface.py:599
 msgid "Free space"
 msgstr "Слободан простор"
 
 #: usr/lib/live-installer-3/partitioning.py:739
-#: usr/lib/live-installer-3/gtk_interface.py:641
+#: usr/lib/live-installer-3/gtk_interface.py:635
 msgid "Encryption password"
 msgstr "Лозинка шифровања"
 
@@ -106,17 +106,17 @@ msgid "Edit partition"
 msgstr "Уреди партицију"
 
 #: usr/lib/live-installer-3/partitioning.py:917
-#: usr/lib/live-installer-3/gtk_interface.py:597
+#: usr/lib/live-installer-3/gtk_interface.py:591
 msgid "Device"
 msgstr "Уређај"
 
 #: usr/lib/live-installer-3/partitioning.py:918
-#: usr/lib/live-installer-3/gtk_interface.py:602
+#: usr/lib/live-installer-3/gtk_interface.py:596
 msgid "Format as"
 msgstr "Форматирај као"
 
 #: usr/lib/live-installer-3/partitioning.py:919
-#: usr/lib/live-installer-3/gtk_interface.py:601
+#: usr/lib/live-installer-3/gtk_interface.py:595
 msgid "Mount point"
 msgstr "Тачка монтирања"
 
@@ -135,7 +135,7 @@ msgstr "Лозинка"
 #: usr/lib/live-installer-3/partitioning.py:1049
 #: usr/lib/live-installer-3/partitioning.py:1058
 #: usr/lib/live-installer-3/partitioning.py:1129
-#: usr/lib/live-installer-3/gtk_interface.py:637
+#: usr/lib/live-installer-3/gtk_interface.py:631
 msgid "Encryption"
 msgstr "Шифровање"
 
@@ -171,12 +171,12 @@ msgstr ""
 "Сигурно желите да наставите?"
 
 #: usr/lib/live-installer-3/partitioning.py:1115
-#: usr/lib/live-installer-3/gtk_interface.py:783
+#: usr/lib/live-installer-3/gtk_interface.py:777
 msgid "Please provide an encryption password."
 msgstr "Наведите лозинку за шифровање."
 
 #: usr/lib/live-installer-3/partitioning.py:1118
-#: usr/lib/live-installer-3/gtk_interface.py:786
+#: usr/lib/live-installer-3/gtk_interface.py:780
 msgid "Your encryption passwords do not match."
 msgstr "Лозинке шифровања се не поклапају."
 
@@ -192,11 +192,11 @@ msgstr ""
 msgid "You need to choose a mount point for partition:"
 msgstr "Морате да изаберете тачку монитрања:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:83
+#: usr/lib/live-installer-3/gtk_interface.py:82
 msgid "{} Installer"
 msgstr "{} инсталатер"
 
-#: usr/lib/live-installer-3/gtk_interface.py:316
+#: usr/lib/live-installer-3/gtk_interface.py:314
 #, python-format
 msgid ""
 "Please, click on the network manager's system tray icon to connect to the "
@@ -213,20 +213,20 @@ msgstr ""
 "Само, без интернета, систем неће бити ажуриран и неки пакети неће бити "
 "локализовани."
 
-#: usr/lib/live-installer-3/gtk_interface.py:319
-#: usr/lib/live-installer-3/gtk_interface.py:423
+#: usr/lib/live-installer-3/gtk_interface.py:317
+#: usr/lib/live-installer-3/gtk_interface.py:417
 msgid "No internet connection"
 msgstr "Нема интернет везе"
 
-#: usr/lib/live-installer-3/gtk_interface.py:359
+#: usr/lib/live-installer-3/gtk_interface.py:357
 msgid "Quit?"
 msgstr "Напустити?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:359
+#: usr/lib/live-installer-3/gtk_interface.py:357
 msgid "Are you sure you want to quit the installer?"
 msgstr "Заиста напуштате програм за инсталацију?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:421
+#: usr/lib/live-installer-3/gtk_interface.py:415
 msgid ""
 "Cannot download and install additional locale packages: no internet "
 "connection\n"
@@ -235,172 +235,172 @@ msgstr ""
 "Не могу да преузмем и инсталирам локалне пакете — нема интернет везе\n"
 "Подешавања ће и даље остати на изабраном језику."
 
-#: usr/lib/live-installer-3/gtk_interface.py:548
+#: usr/lib/live-installer-3/gtk_interface.py:542
 msgid "{} OEM Setup"
 msgstr "{} ОЕМ постава"
 
-#: usr/lib/live-installer-3/gtk_interface.py:564
-#: usr/lib/live-installer-3/gtk_interface.py:584
+#: usr/lib/live-installer-3/gtk_interface.py:558
+#: usr/lib/live-installer-3/gtk_interface.py:578
 msgid "Language"
 msgstr "Језик"
 
-#: usr/lib/live-installer-3/gtk_interface.py:565
+#: usr/lib/live-installer-3/gtk_interface.py:559
 msgid "Timezone"
 msgstr "Временска зона"
 
-#: usr/lib/live-installer-3/gtk_interface.py:566
+#: usr/lib/live-installer-3/gtk_interface.py:560
 msgid "Keyboard layout"
 msgstr "Распоред тастатуре"
 
-#: usr/lib/live-installer-3/gtk_interface.py:567
+#: usr/lib/live-installer-3/gtk_interface.py:561
 msgid "User info"
 msgstr "Корисничке информације"
 
-#: usr/lib/live-installer-3/gtk_interface.py:568
+#: usr/lib/live-installer-3/gtk_interface.py:562
 msgid "Partitioning"
 msgstr "Партиционисање"
 
-#: usr/lib/live-installer-3/gtk_interface.py:569
+#: usr/lib/live-installer-3/gtk_interface.py:563
 msgid "Please make sure you wish to manage partitions manually"
 msgstr "Размислите да ли желите ручно да средите партиције"
 
-#: usr/lib/live-installer-3/gtk_interface.py:570
+#: usr/lib/live-installer-3/gtk_interface.py:564
 msgid "Summary"
 msgstr "Сажетак"
 
-#: usr/lib/live-installer-3/gtk_interface.py:571
+#: usr/lib/live-installer-3/gtk_interface.py:565
 msgid "Installing {}..."
 msgstr "Инсталирам {}..."
 
-#: usr/lib/live-installer-3/gtk_interface.py:572
+#: usr/lib/live-installer-3/gtk_interface.py:566
 msgid "Installation is paused: please finish the custom installation"
 msgstr "Инсталација је паузирана: завршите прилагођену инсталацију"
 
-#: usr/lib/live-installer-3/gtk_interface.py:579
-#: usr/lib/live-installer-3/gtk_interface.py:609
+#: usr/lib/live-installer-3/gtk_interface.py:573
+#: usr/lib/live-installer-3/gtk_interface.py:603
 msgid "Quit"
 msgstr "Напусти"
 
-#: usr/lib/live-installer-3/gtk_interface.py:580
-#: usr/lib/live-installer-3/gtk_interface.py:610
+#: usr/lib/live-installer-3/gtk_interface.py:574
+#: usr/lib/live-installer-3/gtk_interface.py:604
 msgid "Back"
 msgstr "Назад"
 
-#: usr/lib/live-installer-3/gtk_interface.py:581
-#: usr/lib/live-installer-3/gtk_interface.py:611
-#: usr/lib/live-installer-3/gtk_interface.py:702
+#: usr/lib/live-installer-3/gtk_interface.py:575
+#: usr/lib/live-installer-3/gtk_interface.py:605
+#: usr/lib/live-installer-3/gtk_interface.py:696
 msgid "Forward"
 msgstr "Напред"
 
-#: usr/lib/live-installer-3/gtk_interface.py:585
+#: usr/lib/live-installer-3/gtk_interface.py:579
 msgid "Country"
 msgstr "Земља"
 
-#: usr/lib/live-installer-3/gtk_interface.py:588
+#: usr/lib/live-installer-3/gtk_interface.py:582
 msgid "Selected timezone:"
 msgstr "Изабрана временска зона:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:589
+#: usr/lib/live-installer-3/gtk_interface.py:583
 msgid "Select timezone"
 msgstr "Изаберите зону"
 
-#: usr/lib/live-installer-3/gtk_interface.py:592
+#: usr/lib/live-installer-3/gtk_interface.py:586
 msgid "Refresh"
 msgstr "Освежи"
 
-#: usr/lib/live-installer-3/gtk_interface.py:593
+#: usr/lib/live-installer-3/gtk_interface.py:587
 msgid "_Expert mode"
 msgstr "Експертски _режим"
 
-#: usr/lib/live-installer-3/gtk_interface.py:594
+#: usr/lib/live-installer-3/gtk_interface.py:588
 msgid "_Edit partitions"
 msgstr "Уреди _партиције"
 
-#: usr/lib/live-installer-3/gtk_interface.py:598
+#: usr/lib/live-installer-3/gtk_interface.py:592
 msgid "Grub"
 msgstr "ГРУБ"
 
-#: usr/lib/live-installer-3/gtk_interface.py:599
+#: usr/lib/live-installer-3/gtk_interface.py:593
 msgid "Type"
 msgstr "Тип"
 
-#: usr/lib/live-installer-3/gtk_interface.py:600
+#: usr/lib/live-installer-3/gtk_interface.py:594
 msgid "Label"
 msgstr "Ознака"
 
-#: usr/lib/live-installer-3/gtk_interface.py:603
+#: usr/lib/live-installer-3/gtk_interface.py:597
 msgid "Encrypt"
 msgstr "Шифруј"
 
-#: usr/lib/live-installer-3/gtk_interface.py:604
+#: usr/lib/live-installer-3/gtk_interface.py:598
 msgid "Size"
 msgstr "Величина"
 
-#: usr/lib/live-installer-3/gtk_interface.py:614
+#: usr/lib/live-installer-3/gtk_interface.py:608
 msgid "Layout"
 msgstr "Распоред"
 
-#: usr/lib/live-installer-3/gtk_interface.py:615
+#: usr/lib/live-installer-3/gtk_interface.py:609
 msgid "Variant"
 msgstr "Варијанта"
 
-#: usr/lib/live-installer-3/gtk_interface.py:616
+#: usr/lib/live-installer-3/gtk_interface.py:610
 msgid "Use this box to test your keyboard layout."
 msgstr "користите ово поље да тестирате распоред тастатуре"
 
-#: usr/lib/live-installer-3/gtk_interface.py:617
+#: usr/lib/live-installer-3/gtk_interface.py:611
 msgid "Model"
 msgstr "Модел"
 
-#: usr/lib/live-installer-3/gtk_interface.py:620
+#: usr/lib/live-installer-3/gtk_interface.py:614
 msgid "Click to change your picture"
 msgstr "Кликните да измените слику"
 
-#: usr/lib/live-installer-3/gtk_interface.py:621
+#: usr/lib/live-installer-3/gtk_interface.py:615
 msgid "Take a photo..."
 msgstr "Усликајте..."
 
-#: usr/lib/live-installer-3/gtk_interface.py:622
+#: usr/lib/live-installer-3/gtk_interface.py:616
 msgid "Browse for more pictures..."
 msgstr "Потражите још слика..."
 
-#: usr/lib/live-installer-3/gtk_interface.py:623
+#: usr/lib/live-installer-3/gtk_interface.py:617
 msgid "Your full name"
 msgstr "Ваше име и презиме"
 
-#: usr/lib/live-installer-3/gtk_interface.py:624
+#: usr/lib/live-installer-3/gtk_interface.py:618
 msgid "This will be shown in the About Me application."
 msgstr "Ово ће бити приказано у апликацији „О мени“."
 
-#: usr/lib/live-installer-3/gtk_interface.py:625
+#: usr/lib/live-installer-3/gtk_interface.py:619
 msgid "Your username"
 msgstr "Ваше корисничко име"
 
-#: usr/lib/live-installer-3/gtk_interface.py:626
+#: usr/lib/live-installer-3/gtk_interface.py:620
 msgid "This is the name you will use to log in to your computer."
 msgstr "Ово је име којим се пријављујете на ваш рачунар."
 
-#: usr/lib/live-installer-3/gtk_interface.py:627
+#: usr/lib/live-installer-3/gtk_interface.py:621
 msgid "Your password"
 msgstr "Ваша лозинка"
 
-#: usr/lib/live-installer-3/gtk_interface.py:628
+#: usr/lib/live-installer-3/gtk_interface.py:622
 msgid "Please enter your password twice to ensure it is correct."
 msgstr "Унесите вашу лозинку двапут да осигурамо да је тачна."
 
-#: usr/lib/live-installer-3/gtk_interface.py:630
+#: usr/lib/live-installer-3/gtk_interface.py:624
 msgid "Hostname"
 msgstr "Име домаћина"
 
-#: usr/lib/live-installer-3/gtk_interface.py:631
+#: usr/lib/live-installer-3/gtk_interface.py:625
 msgid "This hostname will be the computer's name on the network."
 msgstr "Ово је име рачунара на мрежи."
 
-#: usr/lib/live-installer-3/gtk_interface.py:632
+#: usr/lib/live-installer-3/gtk_interface.py:626
 msgid "Automatic login"
 msgstr "Аутоматска пријава"
 
-#: usr/lib/live-installer-3/gtk_interface.py:633
+#: usr/lib/live-installer-3/gtk_interface.py:627
 msgid ""
 "If enabled, the login screen is skipped when the system starts, and you are "
 "signed into your desktop session automatically."
@@ -408,19 +408,19 @@ msgstr ""
 "Ако је укључено, пријавни екран се прескаче када се систем покрене и "
 "аутоматски сте пријављени у ваше радно окружење."
 
-#: usr/lib/live-installer-3/gtk_interface.py:635
+#: usr/lib/live-installer-3/gtk_interface.py:629
 msgid "Log in automatically on system boot"
 msgstr "Пријави се аутоматски при подизању"
 
-#: usr/lib/live-installer-3/gtk_interface.py:638
+#: usr/lib/live-installer-3/gtk_interface.py:632
 msgid "Encrypt home partition"
 msgstr "Шифруј home партицију"
 
-#: usr/lib/live-installer-3/gtk_interface.py:639
+#: usr/lib/live-installer-3/gtk_interface.py:633
 msgid "If enabled, the home partition will be encrypted."
 msgstr "Ако је укључено, home партиција биће шифрована."
 
-#: usr/lib/live-installer-3/gtk_interface.py:642
+#: usr/lib/live-installer-3/gtk_interface.py:636
 msgid ""
 "WARNING: when you loose your encryption password, you won't be able to "
 "recover your data! During boot you will be asked for your password to unlock "
@@ -432,11 +432,11 @@ msgstr ""
 "Током подизања система, бићете упитани за лозинку да бисте откључали „home“ "
 "партицију. Ово не мора бити иста лозинка као лозинка за пријаву."
 
-#: usr/lib/live-installer-3/gtk_interface.py:647
+#: usr/lib/live-installer-3/gtk_interface.py:641
 msgid "Your picture"
 msgstr "Ваша слика"
 
-#: usr/lib/live-installer-3/gtk_interface.py:648
+#: usr/lib/live-installer-3/gtk_interface.py:642
 msgid ""
 "This picture represents your user account. It is used in the login screen "
 "and a few other places."
@@ -444,7 +444,7 @@ msgstr ""
 "Ова слика представља ваш кориснички налог. Користи се на пријавном екрану и "
 "пар других места."
 
-#: usr/lib/live-installer-3/gtk_interface.py:652
+#: usr/lib/live-installer-3/gtk_interface.py:646
 msgid ""
 "You have selected to manage your partitions manually, this feature is for "
 "ADVANCED USERS ONLY."
@@ -452,17 +452,17 @@ msgstr ""
 "Одабрали сте да ручно средите партиције. Ова опција је САМО ЗА НАПРЕДНЕ "
 "КОРИСНИКЕ."
 
-#: usr/lib/live-installer-3/gtk_interface.py:654
+#: usr/lib/live-installer-3/gtk_interface.py:648
 #, python-format
 msgid "Before continuing, please mount your target filesystem(s) at %s."
 msgstr "Пре настављања, монтирајте циљне фајл-системе на %s"
 
-#: usr/lib/live-installer-3/gtk_interface.py:656
+#: usr/lib/live-installer-3/gtk_interface.py:650
 #, python-format
 msgid "Do NOT mount virtual devices such as /dev, /proc, /sys, etc on %s/."
 msgstr "НЕ монтирајте виртуалне уређаје попут /dev, /proc, /sys, на %s/"
 
-#: usr/lib/live-installer-3/gtk_interface.py:658
+#: usr/lib/live-installer-3/gtk_interface.py:652
 #, python-format
 msgid ""
 "During the install, you will be given time to chroot into %s and install any "
@@ -471,12 +471,12 @@ msgstr ""
 "Током инсталације, имаћете времена да са chroot уђете на %s и инсталирате "
 "пакете који ће бити потребни за подизање вашег новог система."
 
-#: usr/lib/live-installer-3/gtk_interface.py:660
+#: usr/lib/live-installer-3/gtk_interface.py:654
 msgid "During the install, you will be required to write your own /etc/fstab."
 msgstr ""
 "Током инсталације, биће неопходно да направите ваш сопствени /etc/fstab"
 
-#: usr/lib/live-installer-3/gtk_interface.py:662
+#: usr/lib/live-installer-3/gtk_interface.py:656
 msgid ""
 "If you aren't sure what any of this means, please go back and deselect "
 "manual partition management."
@@ -484,11 +484,11 @@ msgstr ""
 "Ако нисте сигурни шта је ово о чему причам, идите назад и искључите ручно "
 "управљање партицијама."
 
-#: usr/lib/live-installer-3/gtk_interface.py:666
+#: usr/lib/live-installer-3/gtk_interface.py:660
 msgid "Please do the following and then click Forward to finish installation:"
 msgstr "Урадите следеће и онда кликните на „Напред“ да завршите инсталацију:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:668
+#: usr/lib/live-installer-3/gtk_interface.py:662
 #, python-brace-format
 msgid ""
 "Create {0}/etc/fstab for the filesystems as they will be mounted in your new "
@@ -499,7 +499,7 @@ msgstr ""
 "систему, по узору на тренутно монтиране у {0} (без {0} префикса у самој "
 "путањи монтирања)."
 
-#: usr/lib/live-installer-3/gtk_interface.py:670
+#: usr/lib/live-installer-3/gtk_interface.py:664
 #, python-format
 msgid ""
 "Install any packages that may be needed for first boot (mdadm, cryptsetup, "
@@ -510,7 +510,7 @@ msgstr ""
 "cryptsetup, dmraid, итд) позивајући „sudo chroot %s“ а затим одговарајућу "
 "apt-get/aptitude инсталацију."
 
-#: usr/lib/live-installer-3/gtk_interface.py:672
+#: usr/lib/live-installer-3/gtk_interface.py:666
 #, python-format
 msgid ""
 "Note that in order for update-initramfs to work properly in some cases (such "
@@ -521,7 +521,7 @@ msgstr ""
 "као dm-crypt), морате имати дискове тренутно монтиране помоћу истих назива "
 "блок-уређаја као у %s/etc/fstab."
 
-#: usr/lib/live-installer-3/gtk_interface.py:674
+#: usr/lib/live-installer-3/gtk_interface.py:668
 #, python-brace-format
 msgid ""
 "Double-check that your {0}/etc/fstab is correct, matches what your new "
@@ -531,39 +531,39 @@ msgstr ""
 "нови систем имати при подизању и поклапа са оним што је тренутно монтирано у "
 "{0}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:678
+#: usr/lib/live-installer-3/gtk_interface.py:672
 msgid "Overview"
 msgstr "Преглед"
 
-#: usr/lib/live-installer-3/gtk_interface.py:764
+#: usr/lib/live-installer-3/gtk_interface.py:758
 msgid "Please provide your full name."
 msgstr "Наведите ваше пуно име."
 
-#: usr/lib/live-installer-3/gtk_interface.py:767
+#: usr/lib/live-installer-3/gtk_interface.py:761
 msgid "Please provide a username."
 msgstr "Наведите корисничко име."
 
-#: usr/lib/live-installer-3/gtk_interface.py:770
+#: usr/lib/live-installer-3/gtk_interface.py:764
 msgid "Please provide a username without -oem."
 msgstr "Наведите корисничко име без -oem"
 
-#: usr/lib/live-installer-3/gtk_interface.py:773
+#: usr/lib/live-installer-3/gtk_interface.py:767
 msgid "Please provide a password for your user account."
 msgstr "Наведите лозинку за ваш кориснички налог."
 
-#: usr/lib/live-installer-3/gtk_interface.py:776
+#: usr/lib/live-installer-3/gtk_interface.py:770
 msgid "Your passwords do not match."
 msgstr "Лозинке вам се не поклапају."
 
-#: usr/lib/live-installer-3/gtk_interface.py:779
+#: usr/lib/live-installer-3/gtk_interface.py:773
 msgid "Please provide a hostname."
 msgstr "Наведите име домаћина."
 
-#: usr/lib/live-installer-3/gtk_interface.py:790
+#: usr/lib/live-installer-3/gtk_interface.py:784
 msgid "Your username cannot start with a digit."
 msgstr "Корисничко име не сме почињати са бројем."
 
-#: usr/lib/live-installer-3/gtk_interface.py:793
+#: usr/lib/live-installer-3/gtk_interface.py:787
 msgid ""
 "The hostname is incorrect:\n"
 "not more than 63 characters between periods\n"
@@ -573,17 +573,17 @@ msgstr ""
 "не више од 63 знака између тачака\n"
 "и не више ид 255 укупно."
 
-#: usr/lib/live-installer-3/gtk_interface.py:798
+#: usr/lib/live-installer-3/gtk_interface.py:792
 msgid "Error"
 msgstr "Грешка"
 
-#: usr/lib/live-installer-3/gtk_interface.py:816
-#: usr/lib/live-installer-3/gtk_interface.py:984
-#: usr/lib/live-installer-3/gtk_interface.py:992
+#: usr/lib/live-installer-3/gtk_interface.py:810
+#: usr/lib/live-installer-3/gtk_interface.py:978
+#: usr/lib/live-installer-3/gtk_interface.py:986
 msgid "Apply"
 msgstr "Примени"
 
-#: usr/lib/live-installer-3/gtk_interface.py:836
+#: usr/lib/live-installer-3/gtk_interface.py:830
 #, python-format
 msgid ""
 "Please indicate a filesystem to format the root (%s) partition with before "
@@ -591,12 +591,12 @@ msgid ""
 msgstr ""
 "Пре почетка, наведите фајл систем у који се форматира корена (%s) партиција."
 
-#: usr/lib/live-installer-3/gtk_interface.py:840
+#: usr/lib/live-installer-3/gtk_interface.py:834
 #, python-format
 msgid "<b>Please select a root (%s) partition.</b>"
 msgstr "<b>Изаберите корену (%s) партицију.</b>"
 
-#: usr/lib/live-installer-3/gtk_interface.py:841
+#: usr/lib/live-installer-3/gtk_interface.py:835
 #, python-brace-format
 msgid ""
 "A root partition is needed to install the system.\n"
@@ -613,7 +613,7 @@ msgstr ""
 " - минимална величина: {1} GiB\n"
 " - препоручени формат фајл-система: ext4\n"
 
-#: usr/lib/live-installer-3/gtk_interface.py:868
+#: usr/lib/live-installer-3/gtk_interface.py:862
 #, python-brace-format
 msgid ""
 "The {part_name} partition is too small.\n"
@@ -622,7 +622,7 @@ msgstr ""
 "Партиција {part_name} превише мала.\n"
 "Мора бити најмање {boot_min_size} MiB."
 
-#: usr/lib/live-installer-3/gtk_interface.py:880
+#: usr/lib/live-installer-3/gtk_interface.py:874
 #, python-brace-format
 msgid ""
 "The {part_name} partition is too small.\n"
@@ -631,7 +631,7 @@ msgstr ""
 "Партиција {part_name} превише мала.\n"
 "Мора бити најмање {efi_min_size} MiB."
 
-#: usr/lib/live-installer-3/gtk_interface.py:908
+#: usr/lib/live-installer-3/gtk_interface.py:902
 #, python-brace-format
 msgid ""
 "The swap partition does not have the correct size:\n"
@@ -644,7 +644,7 @@ msgstr ""
 "препоручено: {1}GiB\n"
 "највише: {2}GiB"
 
-#: usr/lib/live-installer-3/gtk_interface.py:917
+#: usr/lib/live-installer-3/gtk_interface.py:911
 #, python-brace-format
 msgid ""
 "Swap partition {0} is not correctly formatted.\n"
@@ -653,7 +653,7 @@ msgstr ""
 "СВАП партиција {0} није исправно форматирана.\n"
 "Живи инсталатер ће партицију форматирати као СВАП."
 
-#: usr/lib/live-installer-3/gtk_interface.py:938
+#: usr/lib/live-installer-3/gtk_interface.py:932
 msgid ""
 "To ensure compatibility with Windows we recommend\n"
 "you use the first partition of the disk as the EFI partition."
@@ -661,12 +661,12 @@ msgstr ""
 "Да бисте осигурали усаглашеност са Виндоузом препорука је\n"
 "да прву партицију диска користите као ЕФИ партицију."
 
-#: usr/lib/live-installer-3/gtk_interface.py:946
+#: usr/lib/live-installer-3/gtk_interface.py:940
 #, python-format
 msgid "<b>Please select a %s partition.</b>"
 msgstr "<b>Изаберите %s партицију.</b>"
 
-#: usr/lib/live-installer-3/gtk_interface.py:947
+#: usr/lib/live-installer-3/gtk_interface.py:941
 #, python-brace-format
 msgid ""
 "A {part_name} partition is needed with the following requirements:\n"
@@ -681,20 +681,20 @@ msgstr ""
 " - величина: најмање {min_size}\n"
 " - формат: {part_format}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1096
+#: usr/lib/live-installer-3/gtk_interface.py:1090
 msgid "Setup finished"
 msgstr "Инсталација завршена"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1097
+#: usr/lib/live-installer-3/gtk_interface.py:1091
 msgid "Setup is complete. The system will now reboot."
 msgstr "Инсталација је завршена. Систем ће се поново покренути."
 
-#: usr/lib/live-installer-3/gtk_interface.py:1102
-#: usr/lib/live-installer-3/installer.py:1162
+#: usr/lib/live-installer-3/gtk_interface.py:1096
+#: usr/lib/live-installer-3/installer.py:1165
 msgid "Installation finished"
 msgstr "Инсталација је завршена"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1103
+#: usr/lib/live-installer-3/gtk_interface.py:1097
 msgid ""
 "Installation is now complete. Do you want to restart your computer to use "
 "the new system?"
@@ -702,98 +702,98 @@ msgstr ""
 "Инсталација је сада завршена. Желите ли да поново покренете рачунар и "
 "користите нови систем?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1151
+#: usr/lib/live-installer-3/gtk_interface.py:1145
 msgid "Localization"
 msgstr "Локализација"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1152
+#: usr/lib/live-installer-3/gtk_interface.py:1146
 msgid "Language: "
 msgstr "Језик:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1153
+#: usr/lib/live-installer-3/gtk_interface.py:1147
 msgid "Timezone: "
 msgstr "Временска зона:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1154
+#: usr/lib/live-installer-3/gtk_interface.py:1148
 msgid "Keyboard layout: "
 msgstr "Распоред тастатуре:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1157
+#: usr/lib/live-installer-3/gtk_interface.py:1151
 msgid "User settings"
 msgstr "Корисничке поставке"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1158
+#: usr/lib/live-installer-3/gtk_interface.py:1152
 msgid "Real name: "
 msgstr "Право име: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1159
+#: usr/lib/live-installer-3/gtk_interface.py:1153
 msgid "Username: "
 msgstr "Корисничко име: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1160
+#: usr/lib/live-installer-3/gtk_interface.py:1154
 msgid "Automatic login: "
 msgstr "Аутоматска пријава:"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1160
+#: usr/lib/live-installer-3/gtk_interface.py:1154
 msgid "enabled"
 msgstr "укључена"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1160
+#: usr/lib/live-installer-3/gtk_interface.py:1154
 msgid "disabled"
 msgstr "искључена"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1161
+#: usr/lib/live-installer-3/gtk_interface.py:1155
 msgid "System settings"
 msgstr "Системске поставке"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1162
+#: usr/lib/live-installer-3/gtk_interface.py:1156
 msgid "Hostname: "
 msgstr "Име домаћина: "
 
-#: usr/lib/live-installer-3/gtk_interface.py:1165
-#: usr/lib/live-installer-3/gtk_interface.py:1184
+#: usr/lib/live-installer-3/gtk_interface.py:1159
+#: usr/lib/live-installer-3/gtk_interface.py:1178
 msgid "Filesystem operations"
 msgstr "Операције фајл-система"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1166
+#: usr/lib/live-installer-3/gtk_interface.py:1160
 msgid "Install Grub on {}"
 msgstr "Инсталирај ГРУБ на {}..."
 
-#: usr/lib/live-installer-3/gtk_interface.py:1166
+#: usr/lib/live-installer-3/gtk_interface.py:1160
 msgid "Do not install Grub"
 msgstr "Не инсталирај ГРУБ"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1169
+#: usr/lib/live-installer-3/gtk_interface.py:1163
 #, python-format
 msgid "Use already-mounted %s."
 msgstr "Користи већ монтиран %s"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1178
+#: usr/lib/live-installer-3/gtk_interface.py:1172
 msgid "set boot flag"
 msgstr "постави boot заставицу"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1179
+#: usr/lib/live-installer-3/gtk_interface.py:1173
 msgid "Mount {}{} as {}"
 msgstr "Монтирај {}{} као {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1185
+#: usr/lib/live-installer-3/gtk_interface.py:1179
 msgid "Encrypt {}"
 msgstr "Шифруј {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1187
+#: usr/lib/live-installer-3/gtk_interface.py:1181
 msgid "Encrypt {} and format as {}"
 msgstr "Шифруј {} и форматирај као {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1189
+#: usr/lib/live-installer-3/gtk_interface.py:1183
 msgid "Format {} as {}"
 msgstr "Форматирај {} као {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1426
-#: usr/lib/live-installer-3/gtk_interface.py:1452
+#: usr/lib/live-installer-3/gtk_interface.py:1444
+#: usr/lib/live-installer-3/gtk_interface.py:1470
 msgid "Grub install"
 msgstr "ГРУБ инсталација"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1427
+#: usr/lib/live-installer-3/gtk_interface.py:1445
 msgid ""
 "You chose to NOT install Grub on your system.\n"
 "Without a bootloader like Grub your system might not boot.\n"
@@ -805,7 +805,7 @@ msgstr ""
 "\n"
 "Сигурно желите да наставите?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1453
+#: usr/lib/live-installer-3/gtk_interface.py:1471
 msgid ""
 "You chose to install Grub on a partition.\n"
 "It is recommended to install Grub on a disk instead of a partition.\n"
@@ -823,20 +823,20 @@ msgstr ""
 "\n"
 "Сигурно желите да наставите?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1511
+#: usr/lib/live-installer-3/gtk_interface.py:1529
 msgid "Select image"
 msgstr "Одаберите слику"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1537
+#: usr/lib/live-installer-3/gtk_interface.py:1555
 msgid "Unable to convert the image."
 msgstr "Не могу да претворим слику."
 
-#: usr/lib/live-installer-3/installer.py:156
-#: usr/lib/live-installer-3/installer.py:181
+#: usr/lib/live-installer-3/installer.py:157
+#: usr/lib/live-installer-3/installer.py:182
 msgid "Installation error"
 msgstr "Грешка при инсталацији"
 
-#: usr/lib/live-installer-3/installer.py:166
+#: usr/lib/live-installer-3/installer.py:167
 msgid ""
 "Installation is now paused. Please read the instructions on the page "
 "carefully before clicking Forward to finish the installation."
@@ -844,37 +844,37 @@ msgstr ""
 "Инсталација је паузирана. Пажљиво прочитајте упутства пре него што кликнете "
 "„Напред“ за завршетак инсталације."
 
-#: usr/lib/live-installer-3/installer.py:167
+#: usr/lib/live-installer-3/installer.py:168
 msgid "Verify that fstab is correct (use blkid to check the UUIDs)."
 msgstr "Проверите да је fstab исправан (помоћу blkid проверите UUID)."
 
-#: usr/lib/live-installer-3/installer.py:168
+#: usr/lib/live-installer-3/installer.py:169
 msgid ""
 "A chrooted terminal and fstab will be opened after you close this message."
 msgstr ""
 "Након што затворите ову поруку, fstab ће се отворити у chroot терминалу."
 
-#: usr/lib/live-installer-3/installer.py:170
+#: usr/lib/live-installer-3/installer.py:171
 msgid "Installation paused"
 msgstr "Инсталација паузирана"
 
-#: usr/lib/live-installer-3/installer.py:235
+#: usr/lib/live-installer-3/installer.py:236
 #, python-format
 msgid "Encrypting %(partition)s ..."
 msgstr "Шифрујем %(partition)s ..."
 
-#: usr/lib/live-installer-3/installer.py:250
+#: usr/lib/live-installer-3/installer.py:251
 #, python-format
 msgid "Formatting %(partition)s as %(format)s ..."
 msgstr "Форматирам %(partition)s као %(format)s ..."
 
-#: usr/lib/live-installer-3/installer.py:324
-#: usr/lib/live-installer-3/installer.py:339
+#: usr/lib/live-installer-3/installer.py:325
+#: usr/lib/live-installer-3/installer.py:340
 #, python-format
 msgid "Mounting %(partition)s on %(mountpoint)s"
 msgstr "Монтирам %(partition)s на %(mountpoint)s"
 
-#: usr/lib/live-installer-3/installer.py:361
+#: usr/lib/live-installer-3/installer.py:362
 #, python-format
 msgid ""
 "You must first manually mount your target filesystem(s) at %s to do a custom "
@@ -883,12 +883,12 @@ msgstr ""
 "Да бисте урадили прилагођену инсталацију, прво ручно морате монтирати циљне "
 "фајл-системе на %s !"
 
-#: usr/lib/live-installer-3/installer.py:364
-#: usr/lib/live-installer-3/installer.py:468
+#: usr/lib/live-installer-3/installer.py:365
+#: usr/lib/live-installer-3/installer.py:469
 msgid "Not mounted"
 msgstr "Није монтирано"
 
-#: usr/lib/live-installer-3/installer.py:372
+#: usr/lib/live-installer-3/installer.py:373
 msgid ""
 "Something is wrong with the installation medium! This is usually caused by "
 "burning tools which are not compatible with {}. Please burn the ISO image to "
@@ -898,15 +898,15 @@ msgstr ""
 "програмима који нису компатибилни са {}. Нарежите ИСО одраз на ДВД/УСБ са "
 "другим програмом."
 
-#: usr/lib/live-installer-3/installer.py:375
+#: usr/lib/live-installer-3/installer.py:376
 msgid "Base filesystem does not exist"
 msgstr "Основни фајл-систем не постоји"
 
-#: usr/lib/live-installer-3/installer.py:418
+#: usr/lib/live-installer-3/installer.py:419
 msgid "Copying"
 msgstr "Копирам"
 
-#: usr/lib/live-installer-3/installer.py:425
+#: usr/lib/live-installer-3/installer.py:426
 #, python-format
 msgid ""
 "System copy ended abruptly.\n"
@@ -915,110 +915,110 @@ msgstr ""
 "Копирање система ненадано је прекинуто.\n"
 "Ваш уређај можда није исправан (rsync код: %s)."
 
-#: usr/lib/live-installer-3/installer.py:428
+#: usr/lib/live-installer-3/installer.py:429
 msgid "System copy error"
 msgstr "Грешка копирања система"
 
-#: usr/lib/live-installer-3/installer.py:461
+#: usr/lib/live-installer-3/installer.py:462
 msgid "Entering the system ..."
 msgstr "Покрећем систем..."
 
-#: usr/lib/live-installer-3/installer.py:465
+#: usr/lib/live-installer-3/installer.py:466
 #, python-format
 msgid "%s/dev not mounted - exiting"
 msgstr "%s/dev није монтиран — излазим"
 
-#: usr/lib/live-installer-3/installer.py:476
+#: usr/lib/live-installer-3/installer.py:477
 msgid "Installing EFI packages..."
 msgstr "Инсталирам ЕФИ пакете..."
 
-#: usr/lib/live-installer-3/installer.py:500
+#: usr/lib/live-installer-3/installer.py:501
 msgid "Installing drivers"
 msgstr "Инсталирам драјвере"
 
-#: usr/lib/live-installer-3/installer.py:514
+#: usr/lib/live-installer-3/installer.py:515
 msgid "Writing filesystem mount information to /etc/fstab"
 msgstr "Уписујем податке о монтирању фајл система у /etc/fstab"
 
-#: usr/lib/live-installer-3/installer.py:733
+#: usr/lib/live-installer-3/installer.py:734
 msgid "Setting locale"
 msgstr "Поставка локалитета"
 
-#: usr/lib/live-installer-3/installer.py:744
+#: usr/lib/live-installer-3/installer.py:745
 msgid "Adding new user to the system"
 msgstr "Додајем новог корисника на систем"
 
-#: usr/lib/live-installer-3/installer.py:851
+#: usr/lib/live-installer-3/installer.py:852
 msgid "Setting hostname"
 msgstr "Поставка имена домаћина"
 
-#: usr/lib/live-installer-3/installer.py:874
+#: usr/lib/live-installer-3/installer.py:875
 msgid "Update apt cache"
 msgstr "Ажурирај АПТ кеш"
 
-#: usr/lib/live-installer-3/installer.py:876
+#: usr/lib/live-installer-3/installer.py:877
 msgid "Update the new system"
 msgstr "Ажурирам нови систем"
 
-#: usr/lib/live-installer-3/installer.py:883
+#: usr/lib/live-installer-3/installer.py:884
 msgid "Localizing packages"
 msgstr "Локализујем пакете"
 
-#: usr/lib/live-installer-3/installer.py:901
+#: usr/lib/live-installer-3/installer.py:902
 msgid "Setting keyboard options"
 msgstr "Постављам опције тастатуре"
 
-#: usr/lib/live-installer-3/installer.py:967
+#: usr/lib/live-installer-3/installer.py:968
 msgid "Configuring sensors"
 msgstr "Подешавам сензоре"
 
-#: usr/lib/live-installer-3/installer.py:973
+#: usr/lib/live-installer-3/installer.py:974
 msgid "Removing VirtualBox"
 msgstr "Уклањам VirtualBox"
 
-#: usr/lib/live-installer-3/installer.py:979
+#: usr/lib/live-installer-3/installer.py:980
 msgid "Removing os-prober"
 msgstr "Уклањам os-prober"
 
-#: usr/lib/live-installer-3/installer.py:1024
+#: usr/lib/live-installer-3/installer.py:1027
 msgid ""
 "The grub bootloader was not configured properly! You need to configure it "
 "manually."
 msgstr "ГРУБ није исправно подешен! Морате га подесити ручно."
 
-#: usr/lib/live-installer-3/installer.py:1027
+#: usr/lib/live-installer-3/installer.py:1030
 msgid "Grub not configured"
 msgstr "ГРУБ није подешен"
 
-#: usr/lib/live-installer-3/installer.py:1033
+#: usr/lib/live-installer-3/installer.py:1036
 msgid "Installing bootloader"
 msgstr "Инсталирам подизни учитавач"
 
-#: usr/lib/live-installer-3/installer.py:1057
+#: usr/lib/live-installer-3/installer.py:1060
 msgid "Removing live configuration (packages)"
 msgstr "Уклањам пакете живе конфигурације"
 
-#: usr/lib/live-installer-3/installer.py:1092
+#: usr/lib/live-installer-3/installer.py:1095
 msgid "Cleaning APT"
 msgstr "Чистим АПТ"
 
-#: usr/lib/live-installer-3/installer.py:1112
+#: usr/lib/live-installer-3/installer.py:1115
 msgid "Update Initramfs"
 msgstr ""
 
-#: usr/lib/live-installer-3/installer.py:1145
+#: usr/lib/live-installer-3/installer.py:1148
 msgid "Unmounting partitions"
 msgstr "Демонтирам партиције"
 
-#: usr/lib/live-installer-3/installer.py:1182
+#: usr/lib/live-installer-3/installer.py:1185
 msgid "Configuring bootloader"
 msgstr "Подешавам подизни учитавач"
 
-#: usr/lib/live-installer-3/installer.py:1189
+#: usr/lib/live-installer-3/installer.py:1192
 msgid "Checking bootloader"
 msgstr "Проверавам подизни учитавач"
 
-#: usr/lib/live-installer-3/installer.py:1204
+#: usr/lib/live-installer-3/installer.py:1207
 #, python-format
 msgid "No %s file found!"
 msgstr "Није нађен фајл %s!"
