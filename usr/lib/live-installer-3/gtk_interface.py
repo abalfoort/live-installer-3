@@ -16,16 +16,15 @@ import timezones
 from dialogs import MessageDialog, QuestionDialog, ErrorDialog, \
                     WarningDialog, SelectImageDialog
 from utils import getoutput, get_config_dict, shell_exec, filter_text, \
-                  is_valid_hostname, ExecuteThreadedCommands, get_value_from_url, \
+                  is_valid_hostname, ExecuteThreadedCommands, \
                   has_internet_connection, memoize, is_xfce_running, get_memory_gib
 import partitioning
 from widgets import PictureChooserButton
 from simplebrowser import SimpleBrowser
 from splash import Splash
 import math
-
-# https://geoip2.readthedocs.io/en/latest/
-import geoip2.database
+import requests
+import GeoIP
 
 # i18n: http://docs.python.org/3/library/gettext.html
 # Actual language set in on_treeview_language_list_cursor_changed
@@ -119,8 +118,10 @@ class InstallerWindow():
         self.langcol_country.set_sort_column_id(1)
         self.treeview_language_list.append_column(self.langcol_country)
         
-        # build the language list
-        self.geoip_reader = None
+        # build timezones
+        self.timezones_model = timezones.build_timezones(self)
+        
+        # build the language list (timezones.build_timezones must have run before this)
         self.build_lang_list()
 
         # build user info page
@@ -165,9 +166,6 @@ class InstallerWindow():
             self.setup.face_button.set_picture_from_file(TMP_FACE)
 
         pic_box.pack_start(self.setup.face_button, True, False, 6)
-
-        # build timezones
-        self.timezones_model = timezones.build_timezones(self)
 
         # Initiate disks treeview
         for i in (partitioning.IDX_PART_PATH,
@@ -357,10 +355,6 @@ class InstallerWindow():
 
     def on_main_window_delete_event(self, widget, event=None):
         if QuestionDialog(_("Quit?"), _("Are you sure you want to quit the installer?")):
-            try:
-                self.geoip_reader.close()
-            except:
-                pass
             Gtk.main_quit()
             return False
         else:
@@ -1245,19 +1239,43 @@ class InstallerWindow():
             cur_country_code = re.split('_|@', cur_locale)[1]
         cur_timezone = getoutput("cat /etc/timezone")
         if not cur_timezone:
-            cur_timezone = None
+            cur_timezone = 'Europe/Amsterdam'
             
         # Try to find out where we're located when running the default US ISO
         if cur_country_code == 'US':
             try:
-                # Use IP url from configuration file
-                ip = get_value_from_url(self.setup.my_ip)
-                # Get country code and time zone from geoip api
-                if self.geoip_reader is None:
-                    self.geoip_reader = geoip2.database.Reader('/var/lib/GeoIP/GeoLite2-City.mmdb')
-                response = self.geoip_reader.city(ip)
-                cur_country_code = response.country.iso_code
-                cur_timezone = response.location.time_zone
+                # Use IP APIs from configuration file
+                addr = None
+                for ip_url in self.setup.my_ip.split(','):
+                    try:
+                        # Test IP4
+                        addr = re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', requests.get(ip_url).text).group()
+                        ip_ver = 4
+                    except:
+                        # Test IP6
+                        addr = re.search(r'([0-9a-fA-F][0-9a-fA-F]{0,3}:){3,7}:([0-9a-fA-F][0-9a-fA-F]{0,3})', requests.get(ip_url).text).group()
+                        ip_ver = 6
+                    if addr: break
+
+                # Get country code and time zone
+                try:
+                    if ip_ver == 6:
+                        # Need to load the database manually for IP6
+                        db = getoutput("dpkg -S GeoIPv6.dat | awk '{print $2}'")
+                        geoip = GeoIP.open(db, GeoIP.GEOIP_STANDARD)
+                        cur_country_code = geoip.country_code_by_addr_v6(addr)
+                    else:
+                        geoip = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
+                        cur_country_code = geoip.country_code_by_addr(addr)
+                    
+                    # Loop through the timezones
+                    for tz in timezones.timezones:
+                        if tz.ccode == cur_country_code:
+                            cur_timezone = tz.name
+                            break
+                            
+                except ValueError:
+                    print(('Warning: address/netmask is invalid: %s' % addr))
             except:
                 pass #best effort, we get here if we're not connected to the Internet
 

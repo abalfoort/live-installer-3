@@ -787,7 +787,7 @@ class InstallerEngine(threading.Thread):
             replace_pattern_in_file(r'^#?autologin-user\s*=.*', 'autologin-user={user}'.format(user=self.setup.username), conf)
         else:
             # Remove autologin in live session with Lightdm
-            comment_line('autologin-user', conf)
+            comment_line(conf, 'autologin-user')
 
         # Add user's face if it doesn't already exist
         face_path = "%s%s/%s/.face" % (self.setup.target_dir, partitioning.HOME_MOUNT_POINT, self.setup.username)
@@ -1113,7 +1113,7 @@ class InstallerEngine(threading.Thread):
         # Note: before cleanup you would have to use: /usr/sbin/update-initramfs.orig.initramfs-tools -u
         self.setup.log.write(" --> Update Initramfs", "InstallerEngine.finish_install", "info")
         self.update_progress(pulse=True, message=_("Update Initramfs"))
-        self.exec_cmd("update-initramfs -u")
+        self.exec_cmd("update-initramfs -u; update-grub")
         
         # Remove temporary files
         for f in self.setup.post_install_remove:
@@ -1258,7 +1258,7 @@ class Setup(object):
         if self.logged_user[-4:] == "-oem":
             self.oem_setup = True
         self.target_dir = self.config.get('target', '/target')
-        self.my_ip = self.config.get('my_ip', 'https://ifconfig.me')
+        self.my_ip = self.config.get('my_ip', 'https://api.ipify.org/')
         self.face = self.config.get('face', '/usr/share/pixmaps/faces/user_generic.png')
         if self.oem_setup:
             self.target_dir = ""

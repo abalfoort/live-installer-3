@@ -412,9 +412,9 @@ def has_power_supply():
 def comment_line(file_path, pattern, comment=True):
     if exists(file_path):
         pattern = pattern.replace("/", "\/")
-        cmd = "sed -i '{p}/s/^/#/' {f}".format(p=pattern, f=file_path)
+        cmd = "sed -i -e ''/{p}/s/^#*/#/'' {f}".format(p=pattern, f=file_path)
         if not comment:
-            cmd = "sed -i '/^#.*{p}/s/^#//' {f}".format(p=pattern, f=file_path)
+            cmd = "sed -i -e '/^#.*{p}/s/^#//' {f}".format(p=pattern, f=file_path)
         shell_exec(cmd)
 
 

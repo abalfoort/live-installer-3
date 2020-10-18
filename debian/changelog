@@ -1,3 +1,9 @@
+live-installer-3 (2020.10.20) stable; urgency=low
+
+  * Fix bug not finding geo information
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 18 Oct 2020 13:15:17 +0200
+
 live-installer-3 (2020.09.05) stable; urgency=low
 
   * Set highest resolution for Plymouth/Grub
