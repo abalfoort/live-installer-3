@@ -1113,7 +1113,7 @@ class InstallerEngine(threading.Thread):
         # Note: before cleanup you would have to use: /usr/sbin/update-initramfs.orig.initramfs-tools -u
         self.setup.log.write(" --> Update Initramfs", "InstallerEngine.finish_install", "info")
         self.update_progress(pulse=True, message=_("Update Initramfs"))
-        self.exec_cmd("update-initramfs -u; update-grub")
+        self.exec_cmd("update-initramfs -u")
         
         # Remove temporary files
         for f in self.setup.post_install_remove:
@@ -1258,7 +1258,7 @@ class Setup(object):
         if self.logged_user[-4:] == "-oem":
             self.oem_setup = True
         self.target_dir = self.config.get('target', '/target')
-        self.my_ip = self.config.get('my_ip', 'https://api.ipify.org/')
+        self.my_ip = self.config.get('my_ip', '')
         self.face = self.config.get('face', '/usr/share/pixmaps/faces/user_generic.png')
         if self.oem_setup:
             self.target_dir = ""

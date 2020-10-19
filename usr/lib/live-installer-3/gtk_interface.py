@@ -23,8 +23,7 @@ from widgets import PictureChooserButton
 from simplebrowser import SimpleBrowser
 from splash import Splash
 import math
-import requests
-import GeoIP
+import geoiptz
 
 # i18n: http://docs.python.org/3/library/gettext.html
 # Actual language set in on_treeview_language_list_cursor_changed
@@ -1243,41 +1242,9 @@ class InstallerWindow():
             
         # Try to find out where we're located when running the default US ISO
         if cur_country_code == 'US':
-            try:
-                # Use IP APIs from configuration file
-                addr = None
-                for ip_url in self.setup.my_ip.split(','):
-                    try:
-                        # Test IP4
-                        addr = re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', requests.get(ip_url).text).group()
-                        ip_ver = 4
-                    except:
-                        # Test IP6
-                        addr = re.search(r'([0-9a-fA-F][0-9a-fA-F]{0,3}:){3,7}:([0-9a-fA-F][0-9a-fA-F]{0,3})', requests.get(ip_url).text).group()
-                        ip_ver = 6
-                    if addr: break
-
-                # Get country code and time zone
-                try:
-                    if ip_ver == 6:
-                        # Need to load the database manually for IP6
-                        db = getoutput("dpkg -S GeoIPv6.dat | awk '{print $2}'")
-                        geoip = GeoIP.open(db, GeoIP.GEOIP_STANDARD)
-                        cur_country_code = geoip.country_code_by_addr_v6(addr)
-                    else:
-                        geoip = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
-                        cur_country_code = geoip.country_code_by_addr(addr)
-                    
-                    # Loop through the timezones
-                    for tz in timezones.timezones:
-                        if tz.ccode == cur_country_code:
-                            cur_timezone = tz.name
-                            break
-                            
-                except ValueError:
-                    print(('Warning: address/netmask is invalid: %s' % addr))
-            except:
-                pass #best effort, we get here if we're not connected to the Internet
+            if self.setup.my_ip:
+                geoiptz.ip_urls = self.setup.my_ip.split(',')
+            cur_country_code, cur_timezone = geoiptz.get_geoip_tz()
 
         self.cur_country_code = cur_country_code
         self.cur_timezone = cur_timezone
