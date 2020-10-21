@@ -1237,14 +1237,19 @@ class InstallerWindow():
         if '_' in cur_locale:
             cur_country_code = re.split('_|@', cur_locale)[1]
         cur_timezone = getoutput("cat /etc/timezone")
-        if not cur_timezone:
+        if not cur_timezone or 'UTC' in cur_timezone:
             cur_timezone = 'Europe/Amsterdam'
             
         # Try to find out where we're located when running the default US ISO
         if cur_country_code == 'US':
             if self.setup.my_ip:
                 geoiptz.ip_urls = self.setup.my_ip.split(',')
-            cur_country_code, cur_timezone = geoiptz.get_geoip_tz()
+            
+            if has_internet_connection():
+                # Get the user's country code by own IP address
+                cur_country_code = geoiptz.country_code_by_addr()
+                # Get (first) timezone by found country code
+                cur_timezone = geoiptz.get_timezones(cur_country_code)[0]
 
         self.cur_country_code = cur_country_code
         self.cur_timezone = cur_timezone
