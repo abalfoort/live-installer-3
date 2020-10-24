@@ -1,3 +1,9 @@
+live-installer-3 (2020.10.24) stable; urgency=low
+
+  * Updated translation: da
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sat, 24 Oct 2020 19:18:58 +0200
+
 live-installer-3 (2020.10.21) stable; urgency=low
 
   * Move geo functionality to its own module
