@@ -4,7 +4,7 @@
 #
 # Translators:
 # abc Def <hdogan1974@gmail.com>, 2020
-# Arjen Balfoort <translations@solydxk.com>, 2016
+# Arjen Balfoort <arjenbalfoort@hotmail.com>, 2016
 # Butterfly <gokhanlnx@gmail.com>, 2016-2018
 msgid ""
 msgstr ""
@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2019-06-19 11:29+0200\n"
 "PO-Revision-Date: 2020-03-28 23:28+0000\n"
 "Last-Translator: abc Def <hdogan1974@gmail.com>\n"
-"Language-Team: Turkish (http://www.transifex.com/solydxk/live-installer-3-"
+"Language-Team: Turkish (http://www.transifex.com/abalfoort/live-installer-3-"
 "slideshow/language/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"

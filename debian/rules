@@ -47,11 +47,8 @@ override_dh_builddeb:
 	rm -rf ./debian/$(source)-slideshow
 
 update:
-	# Push pot file to Transifex
-	tx push -s
-
 	# Get translations from Transifex
-	tx pull -a
+	#tx pull -a
 
 	# Scan for .py files
 	@ xgettext \
@@ -129,3 +126,6 @@ update:
 			rm -rvf "$${D}"; \
 		fi; \
 	done && echo "HTML files scanned for translations"
+	
+	# Push pot file to Transifex
+	#tx push -s

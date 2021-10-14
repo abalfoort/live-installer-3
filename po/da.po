@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: live-installer-3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-24 19:19+0200\n"
+"POT-Creation-Date: 2021-04-25 16:40+0200\n"
 "PO-Revision-Date: 2020-10-22 06:58+0000\n"
 "Last-Translator: Tony Albers\n"
 "Language-Team: Danish (http://www.transifex.com/abalfoort/live-installer-3/"
@@ -872,10 +872,10 @@ msgstr ""
 "Maksimal størrelse: {2}GiB"
 
 #: usr/lib/live-installer-3/gtk_interface.py:910
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
-"Swap partition {0} is not correctly formatted.\n"
-"Live Installer will format the partition to swap."
+"Swap partition {partition} is not correctly formatted.\n"
+"{title} will format the partition to swap."
 msgstr ""
 "Sweap-partitionen {0} er ikke korrekt formatteret.\n"
 "Live-installationsprogrammet vil formattere partitionen til swap."
@@ -1010,12 +1010,12 @@ msgstr "Kryptér {} og formatér som {}"
 msgid "Format {} as {}"
 msgstr "Formatér {} som {}"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1416
-#: usr/lib/live-installer-3/gtk_interface.py:1442
+#: usr/lib/live-installer-3/gtk_interface.py:1420
+#: usr/lib/live-installer-3/gtk_interface.py:1446
 msgid "Grub install"
 msgstr "Grub installation"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1417
+#: usr/lib/live-installer-3/gtk_interface.py:1421
 msgid ""
 "You chose to NOT install Grub on your system.\n"
 "Without a bootloader like Grub your system might not boot.\n"
@@ -1027,7 +1027,7 @@ msgstr ""
 "\n"
 "Er du sikker på at du vil fortsætte?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1443
+#: usr/lib/live-installer-3/gtk_interface.py:1447
 msgid ""
 "You chose to install Grub on a partition.\n"
 "It is recommended to install Grub on a disk instead of a partition.\n"
@@ -1045,11 +1045,11 @@ msgstr ""
 "\n"
 "Er du sikker på at du vil fortsætte?"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1501
+#: usr/lib/live-installer-3/gtk_interface.py:1505
 msgid "Select image"
 msgstr "Vælg billede"
 
-#: usr/lib/live-installer-3/gtk_interface.py:1527
+#: usr/lib/live-installer-3/gtk_interface.py:1531
 msgid "Unable to convert the image."
 msgstr "Billedet kan ikke konverteres."
 

@@ -907,8 +907,8 @@ class InstallerWindow():
                         if (partition.format_as and 'swap' not in partition.format_as) or \
                            (not partition.format_as and 'swap' not in partition.type):
                             MessageDialog(_("Installation Tool"),
-                                         _("Swap partition {0} is not correctly formatted.\n"
-                                         "Live Installer will format the partition to swap.").format(partition.path))
+                                         _("Swap partition {partition} is not correctly formatted.\n"
+                                         "{title} will format the partition to swap.").format(partition=partition.path, title=self.title))
                             partition.format_as = 'swap'
 
                 # Show message if needed
@@ -1246,10 +1246,14 @@ class InstallerWindow():
                 geoiptz.ip_urls = self.setup.my_ip.split(',')
             
             if has_internet_connection():
-                # Get the user's country code by own IP address
-                cur_country_code = geoiptz.country_code_by_addr()
-                # Get (first) timezone by found country code
-                cur_timezone = geoiptz.get_timezones(cur_country_code)[0]
+                try:
+                    # Get the user's country code by own IP address
+                    cur_country_code = geoiptz.country_code_by_addr()
+                    # Get (first) timezone by found country code
+                    cur_timezone = geoiptz.get_timezones(cur_country_code)[0]
+                except:
+                    # Somehow cannot determine country code
+                    pass
 
         self.cur_country_code = cur_country_code
         self.cur_timezone = cur_timezone

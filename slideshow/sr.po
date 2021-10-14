@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the live-installer-3-slideshow package.
 #
 # Translators:
-# Arjen Balfoort <arjenbalfoort@solydxk.com>, 2016
+# Arjen Balfoort <arjenbalfoort@hotmail.com>, 2016
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010
 # Slobodan Simić <slsimic@gmail.com>, 2017
 # Slobodan Simić <slsimic@gmail.com>, 2015
@@ -13,7 +13,7 @@ msgstr ""
 "POT-Creation-Date: 2019-06-19 11:29+0200\n"
 "PO-Revision-Date: 2017-09-23 21:41+0000\n"
 "Last-Translator: Slobodan Simić <slsimic@gmail.com>\n"
-"Language-Team: Serbian (http://www.transifex.com/solydxk/live-installer-3-"
+"Language-Team: Serbian (http://www.transifex.com/abalfoort/live-installer-3-"
 "slideshow/language/sr/)\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"

@@ -1,3 +1,9 @@
+live-installer-3 (2021.04.25) stable; urgency=low
+
+  * Fix crash on geoiptz when unable to determine country code
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 25 Apr 2021 16:39:48 +0200
+
 live-installer-3 (2020.10.24) stable; urgency=low
 
   * Updated translation: da
